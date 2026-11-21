@@ -2,7 +2,7 @@
 
 An app that teaches English to Urdu speakers. Free, with ads. Web + Android + iPhone.
 
-Status: **draft for discussion** (2026-11-21). Nothing here is final until we agree on it.
+Status (2026-11-21, overnight build): Phases 1–2 done, Phase 3 started. See **Progress** at the end.
 
 ---
 
@@ -252,3 +252,24 @@ the owner checks the Urdu. Zero cost to users, highest quality, fully offline.
 - **Phase 4:** AI tutor using whatever is free on the device (Chrome Gemini Nano, Apple Foundation Models,
   Gemini Nano on Android), else offer the Tier 2 pack on Wi-Fi.
 - **Phase 5:** cloud tutor (Tier 3) only if ad income covers it.
+
+---
+
+## Progress
+
+**Done (2026-11-21):**
+- Phase 1 — app shell, Urdu RTL / Roman Urdu UI, onboarding (script, goal, daily goal, level), learning path, lesson player.
+- Phase 2 — 9 units / 25 lessons (A1–A2) incl. a Sounds unit (v/w, th, "school not iskool"), placement / jump-ahead
+  and unit tests, spaced-repetition review, Words list, streak / XP / daily goal / hearts, speaking exercises
+  (word-level scoring), dictation, fix-the-mistake, dialogue replies.
+- Extra — 4 Stories (Duolingo-Stories style: per-character voices, tap any word for its Urdu meaning, questions).
+- Web version live on GitHub Pages; offline service worker.
+- Phase 3 started — Capacitor Android + iOS projects, native TTS + speech recognition plugins, daily reminder,
+  icons + splash. Debug APK builds and runs on the emulator (native TTS confirmed).
+
+**Next:**
+- Owner reviews all Urdu (`docs/URDU_REVIEW.md`).
+- Try the debug APK on a real phone (speaking exercises, reminder).
+- AdMob (needs an AdMob account), privacy policy page, Play listing, GitHub Actions builds (added via web UI).
+- More content: housing, bank & forms, emergencies, past tense; more stories.
+- Tier 1 AI: optional sound-level pronunciation model.
