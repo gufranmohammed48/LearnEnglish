@@ -1,0 +1,40 @@
+{
+  "id": "u9-l1",
+  "words": [
+    { "en": "Hello, this is Ali.", "ur": "ہیلو، میں علی بول رہا ہوں۔", "roman": "Hello, main Ali bol raha hoon." },
+    { "en": "Can I speak to...?", "ur": "کیا میں ... سے بات کر سکتا ہوں؟", "roman": "Kya main ... se baat kar sakta hoon?" },
+    { "en": "Please hold", "ur": "ذرا رکیے", "roman": "Zara rukiye" },
+    { "en": "call back", "ur": "واپس فون کرنا", "roman": "wapas phone karna" },
+    { "en": "message", "ur": "پیغام", "roman": "paighaam" },
+    { "en": "number", "ur": "نمبر", "roman": "number" },
+    { "en": "Could you repeat that?", "ur": "کیا آپ دوبارہ کہہ سکتے ہیں؟", "roman": "Kya aap dobara keh sakte hain?" },
+    { "en": "slowly", "ur": "آہستہ", "roman": "aahista" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "فون پر اپنا تعارف 'I am Ali' کے بجائے 'This is Ali' سے کرتے ہیں۔ بات سمجھ نہ آئے تو گھبرائیں نہیں: 'Could you repeat that, please?' یا 'Could you speak slowly, please?' کہیں۔ یہ بالکل عام بات ہے۔",
+                "roman": "Phone par apna taaruf 'I am Ali' ke bajaaye 'This is Ali' se karte hain. Baat samajh na aaye to ghabraaein nahin: 'Could you repeat that, please?' ya 'Could you speak slowly, please?' kahein. Yeh bilkul aam baat hai." },
+      "examples": [
+        { "en": "Hello, this is Ali.", "ur": "ہیلو، میں علی بول رہا ہوں۔", "roman": "Hello, main Ali bol raha hoon." },
+        { "en": "Can I speak to Dr. Khan, please?", "ur": "کیا میں ڈاکٹر خان سے بات کر سکتا ہوں؟", "roman": "Kya main Doctor Khan se baat kar sakta hoon?" },
+        { "en": "Could you speak slowly, please?", "ur": "کیا آپ آہستہ بول سکتے ہیں؟", "roman": "Kya aap aahista bol sakte hain?" }
+      ] },
+    { "type": "pick", "q": { "ur": "ہیلو، میں سارہ بول رہی ہوں", "roman": "Hello, main Sara bol rahi hoon" }, "options": ["Hello, this is Sara.", "Hello, I am speaking Sara.", "Hello, Sara is talking."], "answer": 0,
+      "why": { "ur": "فون پر 'This is ...' کہتے ہیں۔", "roman": "Phone par 'This is ...' kehte hain." } },
+    { "type": "pick", "q": { "en": "Please hold." }, "options": [{ "ur": "ذرا رکیے", "roman": "Zara rukiye" }, { "ur": "فون بند کریں", "roman": "Phone band karein" }, { "ur": "زور سے بولیں", "roman": "Zor se bolein" }], "answer": 0 },
+    { "type": "build", "q": { "ur": "کیا آپ دوبارہ کہہ سکتے ہیں؟", "roman": "Kya aap dobara keh sakte hain?" }, "answer": "Could you repeat that?", "extra": ["say", "are"] },
+    { "type": "build", "q": { "ur": "کیا آپ آہستہ بول سکتے ہیں، مہربانی کر کے؟", "roman": "Kya aap aahista bol sakte hain, meherbani kar ke?" }, "answer": "Could you speak slowly, please?", "extra": ["slow", "talk"] },
+    { "type": "reply", "scene": { "ur": "فون پر", "roman": "Phone par" }, "say": "He is not here right now. Can I take a message?", "options": ["Yes, please ask him to call me back.", "Yes, I am a message.", "No, I am fine."], "answer": 0 },
+    { "type": "listen", "say": "Can I have your number, please?", "options": ["Can I have your number, please?", "Can I have your name, please?", "Can I have a number, please?"], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "فون پر", "roman": "Phone par" }, "say": "Good morning, City Clinic. How can I help you?", "options": ["Hello, can I make an appointment, please?", "Good night, clinic.", "I am a clinic."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "message", "ur": "پیغام", "roman": "paighaam" },
+      { "en": "number", "ur": "نمبر", "roman": "number" },
+      { "en": "slowly", "ur": "آہستہ", "roman": "aahista" },
+      { "en": "call back", "ur": "واپس فون کرنا", "roman": "wapas phone karna" },
+      { "en": "Please hold", "ur": "ذرا رکیے", "roman": "Zara rukiye" } ] },
+    { "type": "pick", "q": { "ur": "آپ کا فون نمبر کیا ہے؟", "roman": "Aap ka phone number kya hai?" }, "options": ["What is your phone number?", "What your phone number is?", "How is your phone number?"], "answer": 0 },
+    { "type": "speak", "say": "Hello, this is Ali. Can I speak to Sara, please?", "meaning": { "ur": "ہیلو، میں علی بول رہا ہوں۔ کیا میں سارہ سے بات کر سکتا ہوں؟", "roman": "Hello, main Ali bol raha hoon. Kya main Sara se baat kar sakta hoon?" } },
+    { "type": "type", "say": "message", "answer": "message", "meaning": { "ur": "پیغام", "roman": "paighaam" } }
+  ]
+}

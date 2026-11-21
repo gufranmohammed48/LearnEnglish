@@ -1,0 +1,39 @@
+{
+  "id": "u8-l2",
+  "words": [
+    { "en": "bus stop", "ur": "بس اسٹاپ", "roman": "bus stop" },
+    { "en": "train station", "ur": "ریلوے اسٹیشن", "roman": "railway station" },
+    { "en": "ticket", "ur": "ٹکٹ", "roman": "ticket" },
+    { "en": "taxi", "ur": "ٹیکسی", "roman": "taxi" },
+    { "en": "airport", "ur": "ہوائی اڈا", "roman": "hawai adda" },
+    { "en": "How do I get to...?", "ur": "... کیسے جاؤں؟", "roman": "... kaise jaaun?" },
+    { "en": "on foot", "ur": "پیدل", "roman": "paidal" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "کسی جگہ جانے کا طریقہ پوچھنا ہو تو: 'How do I get to the airport?'۔ سواری کے لیے 'by': by bus، by car، by train، مگر پیدل کے لیے 'on foot'۔ 'Where is the station?' بھی ٹھیک ہے۔",
+                "roman": "Kisi jagah jaane ka tareeqa poochhna ho to: 'How do I get to the airport?'. Sawaari ke liye 'by': by bus, by car, by train, magar paidal ke liye 'on foot'. 'Where is the station?' bhi theek hai." },
+      "examples": [
+        { "en": "How do I get to the airport?", "ur": "ہوائی اڈے کیسے جاؤں؟", "roman": "Hawai adde kaise jaaun?" },
+        { "en": "I go to work by bus.", "ur": "میں بس سے کام پر جاتا ہوں۔", "roman": "Main bus se kaam par jaata hoon." },
+        { "en": "One ticket, please.", "ur": "ایک ٹکٹ دے دیں۔", "roman": "Ek ticket de dein." }
+      ] },
+    { "type": "pick", "q": { "en": "airport" }, "options": [{ "ur": "ہوائی اڈا", "roman": "hawai adda" }, { "ur": "بس اسٹاپ", "roman": "bus stop" }, { "ur": "ریلوے اسٹیشن", "roman": "railway station" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "پیدل", "roman": "paidal" }, "options": ["on foot", "by foot", "with foot"], "answer": 0 },
+    { "type": "pick", "q": { "en": "I go to work ___ bus." }, "options": ["by", "on", "with"], "answer": 0 },
+    { "type": "build", "q": { "ur": "ہوائی اڈے کیسے جاؤں؟", "roman": "Hawai adde kaise jaaun?" }, "answer": "How do I get to the airport?", "extra": ["where", "am"] },
+    { "type": "listen", "say": "The bus stop is near the bank.", "options": ["The bus stop is near the bank.", "The bus stop is near the park.", "The bus is near the bank."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "ٹکٹ کاؤنٹر پر", "roman": "Ticket counter par" }, "say": "Where are you going?", "options": ["To the airport, please.", "I am fine, thanks.", "Yes, by foot."], "answer": 0 },
+    { "type": "build", "q": { "ur": "ایک ٹکٹ، مہربانی کر کے", "roman": "Ek ticket, meherbani kar ke" }, "answer": "One ticket, please", "extra": ["a", "tickets"] },
+    { "type": "fix", "sentence": "I came here by foot.", "wrong": [3], "fixed": "I came here on foot.",
+      "why": { "ur": "پیدل کے لیے 'on foot' کہتے ہیں، 'by foot' نہیں۔", "roman": "Paidal ke liye 'on foot' kehte hain, 'by foot' nahin." } },
+    { "type": "match", "pairs": [
+      { "en": "bus stop", "ur": "بس اسٹاپ", "roman": "bus stop" },
+      { "en": "train station", "ur": "ریلوے اسٹیشن", "roman": "railway station" },
+      { "en": "airport", "ur": "ہوائی اڈا", "roman": "hawai adda" },
+      { "en": "ticket", "ur": "ٹکٹ", "roman": "ticket" },
+      { "en": "on foot", "ur": "پیدل", "roman": "paidal" } ] },
+    { "type": "speak", "say": "How do I get to the train station?", "meaning": { "ur": "ریلوے اسٹیشن کیسے جاؤں؟", "roman": "Railway station kaise jaaun?" } },
+    { "type": "type", "say": "ticket", "answer": "ticket", "meaning": { "ur": "ٹکٹ", "roman": "ticket" } }
+  ]
+}

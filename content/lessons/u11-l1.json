@@ -1,0 +1,41 @@
+{
+  "id": "u11-l1",
+  "words": [
+    { "en": "job", "ur": "نوکری", "roman": "naukri" },
+    { "en": "work", "ur": "کام", "roman": "kaam" },
+    { "en": "driver", "ur": "ڈرائیور", "roman": "driver" },
+    { "en": "cook", "ur": "باورچی", "roman": "baawarchi" },
+    { "en": "nurse", "ur": "نرس", "roman": "nurse" },
+    { "en": "engineer", "ur": "انجینئر", "roman": "engineer" },
+    { "en": "shop assistant", "ur": "دکان میں کام کرنے والا", "roman": "dukaan mein kaam karne wala" },
+    { "en": "What do you do?", "ur": "آپ کیا کام کرتے ہیں؟", "roman": "Aap kya kaam karte hain?" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "کسی کا پیشہ پوچھنا ہو تو 'What do you do?'۔ جواب میں پیشے سے پہلے 'a' یا 'an' ضروری ہے: 'I am a driver'، 'I am an engineer'۔ 'I am driver' غلط ہے۔ یا: 'I work as a cook'۔",
+                "roman": "Kisi ka pesha poochhna ho to 'What do you do?'. Jawaab mein peshe se pehle 'a' ya 'an' zaroori hai: 'I am a driver', 'I am an engineer'. 'I am driver' ghalat hai. Ya: 'I work as a cook'." },
+      "examples": [
+        { "en": "What do you do?", "ur": "آپ کیا کام کرتے ہیں؟", "roman": "Aap kya kaam karte hain?" },
+        { "en": "I am a nurse.", "ur": "میں نرس ہوں۔", "roman": "Main nurse hoon." },
+        { "en": "I work in a restaurant.", "ur": "میں ایک ریسٹورنٹ میں کام کرتا ہوں۔", "roman": "Main ek restaurant mein kaam karta hoon." }
+      ] },
+    { "type": "pick", "q": { "ur": "آپ کیا کام کرتے ہیں؟", "roman": "Aap kya kaam karte hain?" }, "options": ["What do you do?", "What are you doing?", "What work you do?"], "answer": 0,
+      "why": { "ur": "'What are you doing?' کا مطلب ہے 'ابھی کیا کر رہے ہیں؟'۔", "roman": "'What are you doing?' ka matlab hai 'abhi kya kar rahe hain?'." } },
+    { "type": "pick", "q": { "en": "I am ___ engineer." }, "options": ["an", "a"], "answer": 0 },
+    { "type": "pick", "q": { "en": "She is ___ nurse." }, "options": ["a", "an"], "answer": 0 },
+    { "type": "fix", "sentence": "I am driver.", "wrong": [2], "fixed": "I am a driver.",
+      "why": { "ur": "پیشے سے پہلے 'a' لگائیں۔", "roman": "Peshe se pehle 'a' lagaein." } },
+    { "type": "match", "pairs": [
+      { "en": "job", "ur": "نوکری", "roman": "naukri" },
+      { "en": "driver", "ur": "ڈرائیور", "roman": "driver" },
+      { "en": "cook", "ur": "باورچی", "roman": "baawarchi" },
+      { "en": "nurse", "ur": "نرس", "roman": "nurse" },
+      { "en": "engineer", "ur": "انجینئر", "roman": "engineer" } ] },
+    { "type": "build", "q": { "ur": "میں ایک ریسٹورنٹ میں کام کرتا ہوں", "roman": "Main ek restaurant mein kaam karta hoon" }, "answer": "I work in a restaurant", "extra": ["am", "on"] },
+    { "type": "reply", "say": "What do you do?", "options": ["I am a cook.", "I am cooking.", "I do fine."], "answer": 0 },
+    { "type": "listen", "say": "I am looking for a job.", "options": ["I am looking for a job.", "I am looking for a jog.", "I am cooking for a job."], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں نوکری ڈھونڈ رہا ہوں", "roman": "Main naukri dhoondh raha hoon" }, "answer": "I am looking for a job", "extra": ["finding", "the"] },
+    { "type": "type", "say": "job", "answer": "job", "meaning": { "ur": "نوکری", "roman": "naukri" } },
+    { "type": "speak", "say": "I am a driver. I work in the city.", "meaning": { "ur": "میں ڈرائیور ہوں۔ میں شہر میں کام کرتا ہوں۔", "roman": "Main driver hoon. Main shehar mein kaam karta hoon." } }
+  ]
+}

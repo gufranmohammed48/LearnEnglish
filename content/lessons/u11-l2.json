@@ -1,0 +1,39 @@
+{
+  "id": "u11-l2",
+  "words": [
+    { "en": "interview", "ur": "انٹرویو", "roman": "interview" },
+    { "en": "experience", "ur": "تجربہ", "roman": "tajurba" },
+    { "en": "years", "ur": "سال", "roman": "saal" },
+    { "en": "hard-working", "ur": "محنتی", "roman": "mehnati" },
+    { "en": "strength", "ur": "خوبی", "roman": "khoobi" },
+    { "en": "Tell me about yourself.", "ur": "اپنے بارے میں بتائیں۔", "roman": "Apne baare mein bataaein." },
+    { "en": "I can start on Monday.", "ur": "میں پیر سے شروع کر سکتا ہوں۔", "roman": "Main peer se shuru kar sakta hoon." }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "انٹرویو میں چھوٹے، صاف جملے بولیں۔ تجربہ بتانا ہو تو: 'I have five years of experience' (پانچ سال کا تجربہ)۔ 'I am having experience' نہیں۔ آخر میں شکریہ: 'Thank you for your time'۔",
+                "roman": "Interview mein chhote, saaf jumle bolein. Tajurba batana ho to: 'I have five years of experience' (paanch saal ka tajurba). 'I am having experience' nahin. Aakhir mein shukriya: 'Thank you for your time'." },
+      "examples": [
+        { "en": "I have five years of experience.", "ur": "میرے پاس پانچ سال کا تجربہ ہے۔", "roman": "Mere paas paanch saal ka tajurba hai." },
+        { "en": "I am hard-working and honest.", "ur": "میں محنتی اور ایماندار ہوں۔", "roman": "Main mehnati aur imaandaar hoon." },
+        { "en": "Thank you for your time.", "ur": "آپ کے وقت کا شکریہ۔", "roman": "Aap ke waqt ka shukriya." }
+      ] },
+    { "type": "pick", "q": { "en": "experience" }, "options": [{ "ur": "تجربہ", "roman": "tajurba" }, { "ur": "خوبی", "roman": "khoobi" }, { "ur": "محنتی", "roman": "mehnati" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "میرے پاس تین سال کا تجربہ ہے", "roman": "Mere paas teen saal ka tajurba hai" }, "options": ["I have three years of experience.", "I am having three years experience.", "I have experience of three year."], "answer": 0 },
+    { "type": "fix", "sentence": "I am having two years experience.", "wrong": [1, 2], "fixed": "I have two years of experience.",
+      "why": { "ur": "'I am having' نہیں، 'I have'۔", "roman": "'I am having' nahin, 'I have'." } },
+    { "type": "reply", "scene": { "ur": "نوکری کا انٹرویو", "roman": "Naukri ka interview" }, "say": "Tell me about yourself.", "options": ["My name is Ali. I am a cook with five years of experience.", "I am fine, thank you.", "Yes, tell me."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "نوکری کا انٹرویو", "roman": "Naukri ka interview" }, "say": "When can you start?", "options": ["I can start on Monday.", "I can start in Monday.", "I started Monday."], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں محنتی ہوں", "roman": "Main mehnati hoon" }, "answer": "I am hard-working", "extra": ["have", "a"] },
+    { "type": "build", "q": { "ur": "آپ کے وقت کا شکریہ", "roman": "Aap ke waqt ka shukriya" }, "answer": "Thank you for your time", "extra": ["of", "my"] },
+    { "type": "listen", "say": "Why do you want this job?", "options": ["Why do you want this job?", "When do you want this job?", "Why do you want this jog?"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "interview", "ur": "انٹرویو", "roman": "interview" },
+      { "en": "experience", "ur": "تجربہ", "roman": "tajurba" },
+      { "en": "hard-working", "ur": "محنتی", "roman": "mehnati" },
+      { "en": "strength", "ur": "خوبی", "roman": "khoobi" },
+      { "en": "years", "ur": "سال", "roman": "saal" } ] },
+    { "type": "speak", "say": "I have five years of experience. I am hard-working.", "meaning": { "ur": "میرے پاس پانچ سال کا تجربہ ہے۔ میں محنتی ہوں۔", "roman": "Mere paas paanch saal ka tajurba hai. Main mehnati hoon." } },
+    { "type": "type", "say": "interview", "answer": "interview", "meaning": { "ur": "انٹرویو", "roman": "interview" } }
+  ]
+}

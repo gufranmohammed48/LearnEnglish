@@ -1,0 +1,40 @@
+{
+  "id": "u12-l1",
+  "words": [
+    { "en": "teacher", "ur": "استاد / ٹیچر", "roman": "ustaad / teacher" },
+    { "en": "homework", "ur": "گھر کا کام", "roman": "ghar ka kaam" },
+    { "en": "class", "ur": "جماعت / کلاس", "roman": "jamaat / class" },
+    { "en": "grade", "ur": "جماعت (درجہ)", "roman": "jamaat (darja)" },
+    { "en": "absent", "ur": "غیر حاضر", "roman": "ghair haazir" },
+    { "en": "pick up", "ur": "لینے آنا", "roman": "lene aana" },
+    { "en": "parent", "ur": "والدین میں سے ایک", "roman": "waalidain mein se ek" },
+    { "en": "How is my son doing?", "ur": "میرا بیٹا پڑھائی میں کیسا ہے؟", "roman": "Mera beta parhai mein kaisa hai?" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "بچوں کے اسکول میں ٹیچر سے بات کرتے وقت یہ جملے کام آئیں گے: 'I am Ahmed's father' (میں احمد کا والد ہوں)، 'How is he doing in class?' (کلاس میں کیسا ہے؟)۔ بچہ نہ جا سکے تو: 'My son is sick today. He will be absent.'۔",
+                "roman": "Bachon ke school mein teacher se baat karte waqt yeh jumle kaam aaein ge: 'I am Ahmed's father' (main Ahmed ka waalid hoon), 'How is he doing in class?' (class mein kaisa hai?). Bachcha na ja sake to: 'My son is sick today. He will be absent.'." },
+      "examples": [
+        { "en": "I am Sara's mother.", "ur": "میں سارہ کی امی ہوں۔", "roman": "Main Sara ki ammi hoon." },
+        { "en": "How is she doing in class?", "ur": "وہ کلاس میں کیسی ہے؟", "roman": "Woh class mein kaisi hai?" },
+        { "en": "My son is sick today.", "ur": "آج میرا بیٹا بیمار ہے۔", "roman": "Aaj mera beta beemaar hai." }
+      ] },
+    { "type": "pick", "q": { "en": "homework" }, "options": [{ "ur": "گھر کا کام", "roman": "ghar ka kaam" }, { "ur": "گھر", "roman": "ghar" }, { "ur": "کلاس", "roman": "class" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "میں احمد کا والد ہوں", "roman": "Main Ahmed ka waalid hoon" }, "options": ["I am Ahmed's father.", "I am father of Ahmed's.", "Ahmed is my father."], "answer": 0 },
+    { "type": "build", "q": { "ur": "آج میرا بیٹا بیمار ہے", "roman": "Aaj mera beta beemaar hai" }, "answer": "My son is sick today", "extra": ["daughter", "am"] },
+    { "type": "reply", "scene": { "ur": "اسکول میں ٹیچر سے", "roman": "School mein teacher se" }, "say": "Hello! How can I help you?", "options": ["Hi, I am Ali's mother. How is he doing in class?", "Hi, I am a class.", "Good night, teacher."], "answer": 0 },
+    { "type": "listen", "say": "He needs to do his homework every day.", "options": ["He needs to do his homework every day.", "He needs to do his housework every day.", "She needs to do her homework every day."], "answer": 0 },
+    { "type": "pick", "q": { "en": "My daughter will be ___ tomorrow. She has a fever." }, "options": ["absent", "present"], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں تین بجے اسے لینے آؤں گا", "roman": "Main teen bajay use lene aaunga" }, "answer": "I will pick him up at three", "extra": ["on", "her"] },
+    { "type": "match", "pairs": [
+      { "en": "teacher", "ur": "ٹیچر", "roman": "teacher" },
+      { "en": "homework", "ur": "گھر کا کام", "roman": "ghar ka kaam" },
+      { "en": "absent", "ur": "غیر حاضر", "roman": "ghair haazir" },
+      { "en": "class", "ur": "کلاس", "roman": "class" },
+      { "en": "pick up", "ur": "لینے آنا", "roman": "lene aana" } ] },
+    { "type": "fix", "sentence": "My son he is in grade three.", "wrong": [2], "fixed": "My son is in grade three.",
+      "why": { "ur": "'My son' کے بعد دوبارہ 'he' نہ لگائیں۔", "roman": "'My son' ke baad dobara 'he' na lagaein." } },
+    { "type": "speak", "say": "I am Ahmed's father. How is he doing in class?", "meaning": { "ur": "میں احمد کا والد ہوں۔ وہ کلاس میں کیسا ہے؟", "roman": "Main Ahmed ka waalid hoon. Woh class mein kaisa hai?" } },
+    { "type": "type", "say": "teacher", "answer": "teacher", "meaning": { "ur": "استاد / ٹیچر", "roman": "ustaad / teacher" } }
+  ]
+}

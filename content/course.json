@@ -1,52 +1,365 @@
 {
   "version": 1,
   "units": [
-    { "id": "u1", "level": "A1", "color": "green",
-      "title": { "en": "Greetings", "ur": "سلام اور ملاقات", "roman": "Salaam aur mulaqaat" },
+    {
+      "id": "u1",
+      "level": "A1",
+      "color": "green",
+      "title": {
+        "en": "Greetings",
+        "ur": "سلام اور ملاقات",
+        "roman": "Salaam aur mulaqaat"
+      },
       "lessons": [
-        { "id": "u1-l1", "title": { "en": "Hello & thank you", "ur": "سلام اور شکریہ", "roman": "Salaam aur shukriya" } },
-        { "id": "u1-l2", "title": { "en": "How are you?", "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" } },
-        { "id": "u1-l3", "title": { "en": "My name is…", "ur": "میرا نام…", "roman": "Mera naam…" } }
-      ] },
-    { "id": "u2", "level": "A1", "color": "blue",
-      "title": { "en": "Things: a, an, this, that", "ur": "چیزیں: a، an، this، that", "roman": "Cheezein: a, an, this, that" },
+        {
+          "id": "u1-l1",
+          "title": {
+            "en": "Hello & thank you",
+            "ur": "سلام اور شکریہ",
+            "roman": "Salaam aur shukriya"
+          }
+        },
+        {
+          "id": "u1-l2",
+          "title": {
+            "en": "How are you?",
+            "ur": "آپ کیسے ہیں؟",
+            "roman": "Aap kaise hain?"
+          }
+        },
+        {
+          "id": "u1-l3",
+          "title": {
+            "en": "My name is…",
+            "ur": "میرا نام…",
+            "roman": "Mera naam…"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "level": "A1",
+      "color": "blue",
+      "title": {
+        "en": "Things: a, an, this, that",
+        "ur": "چیزیں: a، an، this، that",
+        "roman": "Cheezein: a, an, this, that"
+      },
       "lessons": [
-        { "id": "u2-l1", "title": { "en": "a and an", "ur": "a اور an", "roman": "a aur an" } },
-        { "id": "u2-l2", "title": { "en": "This and that", "ur": "یہ اور وہ", "roman": "Yeh aur woh" } }
-      ] },
-    { "id": "u3", "level": "A1", "color": "orange",
-      "title": { "en": "Numbers & money", "ur": "گنتی اور پیسے", "roman": "Ginti aur paisay" },
+        {
+          "id": "u2-l1",
+          "title": {
+            "en": "a and an",
+            "ur": "a اور an",
+            "roman": "a aur an"
+          }
+        },
+        {
+          "id": "u2-l2",
+          "title": {
+            "en": "This and that",
+            "ur": "یہ اور وہ",
+            "roman": "Yeh aur woh"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "level": "A1",
+      "color": "orange",
+      "title": {
+        "en": "Numbers & money",
+        "ur": "گنتی اور پیسے",
+        "roman": "Ginti aur paisay"
+      },
       "lessons": [
-        { "id": "u3-l1", "title": { "en": "Numbers 1–10", "ur": "گنتی 1 سے 10", "roman": "Ginti 1 se 10" } },
-        { "id": "u3-l2", "title": { "en": "How much is it?", "ur": "یہ کتنے کا ہے؟", "roman": "Yeh kitne ka hai?" } }
-      ] },
-    { "id": "u4", "level": "A1", "color": "purple",
-      "title": { "en": "Family", "ur": "خاندان", "roman": "Khaandaan" },
+        {
+          "id": "u3-l1",
+          "title": {
+            "en": "Numbers 1–10",
+            "ur": "گنتی 1 سے 10",
+            "roman": "Ginti 1 se 10"
+          }
+        },
+        {
+          "id": "u3-l2",
+          "title": {
+            "en": "How much is it?",
+            "ur": "یہ کتنے کا ہے؟",
+            "roman": "Yeh kitne ka hai?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "level": "A1",
+      "color": "purple",
+      "title": {
+        "en": "Family",
+        "ur": "خاندان",
+        "roman": "Khaandaan"
+      },
       "lessons": [
-        { "id": "u4-l1", "title": { "en": "My family", "ur": "میرا خاندان", "roman": "Mera khaandaan" } },
-        { "id": "u4-l2", "title": { "en": "He and she", "ur": "he اور she", "roman": "he aur she" } }
-      ] },
-    { "id": "u5", "level": "A1", "color": "teal",
-      "title": { "en": "Food & shopping", "ur": "کھانا اور خریداری", "roman": "Khaana aur khareedari" },
+        {
+          "id": "u4-l1",
+          "title": {
+            "en": "My family",
+            "ur": "میرا خاندان",
+            "roman": "Mera khaandaan"
+          }
+        },
+        {
+          "id": "u4-l2",
+          "title": {
+            "en": "He and she",
+            "ur": "he اور she",
+            "roman": "he aur she"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "level": "A1",
+      "color": "teal",
+      "title": {
+        "en": "Food & shopping",
+        "ur": "کھانا اور خریداری",
+        "roman": "Khaana aur khareedari"
+      },
       "lessons": [
-        { "id": "u5-l1", "title": { "en": "Food & drinks", "ur": "کھانا پینا", "roman": "Khaana peena" } },
-        { "id": "u5-l2", "title": { "en": "At the shop", "ur": "دکان پر", "roman": "Dukaan par" } }
-      ] },
-    { "id": "u6", "level": "A1", "color": "red",
-      "title": { "en": "At the doctor", "ur": "ڈاکٹر کے پاس", "roman": "Doctor ke paas" },
+        {
+          "id": "u5-l1",
+          "title": {
+            "en": "Food & drinks",
+            "ur": "کھانا پینا",
+            "roman": "Khaana peena"
+          }
+        },
+        {
+          "id": "u5-l2",
+          "title": {
+            "en": "At the shop",
+            "ur": "دکان پر",
+            "roman": "Dukaan par"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "level": "A1",
+      "color": "red",
+      "title": {
+        "en": "At the doctor",
+        "ur": "ڈاکٹر کے پاس",
+        "roman": "Doctor ke paas"
+      },
       "lessons": [
-        { "id": "u6-l1", "title": { "en": "Body & pain", "ur": "جسم اور درد", "roman": "Jism aur dard" } },
-        { "id": "u6-l2", "title": { "en": "At the clinic", "ur": "کلینک میں", "roman": "Clinic mein" } }
-      ] },
-    { "id": "u7", "level": "A1", "color": "pink",
-      "title": { "en": "Asking questions", "ur": "سوال پوچھنا", "roman": "Sawaal poochhna" },
+        {
+          "id": "u6-l1",
+          "title": {
+            "en": "Body & pain",
+            "ur": "جسم اور درد",
+            "roman": "Jism aur dard"
+          }
+        },
+        {
+          "id": "u6-l2",
+          "title": {
+            "en": "At the clinic",
+            "ur": "کلینک میں",
+            "roman": "Clinic mein"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "level": "A1",
+      "color": "pink",
+      "title": {
+        "en": "Asking questions",
+        "ur": "سوال پوچھنا",
+        "roman": "Sawaal poochhna"
+      },
       "lessons": [
-        { "id": "u7-l1", "title": { "en": "Where are you going?", "ur": "آپ کہاں جا رہے ہیں؟", "roman": "Aap kahan ja rahe hain?" } }
-      ] },
-    { "id": "u8", "soon": true, "title": { "en": "Directions", "ur": "راستہ پوچھنا", "roman": "Raasta poochhna" }, "lessons": [] },
-    { "id": "u9", "soon": true, "title": { "en": "Phone calls", "ur": "فون پر بات", "roman": "Phone par baat" }, "lessons": [] },
-    { "id": "u10", "soon": true, "title": { "en": "Time & dates", "ur": "وقت اور تاریخ", "roman": "Waqt aur tareekh" }, "lessons": [] },
-    { "id": "u11", "soon": true, "title": { "en": "Work & jobs", "ur": "کام اور نوکری", "roman": "Kaam aur naukri" }, "lessons": [] },
-    { "id": "u12", "soon": true, "title": { "en": "Your child's school", "ur": "بچوں کا اسکول", "roman": "Bachon ka school" }, "lessons": [] }
+        {
+          "id": "u7-l1",
+          "title": {
+            "en": "Where are you going?",
+            "ur": "آپ کہاں جا رہے ہیں؟",
+            "roman": "Aap kahan ja rahe hain?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "level": "A1",
+      "color": "blue",
+      "title": {
+        "en": "Directions & transport",
+        "ur": "راستہ اور سواری",
+        "roman": "Raasta aur sawaari"
+      },
+      "lessons": [
+        {
+          "id": "u8-l1",
+          "title": {
+            "en": "Left, right, straight",
+            "ur": "دائیں، بائیں، سیدھا",
+            "roman": "Daayein, baayein, seedha"
+          }
+        },
+        {
+          "id": "u8-l2",
+          "title": {
+            "en": "Bus, train, taxi",
+            "ur": "بس، ٹرین، ٹیکسی",
+            "roman": "Bus, train, taxi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u9",
+      "level": "A1",
+      "color": "teal",
+      "title": {
+        "en": "Phone calls",
+        "ur": "فون پر بات",
+        "roman": "Phone par baat"
+      },
+      "lessons": [
+        {
+          "id": "u9-l1",
+          "title": {
+            "en": "Hello, this is…",
+            "ur": "ہیلو، میں … بول رہا ہوں",
+            "roman": "Hello, main … bol raha hoon"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u10",
+      "level": "A1",
+      "color": "orange",
+      "title": {
+        "en": "Time & days",
+        "ur": "وقت اور دن",
+        "roman": "Waqt aur din"
+      },
+      "lessons": [
+        {
+          "id": "u10-l1",
+          "title": {
+            "en": "What time is it?",
+            "ur": "کیا وقت ہوا ہے؟",
+            "roman": "Kya waqt hua hai?"
+          }
+        },
+        {
+          "id": "u10-l2",
+          "title": {
+            "en": "Days of the week",
+            "ur": "ہفتے کے دن",
+            "roman": "Haftay ke din"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u11",
+      "level": "A2",
+      "color": "purple",
+      "title": {
+        "en": "Work & jobs",
+        "ur": "کام اور نوکری",
+        "roman": "Kaam aur naukri"
+      },
+      "lessons": [
+        {
+          "id": "u11-l1",
+          "title": {
+            "en": "What do you do?",
+            "ur": "آپ کیا کام کرتے ہیں؟",
+            "roman": "Aap kya kaam karte hain?"
+          }
+        },
+        {
+          "id": "u11-l2",
+          "title": {
+            "en": "Job interview",
+            "ur": "نوکری کا انٹرویو",
+            "roman": "Naukri ka interview"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u12",
+      "level": "A2",
+      "color": "green",
+      "title": {
+        "en": "Your child's school",
+        "ur": "بچوں کا اسکول",
+        "roman": "Bachon ka school"
+      },
+      "lessons": [
+        {
+          "id": "u12-l1",
+          "title": {
+            "en": "Talking to the teacher",
+            "ur": "ٹیچر سے بات",
+            "roman": "Teacher se baat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u13",
+      "soon": true,
+      "title": {
+        "en": "Housing & the landlord",
+        "ur": "گھر اور مالک مکان",
+        "roman": "Ghar aur maalik-e-makaan"
+      },
+      "lessons": []
+    },
+    {
+      "id": "u14",
+      "soon": true,
+      "title": {
+        "en": "Bank & forms",
+        "ur": "بینک اور فارم",
+        "roman": "Bank aur form"
+      },
+      "lessons": []
+    },
+    {
+      "id": "u15",
+      "soon": true,
+      "title": {
+        "en": "Emergencies",
+        "ur": "ہنگامی حالات",
+        "roman": "Hangaami haalaat"
+      },
+      "lessons": []
+    },
+    {
+      "id": "u16",
+      "soon": true,
+      "title": {
+        "en": "Talking about the past",
+        "ur": "گزری ہوئی باتیں",
+        "roman": "Guzri hui baatein"
+      },
+      "lessons": []
+    }
   ]
 }

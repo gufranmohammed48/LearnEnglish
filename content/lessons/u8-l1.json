@@ -1,0 +1,41 @@
+{
+  "id": "u8-l1",
+  "words": [
+    { "en": "left", "ur": "بائیں", "roman": "baayein" },
+    { "en": "right", "ur": "دائیں", "roman": "daayein" },
+    { "en": "straight", "ur": "سیدھا", "roman": "seedha" },
+    { "en": "turn", "ur": "مڑیں", "roman": "murein" },
+    { "en": "near", "ur": "قریب", "roman": "qareeb" },
+    { "en": "far", "ur": "دور", "roman": "door" },
+    { "en": "Where is the...?", "ur": "... کہاں ہے؟", "roman": "... kahan hai?" },
+    { "en": "next to", "ur": "کے ساتھ / کے برابر", "roman": "ke saath / ke baraabar" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "راستہ پوچھنا ہو تو 'Excuse me, where is the ...?'۔ جواب میں اکثر یہ سنیں گے: 'Go straight' (سیدھا جائیں)، 'Turn left' (بائیں مڑیں)، 'Turn right' (دائیں مڑیں)۔ اردو میں 'کے ساتھ' بعد میں آتا ہے، انگریزی میں 'next to' پہلے: next to the bank۔",
+                "roman": "Raasta poochhna ho to 'Excuse me, where is the ...?'. Jawaab mein aksar yeh sunein ge: 'Go straight' (seedha jaaein), 'Turn left' (baayein murein), 'Turn right' (daayein murein). Urdu mein 'ke saath' baad mein aata hai, Angrezi mein 'next to' pehle: next to the bank." },
+      "examples": [
+        { "en": "Excuse me, where is the bank?", "ur": "سنیے، بینک کہاں ہے؟", "roman": "Suniye, bank kahan hai?" },
+        { "en": "Go straight and turn left.", "ur": "سیدھا جائیں اور بائیں مڑیں۔", "roman": "Seedha jaaein aur baayein murein." },
+        { "en": "It is next to the school.", "ur": "یہ اسکول کے ساتھ ہے۔", "roman": "Yeh school ke saath hai." }
+      ] },
+    { "type": "pick", "q": { "en": "left" }, "options": [{ "ur": "بائیں", "roman": "baayein" }, { "ur": "دائیں", "roman": "daayein" }, { "ur": "سیدھا", "roman": "seedha" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "دائیں", "roman": "daayein" }, "options": ["right", "left", "straight"], "answer": 0 },
+    { "type": "listen", "say": "Turn right.", "options": ["Turn right.", "Turn left.", "Go straight."], "answer": 0 },
+    { "type": "build", "q": { "ur": "سیدھا جائیں اور بائیں مڑیں", "roman": "Seedha jaaein aur baayein murein" }, "answer": "Go straight and turn left", "extra": ["right", "to"] },
+    { "type": "build", "q": { "ur": "سنیے، بینک کہاں ہے؟", "roman": "Suniye, bank kahan hai?" }, "answer": "Excuse me, where is the bank?", "extra": ["are", "what"] },
+    { "type": "fix", "sentence": "The bank is the school next to.", "wrong": [3, 4, 5, 6], "fixed": "The bank is next to the school.",
+      "why": { "ur": "انگریزی میں 'next to' پہلے آتا ہے: next to the school۔", "roman": "Angrezi mein 'next to' pehle aata hai: next to the school." } },
+    { "type": "match", "pairs": [
+      { "en": "left", "ur": "بائیں", "roman": "baayein" },
+      { "en": "right", "ur": "دائیں", "roman": "daayein" },
+      { "en": "straight", "ur": "سیدھا", "roman": "seedha" },
+      { "en": "near", "ur": "قریب", "roman": "qareeb" },
+      { "en": "far", "ur": "دور", "roman": "door" } ] },
+    { "type": "reply", "say": "Is it far?", "options": ["No, it is very near.", "No, it is very left.", "Yes, I am far."], "answer": 0 },
+    { "type": "pick", "q": { "ur": "یہ اسکول کے ساتھ ہے", "roman": "Yeh school ke saath hai" }, "options": ["It is next to the school.", "It is the school next.", "It is with school."], "answer": 0 },
+    { "type": "listen", "say": "Go straight for two minutes.", "options": ["Go straight for two minutes.", "Go straight for ten minutes.", "Go right for two minutes."], "answer": 0 },
+    { "type": "speak", "say": "Excuse me, where is the hospital?", "meaning": { "ur": "سنیے، ہسپتال کہاں ہے؟", "roman": "Suniye, hospital kahan hai?" } },
+    { "type": "type", "say": "left", "answer": "left", "meaning": { "ur": "بائیں", "roman": "baayein" } }
+  ]
+}

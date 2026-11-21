@@ -1,0 +1,40 @@
+{
+  "id": "u10-l1",
+  "words": [
+    { "en": "What time is it?", "ur": "کیا وقت ہوا ہے؟", "roman": "Kya waqt hua hai?" },
+    { "en": "o'clock", "ur": "بجے", "roman": "bajay" },
+    { "en": "half past", "ur": "ساڑھے", "roman": "saarhe" },
+    { "en": "quarter past", "ur": "سوا", "roman": "sawa" },
+    { "en": "quarter to", "ur": "پونے", "roman": "paune" },
+    { "en": "morning", "ur": "صبح", "roman": "subah" },
+    { "en": "evening", "ur": "شام", "roman": "shaam" },
+    { "en": "at", "ur": "بجے (وقت کے ساتھ)", "roman": "bajay (waqt ke saath)" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "وقت بتانا: 3:00 = three o'clock، 3:30 = half past three (ساڑھے تین)، 3:15 = quarter past three (سوا تین)، 2:45 = quarter to three (پونے تین)۔ آسان طریقہ بھی ٹھیک ہے: 3:30 = three thirty۔ 'تین بجے' = 'at three o'clock'۔",
+                "roman": "Waqt batana: 3:00 = three o'clock, 3:30 = half past three (saarhe teen), 3:15 = quarter past three (sawa teen), 2:45 = quarter to three (paune teen). Aasaan tareeqa bhi theek hai: 3:30 = three thirty. 'Teen bajay' = 'at three o'clock'." },
+      "examples": [
+        { "en": "It is three o'clock.", "ur": "تین بجے ہیں۔", "roman": "Teen bajay hain." },
+        { "en": "It is half past four.", "ur": "ساڑھے چار بجے ہیں۔", "roman": "Saarhe chaar bajay hain." },
+        { "en": "The class is at nine.", "ur": "کلاس نو بجے ہے۔", "roman": "Class nau bajay hai." }
+      ] },
+    { "type": "pick", "q": { "ur": "کیا وقت ہوا ہے؟", "roman": "Kya waqt hua hai?" }, "options": ["What time is it?", "What time it is?", "How much time?"], "answer": 0 },
+    { "type": "pick", "q": { "en": "half past four" }, "options": [{ "ur": "ساڑھے چار", "roman": "saarhe chaar" }, { "ur": "سوا چار", "roman": "sawa chaar" }, { "ur": "پونے چار", "roman": "paune chaar" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "سوا دو", "roman": "sawa do" }, "options": ["quarter past two", "quarter to two", "half past two"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "پونے پانچ", "roman": "paune paanch" }, "options": ["quarter to five", "quarter past five", "half past five"], "answer": 0,
+      "why": { "ur": "پونے پانچ = پانچ بجنے میں پندرہ منٹ = quarter to five۔", "roman": "Paune paanch = paanch bajne mein pandrah minute = quarter to five." } },
+    { "type": "listen", "say": "It is seven o'clock.", "options": ["It is seven o'clock.", "It is eleven o'clock.", "It is seven thirty."], "answer": 0 },
+    { "type": "pick", "q": { "en": "The doctor's appointment is ___ ten o'clock." }, "options": ["at", "in", "on"], "answer": 0 },
+    { "type": "build", "q": { "ur": "ساڑھے تین بجے ہیں", "roman": "Saarhe teen bajay hain" }, "answer": "It is half past three", "extra": ["quarter", "to"] },
+    { "type": "reply", "say": "What time is it?", "options": ["It is nine o'clock.", "It is Monday.", "Yes, it is time."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "half past", "ur": "ساڑھے", "roman": "saarhe" },
+      { "en": "quarter past", "ur": "سوا", "roman": "sawa" },
+      { "en": "quarter to", "ur": "پونے", "roman": "paune" },
+      { "en": "morning", "ur": "صبح", "roman": "subah" },
+      { "en": "evening", "ur": "شام", "roman": "shaam" } ] },
+    { "type": "type", "say": "nine o'clock", "answer": "nine o'clock", "accept": ["nine oclock", "9 o'clock"], "meaning": { "ur": "نو بجے", "roman": "nau bajay" } },
+    { "type": "speak", "say": "It is half past three.", "meaning": { "ur": "ساڑھے تین بجے ہیں۔", "roman": "Saarhe teen bajay hain." } }
+  ]
+}

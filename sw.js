@@ -1,15 +1,21 @@
 // Offline support. Bump VERSION whenever any file changes so phones pick up the update.
-const VERSION = "angrezi-v1";
+const VERSION = "angrezi-v2";
 const FONTS = "angrezi-fonts"; // kept across versions
-const LESSONS = ["u1-l1", "u1-l2", "u1-l3", "u2-l1", "u2-l2", "u3-l1", "u3-l2", "u4-l1", "u4-l2",
-  "u5-l1", "u5-l2", "u6-l1", "u6-l2", "u7-l1"];
 const FILES = ["./", "index.html", "style.css", "app.js", "lesson.js", "content.js", "store.js", "srs.js", "speech.js",
   "strings.js", "ui.js", "manifest.json", "content/course.json",
-  "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
-  ...LESSONS.map((id) => "content/lessons/" + id + ".json")];
+  "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
+// Caches the app plus every lesson listed in course.json, so the whole course works offline.
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: "reload" })))));
+  e.waitUntil((async () => {
+    const c = await caches.open(VERSION);
+    await c.addAll(FILES.map((f) => new Request(f, { cache: "reload" })));
+    try {
+      const course = await (await fetch("content/course.json", { cache: "reload" })).json();
+      const lessons = course.units.flatMap((u) => (u.soon ? [] : u.lessons.map((l) => "content/lessons/" + l.id + ".json")));
+      await c.addAll(lessons.map((f) => new Request(f, { cache: "reload" })));
+    } catch (err) {}
+  })());
   self.skipWaiting();
 });
 

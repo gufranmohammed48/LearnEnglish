@@ -1,0 +1,42 @@
+{
+  "id": "u10-l2",
+  "words": [
+    { "en": "Monday", "ur": "پیر", "roman": "Peer" },
+    { "en": "Tuesday", "ur": "منگل", "roman": "Mangal" },
+    { "en": "Wednesday", "ur": "بدھ", "roman": "Budh" },
+    { "en": "Thursday", "ur": "جمعرات", "roman": "Jumeraat" },
+    { "en": "Friday", "ur": "جمعہ", "roman": "Juma" },
+    { "en": "Saturday", "ur": "ہفتہ", "roman": "Hafta" },
+    { "en": "Sunday", "ur": "اتوار", "roman": "Itwaar" },
+    { "en": "today", "ur": "آج", "roman": "aaj" },
+    { "en": "tomorrow", "ur": "کل (آنے والا)", "roman": "kal (aane wala)" },
+    { "en": "yesterday", "ur": "کل (گزرا ہوا)", "roman": "kal (guzra hua)" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں 'کل' کے دو مطلب ہیں، انگریزی میں دو الگ لفظ: آنے والا کل = tomorrow، گزرا ہوا کل = yesterday۔ دنوں کے ساتھ 'on' لگتا ہے: on Monday۔ دنوں کے نام بڑے حرف سے لکھے جاتے ہیں: Monday، Friday۔",
+                "roman": "Urdu mein 'kal' ke do matlab hain, Angrezi mein do alag lafz: aane wala kal = tomorrow, guzra hua kal = yesterday. Dinon ke saath 'on' lagta hai: on Monday. Dinon ke naam baray harf se likhe jaate hain: Monday, Friday." },
+      "examples": [
+        { "en": "See you tomorrow.", "ur": "کل ملتے ہیں۔", "roman": "Kal milte hain." },
+        { "en": "I was sick yesterday.", "ur": "میں کل بیمار تھا۔", "roman": "Main kal beemaar tha." },
+        { "en": "The school is closed on Sunday.", "ur": "اتوار کو اسکول بند ہوتا ہے۔", "roman": "Itwaar ko school band hota hai." }
+      ] },
+    { "type": "pick", "q": { "en": "Friday" }, "options": [{ "ur": "جمعہ", "roman": "Juma" }, { "ur": "جمعرات", "roman": "Jumeraat" }, { "ur": "ہفتہ", "roman": "Hafta" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "اتوار", "roman": "Itwaar" }, "options": ["Sunday", "Saturday", "Monday"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "میں کل بیمار تھا", "roman": "Main kal beemaar tha" }, "options": ["I was sick yesterday.", "I was sick tomorrow.", "I am sick tomorrow."], "answer": 0,
+      "why": { "ur": "'تھا' بتاتا ہے کہ بات گزرے ہوئے کل کی ہے: yesterday۔", "roman": "'tha' batata hai ke baat guzre hue kal ki hai: yesterday." } },
+    { "type": "pick", "q": { "en": "See you ___!" }, "hint": { "ur": "کل ملتے ہیں (آنے والا کل)", "roman": "Kal milte hain (aane wala kal)" }, "options": ["tomorrow", "yesterday"], "answer": 0 },
+    { "type": "pick", "q": { "en": "The shop is closed ___ Sunday." }, "options": ["on", "in", "at"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "Monday", "ur": "پیر", "roman": "Peer" },
+      { "en": "Tuesday", "ur": "منگل", "roman": "Mangal" },
+      { "en": "Wednesday", "ur": "بدھ", "roman": "Budh" },
+      { "en": "Thursday", "ur": "جمعرات", "roman": "Jumeraat" },
+      { "en": "Saturday", "ur": "ہفتہ", "roman": "Hafta" } ] },
+    { "type": "listen", "say": "Wednesday", "options": ["Wednesday", "Tuesday", "Thursday"], "answer": 0 },
+    { "type": "build", "q": { "ur": "آج جمعہ ہے", "roman": "Aaj Juma hai" }, "answer": "Today is Friday", "extra": ["on", "yesterday"] },
+    { "type": "reply", "say": "Can you come on Monday?", "options": ["Yes, Monday is fine.", "Yes, I came Monday.", "No, it is Monday."], "answer": 0 },
+    { "type": "type", "say": "tomorrow", "answer": "tomorrow", "meaning": { "ur": "کل (آنے والا)", "roman": "kal (aane wala)" } },
+    { "type": "speak", "say": "See you on Friday.", "meaning": { "ur": "جمعہ کو ملتے ہیں۔", "roman": "Juma ko milte hain." } }
+  ]
+}
