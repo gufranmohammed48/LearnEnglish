@@ -1,0 +1,36 @@
+{
+  "id": "p1-l2",
+  "words": [
+    { "en": "think", "ur": "سوچنا", "roman": "sochna" },
+    { "en": "thirsty", "ur": "پیاسا", "roman": "pyaasa" },
+    { "en": "they", "ur": "وہ (سب)", "roman": "woh (sab)" },
+    { "en": "mother", "ur": "ماں", "roman": "maan" },
+    { "en": "thing", "ur": "چیز", "roman": "cheez" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "th کی آواز اردو کی 'ت' یا 'د' نہیں ہے۔ زبان کی نوک دانتوں کے بیچ ہلکی سی باہر نکالیں اور ہوا نکالیں۔ دو قسمیں: بغیر آواز کے: think، three، thank۔ آواز کے ساتھ: this، they، mother۔ tree (درخت) اور three (تین) الگ لفظ ہیں!",
+                "roman": "th ki awaaz Urdu ki 't' ya 'd' nahin hai. Zabaan ki nok daanton ke beech halki si baahar nikaalein aur hawa nikaalein. Do qismein: baghair awaaz ke: think, three, thank. Awaaz ke saath: this, they, mother. tree (darakht) aur three (teen) alag lafz hain!" },
+      "examples": [
+        { "en": "three", "ur": "تین", "roman": "teen" },
+        { "en": "thank you", "ur": "شکریہ", "roman": "shukriya" },
+        { "en": "this, they", "ur": "یہ، وہ", "roman": "yeh, woh" }
+      ] },
+    { "type": "listen", "say": "three", "options": ["three", "tree"], "answer": 0 },
+    { "type": "listen", "say": "tree", "options": ["tree", "three"], "answer": 0 },
+    { "type": "listen", "say": "thank", "options": ["thank", "tank"], "answer": 0 },
+    { "type": "listen", "say": "think", "options": ["think", "sink"], "answer": 0 },
+    { "type": "listen", "say": "they", "options": ["they", "day"], "answer": 0 },
+    { "type": "pick", "q": { "en": "thirsty" }, "options": [{ "ur": "پیاسا", "roman": "pyaasa" }, { "ur": "بھوکا", "roman": "bhooka" }, { "ur": "تھکا ہوا", "roman": "thaka hua" }], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "three", "ur": "تین", "roman": "teen" },
+      { "en": "thank you", "ur": "شکریہ", "roman": "shukriya" },
+      { "en": "think", "ur": "سوچنا", "roman": "sochna" },
+      { "en": "mother", "ur": "ماں", "roman": "maan" },
+      { "en": "brother", "ur": "بھائی", "roman": "bhai" } ] },
+    { "type": "speak", "say": "Thank you. I think so.", "meaning": { "ur": "شکریہ۔ میرا بھی یہی خیال ہے۔", "roman": "Shukriya. Mera bhi yahi khayaal hai." } },
+    { "type": "speak", "say": "My brother has three things.", "meaning": { "ur": "میرے بھائی کے پاس تین چیزیں ہیں۔", "roman": "Mere bhai ke paas teen cheezein hain." } },
+    { "type": "type", "say": "think", "answer": "think", "meaning": { "ur": "سوچنا", "roman": "sochna" } },
+    { "type": "type", "say": "three", "answer": "three", "meaning": { "ur": "تین", "roman": "teen" } }
+  ]
+}

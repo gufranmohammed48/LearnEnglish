@@ -1,0 +1,37 @@
+{
+  "id": "p1-l3",
+  "words": [
+    { "en": "school", "ur": "اسکول", "roman": "school" },
+    { "en": "station", "ur": "اسٹیشن", "roman": "station" },
+    { "en": "student", "ur": "طالب علم", "roman": "taalib-e-ilm" },
+    { "en": "street", "ur": "گلی / سڑک", "roman": "gali / sarak" },
+    { "en": "small", "ur": "چھوٹا", "roman": "chhota" },
+    { "en": "speak", "ur": "بولنا", "roman": "bolna" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو بولنے والے اکثر s سے شروع ہونے والے الفاظ سے پہلے 'ا' لگا دیتے ہیں: 'اسکول'، 'اسٹیشن'۔ انگریزی میں 's' سے سیدھا شروع کریں، پہلے 'ا' نہ لگائیں: school، station، student، street، small۔ مشق: پہلے لمبا 'sss' بولیں، پھر باقی لفظ: sss-chool۔",
+                "roman": "Urdu bolne wale aksar s se shuru hone wale alfaaz se pehle 'i' laga dete hain: 'iskool', 'istation'. Angrezi mein 's' se seedha shuru karein, pehle 'i' na lagaein: school, station, student, street, small. Mashq: pehle lamba 'sss' bolein, phir baaqi lafz: sss-chool." },
+      "examples": [
+        { "en": "school", "ur": "اسکول (s سے شروع)", "roman": "school (s se shuru)" },
+        { "en": "station", "ur": "اسٹیشن (s سے شروع)", "roman": "station (s se shuru)" },
+        { "en": "small street", "ur": "چھوٹی گلی", "roman": "chhoti gali" }
+      ] },
+    { "type": "listen", "say": "speak", "options": ["speak", "peak"], "answer": 0 },
+    { "type": "listen", "say": "sport", "options": ["sport", "port"], "answer": 0 },
+    { "type": "listen", "say": "spin", "options": ["spin", "pin"], "answer": 0 },
+    { "type": "pick", "q": { "en": "street" }, "options": [{ "ur": "گلی / سڑک", "roman": "gali / sarak" }, { "ur": "اسکول", "roman": "school" }, { "ur": "اسٹیشن", "roman": "station" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "student" }, "options": [{ "ur": "طالب علم", "roman": "taalib-e-ilm" }, { "ur": "استاد", "roman": "ustaad" }, { "ur": "اسکول", "roman": "school" }], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "school", "ur": "اسکول", "roman": "school" },
+      { "en": "station", "ur": "اسٹیشن", "roman": "station" },
+      { "en": "student", "ur": "طالب علم", "roman": "taalib-e-ilm" },
+      { "en": "street", "ur": "سڑک", "roman": "sarak" },
+      { "en": "small", "ur": "چھوٹا", "roman": "chhota" } ] },
+    { "type": "speak", "say": "school", "meaning": { "ur": "اسکول ('ا' کے بغیر)", "roman": "school ('i' ke baghair)" } },
+    { "type": "speak", "say": "I am a student.", "meaning": { "ur": "میں طالب علم ہوں۔", "roman": "Main taalib-e-ilm hoon." } },
+    { "type": "speak", "say": "The school is on a small street.", "meaning": { "ur": "اسکول ایک چھوٹی سڑک پر ہے۔", "roman": "School ek chhoti sarak par hai." } },
+    { "type": "type", "say": "school", "answer": "school", "meaning": { "ur": "اسکول", "roman": "school" } },
+    { "type": "type", "say": "station", "answer": "station", "meaning": { "ur": "اسٹیشن", "roman": "station" } }
+  ]
+}

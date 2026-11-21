@@ -1,0 +1,37 @@
+{
+  "id": "p1-l1",
+  "words": [
+    { "en": "very", "ur": "بہت", "roman": "bohat" },
+    { "en": "window", "ur": "کھڑکی", "roman": "khirki" },
+    { "en": "village", "ur": "گاؤں", "roman": "gaaon" },
+    { "en": "week", "ur": "ہفتہ (سات دن)", "roman": "hafta (saat din)" },
+    { "en": "voice", "ur": "آواز", "roman": "awaaz" },
+    { "en": "wet", "ur": "گیلا", "roman": "geela" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں 'و' ایک ہی آواز ہے، مگر انگریزی میں دو الگ آوازیں ہیں۔ v: اوپر کے دانت نچلے ہونٹ پر رکھیں (جیسے 'ف'، مگر آواز کے ساتھ): very، village۔ w: ہونٹ گول کریں، دانت ہونٹ کو نہ چھوئیں: window، week۔ wine (شراب) اور vine (بیل) الگ لفظ ہیں!",
+                "roman": "Urdu mein 'wao' ek hi awaaz hai, magar Angrezi mein do alag awaazein hain. v: oopar ke daant nichle hont par rakhein (jaise 'f', magar awaaz ke saath): very, village. w: hont gol karein, daant hont ko na chhuein: window, week. wine (sharaab) aur vine (bel) alag lafz hain!" },
+      "examples": [
+        { "en": "very", "ur": "بہت (v)", "roman": "bohat (v)" },
+        { "en": "window", "ur": "کھڑکی (w)", "roman": "khirki (w)" },
+        { "en": "vest, west", "ur": "بنیان (v)، مغرب (w)", "roman": "baniyaan (v), maghrib (w)" }
+      ] },
+    { "type": "listen", "say": "very", "options": ["very", "wary"], "answer": 0 },
+    { "type": "listen", "say": "west", "options": ["west", "vest"], "answer": 0 },
+    { "type": "listen", "say": "vest", "options": ["vest", "west"], "answer": 0 },
+    { "type": "listen", "say": "wet", "options": ["wet", "vet"], "answer": 0 },
+    { "type": "listen", "say": "vine", "options": ["vine", "wine"], "answer": 0 },
+    { "type": "pick", "q": { "en": "window" }, "options": [{ "ur": "کھڑکی", "roman": "khirki" }, { "ur": "گاؤں", "roman": "gaaon" }, { "ur": "آواز", "roman": "awaaz" }], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "very", "ur": "بہت", "roman": "bohat" },
+      { "en": "window", "ur": "کھڑکی", "roman": "khirki" },
+      { "en": "village", "ur": "گاؤں", "roman": "gaaon" },
+      { "en": "week", "ur": "ہفتہ", "roman": "hafta" },
+      { "en": "voice", "ur": "آواز", "roman": "awaaz" } ] },
+    { "type": "speak", "say": "Very well.", "meaning": { "ur": "بہت اچھا۔ (v پر دھیان دیں)", "roman": "Bohat achha. (v par dhiyaan dein)" } },
+    { "type": "speak", "say": "I visit my village every week.", "meaning": { "ur": "میں ہر ہفتے اپنے گاؤں جاتا ہوں۔", "roman": "Main har haftay apne gaaon jaata hoon." } },
+    { "type": "type", "say": "very", "answer": "very", "meaning": { "ur": "بہت", "roman": "bohat" } },
+    { "type": "type", "say": "week", "answer": "week", "meaning": { "ur": "ہفتہ", "roman": "hafta" } }
+  ]
+}

@@ -94,6 +94,42 @@
       ]
     },
     {
+      "id": "p1",
+      "level": "A1",
+      "color": "red",
+      "title": {
+        "en": "Sounds: v, w, th, s",
+        "ur": "مشکل آوازیں: v، w، th، s",
+        "roman": "Mushkil awaazein: v, w, th, s"
+      },
+      "lessons": [
+        {
+          "id": "p1-l1",
+          "title": {
+            "en": "v and w",
+            "ur": "v اور w",
+            "roman": "v aur w"
+          }
+        },
+        {
+          "id": "p1-l2",
+          "title": {
+            "en": "th: three, not tree",
+            "ur": "th: three، tree نہیں",
+            "roman": "th: three, tree nahin"
+          }
+        },
+        {
+          "id": "p1-l3",
+          "title": {
+            "en": "school, not iskool",
+            "ur": "school، اسکول نہیں",
+            "roman": "school, iskool nahin"
+          }
+        }
+      ]
+    },
+    {
       "id": "u4",
       "level": "A1",
       "color": "purple",
