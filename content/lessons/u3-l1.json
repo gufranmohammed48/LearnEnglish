@@ -1,0 +1,48 @@
+{
+  "id": "u3-l1",
+  "words": [
+    { "en": "one", "ur": "ایک", "roman": "ek" },
+    { "en": "two", "ur": "دو", "roman": "do" },
+    { "en": "three", "ur": "تین", "roman": "teen" },
+    { "en": "four", "ur": "چار", "roman": "chaar" },
+    { "en": "five", "ur": "پانچ", "roman": "paanch" },
+    { "en": "six", "ur": "چھ", "roman": "chhe" },
+    { "en": "seven", "ur": "سات", "roman": "saat" },
+    { "en": "eight", "ur": "آٹھ", "roman": "aath" },
+    { "en": "nine", "ur": "نو", "roman": "nau" },
+    { "en": "ten", "ur": "دس", "roman": "das" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "'three' میں 'th' کی آواز اردو میں نہیں ہے: زبان کی نوک اوپر کے دانتوں کے نیچے رکھ کر ہوا نکالیں۔ 'tree' (درخت) نہیں، 'three'۔ ایک سے زیادہ چیزوں کے ساتھ آخر میں s لگتا ہے: two books۔",
+                "roman": "'three' mein 'th' ki awaaz Urdu mein nahin hai: zabaan ki nok oopar ke daanton ke neeche rakh kar hawa nikaalein. 'tree' (darakht) nahin, 'three'. Ek se zyada cheezon ke saath aakhir mein s lagta hai: two books." },
+      "examples": [
+        { "en": "one, two, three", "ur": "ایک، دو، تین", "roman": "ek, do, teen" },
+        { "en": "three books", "ur": "تین کتابیں", "roman": "teen kitaabein" },
+        { "en": "ten eggs", "ur": "دس انڈے", "roman": "das anday" }
+      ] },
+    { "type": "pick", "q": { "en": "three" }, "options": [{ "ur": "تین", "roman": "teen" }, { "ur": "چار", "roman": "chaar" }, { "ur": "دو", "roman": "do" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "پانچ", "roman": "paanch" }, "options": ["five", "four", "nine"], "answer": 0 },
+    { "type": "listen", "say": "eight", "options": ["eight", "nine", "seven"], "answer": 0 },
+    { "type": "listen", "say": "six", "options": ["six", "seven", "five"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "one", "ur": "ایک", "roman": "ek" },
+      { "en": "two", "ur": "دو", "roman": "do" },
+      { "en": "three", "ur": "تین", "roman": "teen" },
+      { "en": "four", "ur": "چار", "roman": "chaar" },
+      { "en": "five", "ur": "پانچ", "roman": "paanch" } ] },
+    { "type": "match", "pairs": [
+      { "en": "six", "ur": "چھ", "roman": "chhe" },
+      { "en": "seven", "ur": "سات", "roman": "saat" },
+      { "en": "eight", "ur": "آٹھ", "roman": "aath" },
+      { "en": "nine", "ur": "نو", "roman": "nau" },
+      { "en": "ten", "ur": "دس", "roman": "das" } ] },
+    { "type": "pick", "q": { "ur": "سات", "roman": "saat" }, "options": ["seven", "six", "eleven"], "answer": 0 },
+    { "type": "pick", "q": { "en": "I have three ___." }, "options": ["books", "book"], "answer": 0,
+      "why": { "ur": "ایک سے زیادہ ہوں تو s لگائیں: three books۔", "roman": "Ek se zyada hon to s lagaein: three books." } },
+    { "type": "build", "q": { "ur": "میرے پاس دو کتابیں ہیں", "roman": "Mere paas do kitaabein hain" }, "answer": "I have two books", "extra": ["a", "book"] },
+    { "type": "type", "say": "ten", "answer": "ten", "meaning": { "ur": "دس", "roman": "das" } },
+    { "type": "speak", "say": "One, two, three, four, five.", "meaning": { "ur": "ایک، دو، تین، چار، پانچ", "roman": "Ek, do, teen, chaar, paanch" } },
+    { "type": "type", "say": "three", "answer": "three", "meaning": { "ur": "تین", "roman": "teen" } }
+  ]
+}

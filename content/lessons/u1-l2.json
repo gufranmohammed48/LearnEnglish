@@ -1,0 +1,40 @@
+{
+  "id": "u1-l2",
+  "words": [
+    { "en": "Good morning", "ur": "صبح بخیر", "roman": "Subah bakhair" },
+    { "en": "Good afternoon", "ur": "سلام (دوپہر میں)", "roman": "Salaam (dopahar mein)" },
+    { "en": "Good evening", "ur": "سلام (شام میں)", "roman": "Salaam (shaam mein)" },
+    { "en": "Good night", "ur": "شب بخیر", "roman": "Shab bakhair" },
+    { "en": "How are you?", "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" },
+    { "en": "I am fine", "ur": "میں ٹھیک ہوں", "roman": "Main theek hoon" },
+    { "en": "And you?", "ur": "اور آپ؟", "roman": "Aur aap?" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں ہم ہر وقت 'السلام علیکم' کہتے ہیں۔ انگریزی میں وقت کے حساب سے: صبح 'Good morning'، دوپہر 'Good afternoon'، شام 'Good evening'۔ 'Good night' ملتے وقت نہیں، صرف رخصت ہوتے وقت یا سونے سے پہلے کہتے ہیں۔",
+                "roman": "Urdu mein hum har waqt 'Assalam o alaikum' kehte hain. Angrezi mein waqt ke hisaab se: subah 'Good morning', dopahar 'Good afternoon', shaam 'Good evening'. 'Good night' milte waqt nahin, sirf rukhsat hote waqt ya sone se pehle kehte hain." },
+      "examples": [
+        { "en": "Good morning!", "ur": "صبح بخیر!", "roman": "Subah bakhair!" },
+        { "en": "How are you?", "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" },
+        { "en": "I am fine, thank you. And you?", "ur": "میں ٹھیک ہوں، شکریہ۔ اور آپ؟", "roman": "Main theek hoon, shukriya. Aur aap?" }
+      ] },
+    { "type": "pick", "q": { "en": "Good morning" }, "options": [{ "ur": "صبح بخیر", "roman": "Subah bakhair" }, { "ur": "شب بخیر", "roman": "Shab bakhair" }, { "ur": "خدا حافظ", "roman": "Khuda hafiz" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "شب بخیر", "roman": "Shab bakhair" }, "options": ["Good night", "Good morning", "Good evening"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "شام کو کسی سے ملیں تو کیا کہیں گے؟", "roman": "Shaam ko kisi se milein to kya kahenge?" }, "options": ["Good evening", "Good night", "Good morning"], "answer": 0,
+      "why": { "ur": "'Good night' ملتے وقت نہیں کہتے، صرف جاتے وقت یا سوتے وقت۔", "roman": "'Good night' milte waqt nahin kehte, sirf jaate waqt ya sote waqt." } },
+    { "type": "listen", "say": "How are you?", "options": ["How are you?", "Who are you?", "Where are you?"], "answer": 0 },
+    { "type": "pick", "q": { "en": "I am fine" }, "options": [{ "ur": "میں ٹھیک ہوں", "roman": "Main theek hoon" }, { "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" }, { "ur": "اور آپ؟", "roman": "Aur aap?" }], "answer": 0 },
+    { "type": "build", "q": { "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" }, "answer": "How are you?", "extra": ["is", "who"] },
+    { "type": "reply", "say": "How are you?", "options": ["I am fine, thank you. And you?", "My name is Ali.", "Good night."], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں ٹھیک ہوں، شکریہ", "roman": "Main theek hoon, shukriya" }, "answer": "I am fine, thank you", "extra": ["are", "good"] },
+    { "type": "match", "pairs": [
+      { "en": "Good morning", "ur": "صبح بخیر", "roman": "Subah bakhair" },
+      { "en": "Good night", "ur": "شب بخیر", "roman": "Shab bakhair" },
+      { "en": "How are you?", "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" },
+      { "en": "I am fine", "ur": "میں ٹھیک ہوں", "roman": "Main theek hoon" },
+      { "en": "And you?", "ur": "اور آپ؟", "roman": "Aur aap?" } ] },
+    { "type": "pick", "q": { "ur": "اور آپ؟", "roman": "Aur aap?" }, "options": ["And you?", "Are you?", "How you?"], "answer": 0 },
+    { "type": "speak", "say": "Good morning. How are you?", "meaning": { "ur": "صبح بخیر۔ آپ کیسے ہیں؟", "roman": "Subah bakhair. Aap kaise hain?" } },
+    { "type": "type", "say": "Good night", "answer": "Good night", "meaning": { "ur": "شب بخیر", "roman": "Shab bakhair" } }
+  ]
+}

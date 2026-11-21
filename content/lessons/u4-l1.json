@@ -1,0 +1,43 @@
+{
+  "id": "u4-l1",
+  "words": [
+    { "en": "mother", "ur": "ماں / امی", "roman": "maan / ammi" },
+    { "en": "father", "ur": "باپ / ابو", "roman": "baap / abbu" },
+    { "en": "brother", "ur": "بھائی", "roman": "bhai" },
+    { "en": "sister", "ur": "بہن", "roman": "behen" },
+    { "en": "son", "ur": "بیٹا", "roman": "beta" },
+    { "en": "daughter", "ur": "بیٹی", "roman": "beti" },
+    { "en": "husband", "ur": "شوہر", "roman": "shohar" },
+    { "en": "wife", "ur": "بیوی", "roman": "biwi" },
+    { "en": "cousin", "ur": "کزن (چچا، ماموں، خالہ، پھوپھی کے بچے)", "roman": "cousin (chacha, mamoon, khala, phuphi ke bachay)" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں چچا زاد، ماموں زاد، خالہ زاد سب الگ ہیں، مگر انگریزی میں سب کے لیے ایک لفظ ہے: 'cousin'۔ 'cousin brother' یا 'cousin sister' نہ کہیں، صرف 'my cousin'۔ اسی طرح چچا، ماموں، خالو سب 'uncle' اور خالہ، پھوپھی، چچی سب 'aunt'۔",
+                "roman": "Urdu mein chacha zaad, mamoon zaad, khala zaad sab alag hain, magar Angrezi mein sab ke liye ek lafz hai: 'cousin'. 'cousin brother' ya 'cousin sister' na kahein, sirf 'my cousin'. Isi tarah chacha, mamoon, khalu sab 'uncle' aur khala, phuphi, chachi sab 'aunt'." },
+      "examples": [
+        { "en": "This is my mother.", "ur": "یہ میری امی ہیں۔", "roman": "Yeh meri ammi hain." },
+        { "en": "He is my cousin.", "ur": "وہ میرا کزن ہے۔", "roman": "Woh mera cousin hai." },
+        { "en": "I have two sisters.", "ur": "میری دو بہنیں ہیں۔", "roman": "Meri do behnein hain." }
+      ] },
+    { "type": "pick", "q": { "en": "mother" }, "options": [{ "ur": "ماں / امی", "roman": "maan / ammi" }, { "ur": "بہن", "roman": "behen" }, { "ur": "بیٹی", "roman": "beti" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "بہن", "roman": "behen" }, "options": ["sister", "brother", "daughter"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "mother", "ur": "امی", "roman": "ammi" },
+      { "en": "father", "ur": "ابو", "roman": "abbu" },
+      { "en": "brother", "ur": "بھائی", "roman": "bhai" },
+      { "en": "sister", "ur": "بہن", "roman": "behen" },
+      { "en": "son", "ur": "بیٹا", "roman": "beta" } ] },
+    { "type": "build", "q": { "ur": "یہ میرا بھائی ہے", "roman": "Yeh mera bhai hai" }, "answer": "This is my brother", "extra": ["sister", "he"] },
+    { "type": "fix", "sentence": "He is my cousin brother.", "wrong": [4], "fixed": "He is my cousin.",
+      "why": { "ur": "انگریزی میں صرف 'cousin' کافی ہے۔", "roman": "Angrezi mein sirf 'cousin' kaafi hai." } },
+    { "type": "pick", "q": { "en": "daughter" }, "options": [{ "ur": "بیٹی", "roman": "beti" }, { "ur": "بیٹا", "roman": "beta" }, { "ur": "بہن", "roman": "behen" }], "answer": 0 },
+    { "type": "listen", "say": "my wife", "options": ["my wife", "my life", "my wise"], "answer": 0 },
+    { "type": "build", "q": { "ur": "میری دو بہنیں ہیں", "roman": "Meri do behnein hain" }, "answer": "I have two sisters", "extra": ["sister", "am"],
+      "why": { "ur": "اردو کا 'میری ... ہیں' انگریزی میں 'I have' بنتا ہے۔", "roman": "Urdu ka 'meri ... hain' Angrezi mein 'I have' banta hai." } },
+    { "type": "reply", "say": "Do you have any brothers?", "options": ["Yes, I have two brothers.", "Yes, I am two brothers.", "I am fine."], "answer": 0 },
+    { "type": "pick", "q": { "ur": "میرے ماموں", "roman": "Mere mamoon" }, "options": ["my uncle", "my cousin", "my brother"], "answer": 0 },
+    { "type": "speak", "say": "This is my mother and this is my father.", "meaning": { "ur": "یہ میری امی ہیں اور یہ میرے ابو ہیں۔", "roman": "Yeh meri ammi hain aur yeh mere abbu hain." } },
+    { "type": "type", "say": "sister", "answer": "sister", "meaning": { "ur": "بہن", "roman": "behen" } }
+  ]
+}

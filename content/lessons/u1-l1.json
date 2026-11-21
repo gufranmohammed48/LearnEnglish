@@ -1,0 +1,39 @@
+{
+  "id": "u1-l1",
+  "words": [
+    { "en": "Hello", "ur": "سلام", "roman": "Salaam" },
+    { "en": "Goodbye", "ur": "خدا حافظ", "roman": "Khuda hafiz" },
+    { "en": "Thank you", "ur": "شکریہ", "roman": "Shukriya" },
+    { "en": "Please", "ur": "مہربانی کر کے", "roman": "Meherbani kar ke" },
+    { "en": "Yes", "ur": "ہاں", "roman": "Haan" },
+    { "en": "No", "ur": "نہیں", "roman": "Nahin" },
+    { "en": "Sorry", "ur": "معاف کیجیے", "roman": "Maaf kijiye" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "انگریزی میں سلام کے لیے 'Hello' کہتے ہیں۔ 'Please' اور 'Thank you' بہت استعمال ہوتے ہیں: دکان پر، ڈاکٹر کے پاس، ہر جگہ۔ انگریزی بولنے والے چھوٹی سی بات پر بھی 'Thank you' کہتے ہیں۔",
+                "roman": "Angrezi mein salaam ke liye 'Hello' kehte hain. 'Please' aur 'Thank you' bohat istemal hote hain: dukaan par, doctor ke paas, har jagah. Angrezi bolne wale chhoti si baat par bhi 'Thank you' kehte hain." },
+      "examples": [
+        { "en": "Hello!", "ur": "سلام!", "roman": "Salaam!" },
+        { "en": "Thank you.", "ur": "شکریہ۔", "roman": "Shukriya." },
+        { "en": "Water, please.", "ur": "پانی، مہربانی کر کے۔", "roman": "Paani, meherbani kar ke." }
+      ] },
+    { "type": "pick", "q": { "en": "Hello" }, "options": [{ "ur": "سلام", "roman": "Salaam" }, { "ur": "شکریہ", "roman": "Shukriya" }, { "ur": "خدا حافظ", "roman": "Khuda hafiz" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "Thank you" }, "options": [{ "ur": "شکریہ", "roman": "Shukriya" }, { "ur": "ہاں", "roman": "Haan" }, { "ur": "معاف کیجیے", "roman": "Maaf kijiye" }], "answer": 0 },
+    { "type": "listen", "say": "Goodbye", "options": ["Goodbye", "Good", "Hello"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "ہاں", "roman": "Haan" }, "options": ["Yes", "No", "Please"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "نہیں", "roman": "Nahin" }, "options": ["No", "Yes", "Sorry"], "answer": 0 },
+    { "type": "listen", "say": "Please", "options": ["Please", "Police", "Peace"], "answer": 0 },
+    { "type": "pick", "q": { "en": "Sorry" }, "options": [{ "ur": "معاف کیجیے", "roman": "Maaf kijiye" }, { "ur": "شکریہ", "roman": "Shukriya" }, { "ur": "سلام", "roman": "Salaam" }], "answer": 0 },
+    { "type": "build", "q": { "ur": "شکریہ، خدا حافظ", "roman": "Shukriya, Khuda hafiz" }, "answer": "Thank you, goodbye", "extra": ["Hello", "please"] },
+    { "type": "match", "pairs": [
+      { "en": "Hello", "ur": "سلام", "roman": "Salaam" },
+      { "en": "Goodbye", "ur": "خدا حافظ", "roman": "Khuda hafiz" },
+      { "en": "Thank you", "ur": "شکریہ", "roman": "Shukriya" },
+      { "en": "Yes", "ur": "ہاں", "roman": "Haan" },
+      { "en": "No", "ur": "نہیں", "roman": "Nahin" } ] },
+    { "type": "build", "q": { "ur": "ہاں، شکریہ", "roman": "Haan, shukriya" }, "answer": "Yes, thank you", "extra": ["No", "sorry"] },
+    { "type": "speak", "say": "Thank you", "meaning": { "ur": "شکریہ", "roman": "Shukriya" } },
+    { "type": "type", "say": "Hello", "answer": "Hello", "meaning": { "ur": "سلام", "roman": "Salaam" } }
+  ]
+}

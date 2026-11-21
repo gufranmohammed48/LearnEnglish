@@ -1,0 +1,42 @@
+{
+  "id": "u7-l1",
+  "words": [
+    { "en": "where", "ur": "کہاں", "roman": "kahan" },
+    { "en": "when", "ur": "کب", "roman": "kab" },
+    { "en": "why", "ur": "کیوں", "roman": "kyun" },
+    { "en": "who", "ur": "کون", "roman": "kaun" },
+    { "en": "what", "ur": "کیا", "roman": "kya" },
+    { "en": "how", "ur": "کیسے", "roman": "kaise" },
+    { "en": "Where are you going?", "ur": "آپ کہاں جا رہے ہیں؟", "roman": "Aap kahan ja rahe hain?" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں سوال کا لفظ جملے کے بیچ میں آ جاتا ہے: 'آپ کہاں جا رہے ہیں؟'۔ انگریزی میں ترتیب بدلتی ہے: سوال کا لفظ + are/is + آپ: 'Where are you going?'۔ 'Where you are going?' غلط ہے۔",
+                "roman": "Urdu mein sawaal ka lafz jumle ke beech mein aa jaata hai: 'Aap kahan ja rahe hain?'. Angrezi mein tarteeb badalti hai: sawaal ka lafz + are/is + aap: 'Where are you going?'. 'Where you are going?' ghalat hai." },
+      "examples": [
+        { "en": "Where are you going?", "ur": "آپ کہاں جا رہے ہیں؟", "roman": "Aap kahan ja rahe hain?" },
+        { "en": "Who is he?", "ur": "وہ کون ہے؟", "roman": "Woh kaun hai?" },
+        { "en": "What time is it?", "ur": "کیا وقت ہوا ہے؟", "roman": "Kya waqt hua hai?" }
+      ] },
+    { "type": "pick", "q": { "en": "where" }, "options": [{ "ur": "کہاں", "roman": "kahan" }, { "ur": "کب", "roman": "kab" }, { "ur": "کیوں", "roman": "kyun" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "کب", "roman": "kab" }, "options": ["when", "where", "who"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "where", "ur": "کہاں", "roman": "kahan" },
+      { "en": "when", "ur": "کب", "roman": "kab" },
+      { "en": "why", "ur": "کیوں", "roman": "kyun" },
+      { "en": "who", "ur": "کون", "roman": "kaun" },
+      { "en": "how", "ur": "کیسے", "roman": "kaise" } ] },
+    { "type": "fix", "sentence": "Where you are going?", "wrong": [1, 2], "fixed": "Where are you going?",
+      "why": { "ur": "سوال میں 'are' پہلے آتا ہے: Where are you...?", "roman": "Sawaal mein 'are' pehle aata hai: Where are you...?" } },
+    { "type": "build", "q": { "ur": "آپ کہاں جا رہے ہیں؟", "roman": "Aap kahan ja rahe hain?" }, "answer": "Where are you going?", "extra": ["is", "what"] },
+    { "type": "build", "q": { "ur": "وہ کون ہے؟ (مرد)", "roman": "Woh kaun hai? (mard)" }, "answer": "Who is he?", "extra": ["she", "where"] },
+    { "type": "fix", "sentence": "What time it is?", "wrong": [2, 3], "fixed": "What time is it?",
+      "why": { "ur": "سوال میں 'is' پہلے: What time is it?", "roman": "Sawaal mein 'is' pehle: What time is it?" } },
+    { "type": "build", "q": { "ur": "آپ کب آئیں گے؟", "roman": "Aap kab aaein ge?" }, "answer": "When will you come?", "extra": ["are", "where"] },
+    { "type": "reply", "say": "Where are you from?", "options": ["I am from Pakistan.", "I am fine.", "I am going home."], "answer": 0 },
+    { "type": "listen", "say": "Why are you late?", "options": ["Why are you late?", "Why are you here?", "Who are you?"], "answer": 0 },
+    { "type": "pick", "q": { "ur": "آپ کیوں ہنس رہے ہیں؟", "roman": "Aap kyun hans rahe hain?" }, "options": ["Why are you laughing?", "Why you are laughing?", "Why laughing you are?"], "answer": 0 },
+    { "type": "speak", "say": "Excuse me, where is the bus stop?", "meaning": { "ur": "سنیے، بس اسٹاپ کہاں ہے؟", "roman": "Suniye, bus stop kahan hai?" } },
+    { "type": "type", "say": "why", "answer": "why", "meaning": { "ur": "کیوں", "roman": "kyun" } }
+  ]
+}

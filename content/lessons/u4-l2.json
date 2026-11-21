@@ -1,0 +1,41 @@
+{
+  "id": "u4-l2",
+  "words": [
+    { "en": "he", "ur": "وہ (مرد)", "roman": "woh (mard)" },
+    { "en": "she", "ur": "وہ (عورت)", "roman": "woh (aurat)" },
+    { "en": "his", "ur": "اس کا / اس کی (مرد کا)", "roman": "us ka / us ki (mard ka)" },
+    { "en": "her", "ur": "اس کا / اس کی (عورت کا)", "roman": "us ka / us ki (aurat ka)" },
+    { "en": "we", "ur": "ہم", "roman": "hum" },
+    { "en": "they", "ur": "وہ (سب)", "roman": "woh (sab)" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں مرد اور عورت دونوں کے لیے 'وہ' ہے، مگر انگریزی میں مرد کے لیے 'he' اور عورت کے لیے 'she'۔ اور 'اس کا/اس کی' چیز کے حساب سے نہیں بلکہ مالک کے حساب سے بدلتا ہے: علی کی کتاب = his book، سارہ کا قلم = her pen۔",
+                "roman": "Urdu mein mard aur aurat dono ke liye 'woh' hai, magar Angrezi mein mard ke liye 'he' aur aurat ke liye 'she'. Aur 'us ka/us ki' cheez ke hisaab se nahin balkay maalik ke hisaab se badalta hai: Ali ki kitaab = his book, Sara ka qalam = her pen." },
+      "examples": [
+        { "en": "He is my brother.", "ur": "وہ میرا بھائی ہے۔", "roman": "Woh mera bhai hai." },
+        { "en": "She is my sister.", "ur": "وہ میری بہن ہے۔", "roman": "Woh meri behen hai." },
+        { "en": "Sara has a pen. It is her pen.", "ur": "سارہ کے پاس قلم ہے۔ یہ اس کا قلم ہے۔", "roman": "Sara ke paas qalam hai. Yeh us ka qalam hai." }
+      ] },
+    { "type": "pick", "q": { "en": "My father is a teacher. ___ is kind." }, "options": ["He", "She"], "answer": 0 },
+    { "type": "pick", "q": { "en": "Ayesha is my sister. ___ is a doctor." }, "options": ["She", "He"], "answer": 0 },
+    { "type": "pick", "q": { "en": "Ali has a car. It is ___ car." }, "options": ["his", "her"], "answer": 0 },
+    { "type": "pick", "q": { "en": "Sara has a bag. It is ___ bag." }, "options": ["her", "his"], "answer": 0,
+      "why": { "ur": "بیگ سارہ (عورت) کا ہے، اس لیے 'her'۔", "roman": "Bag Sara (aurat) ka hai, is liye 'her'." } },
+    { "type": "fix", "sentence": "My mother is a teacher. He is nice.", "wrong": [5], "fixed": "My mother is a teacher. She is nice.",
+      "why": { "ur": "امی عورت ہیں، اس لیے 'she'۔", "roman": "Ammi aurat hain, is liye 'she'." } },
+    { "type": "pick", "q": { "ur": "ہم", "roman": "hum" }, "options": ["we", "they", "he"], "answer": 0 },
+    { "type": "pick", "q": { "en": "they" }, "options": [{ "ur": "وہ (سب)", "roman": "woh (sab)" }, { "ur": "ہم", "roman": "hum" }, { "ur": "وہ (عورت)", "roman": "woh (aurat)" }], "answer": 0 },
+    { "type": "build", "q": { "ur": "وہ میری بہن ہے", "roman": "Woh meri behen hai" }, "answer": "She is my sister", "extra": ["He", "his"] },
+    { "type": "build", "q": { "ur": "اس کا نام علی ہے", "roman": "Us ka naam Ali hai" }, "answer": "His name is Ali", "extra": ["Her", "He"] },
+    { "type": "listen", "say": "She is my wife.", "options": ["She is my wife.", "He is my wife.", "She is my life."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "he", "ur": "وہ (مرد)", "roman": "woh (mard)" },
+      { "en": "she", "ur": "وہ (عورت)", "roman": "woh (aurat)" },
+      { "en": "we", "ur": "ہم", "roman": "hum" },
+      { "en": "they", "ur": "وہ (سب)", "roman": "woh (sab)" },
+      { "en": "my", "ur": "میرا", "roman": "mera" } ] },
+    { "type": "speak", "say": "He is my brother. She is my sister.", "meaning": { "ur": "وہ میرا بھائی ہے۔ وہ میری بہن ہے۔", "roman": "Woh mera bhai hai. Woh meri behen hai." } },
+    { "type": "type", "say": "she", "answer": "she", "meaning": { "ur": "وہ (عورت)", "roman": "woh (aurat)" } }
+  ]
+}

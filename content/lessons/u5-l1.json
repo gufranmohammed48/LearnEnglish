@@ -1,0 +1,45 @@
+{
+  "id": "u5-l1",
+  "words": [
+    { "en": "water", "ur": "پانی", "roman": "paani" },
+    { "en": "tea", "ur": "چائے", "roman": "chai" },
+    { "en": "milk", "ur": "دودھ", "roman": "doodh" },
+    { "en": "rice", "ur": "چاول", "roman": "chawal" },
+    { "en": "bread", "ur": "ڈبل روٹی", "roman": "double roti" },
+    { "en": "chicken", "ur": "مرغی / چکن", "roman": "murghi / chicken" },
+    { "en": "sugar", "ur": "چینی", "roman": "cheeni" },
+    { "en": "food", "ur": "کھانا", "roman": "khaana" },
+    { "en": "I am hungry", "ur": "مجھے بھوک لگی ہے", "roman": "Mujhe bhook lagi hai" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "کچھ چیزیں گنی نہیں جاتیں: water، rice، milk، sugar۔ ان کے ساتھ 'a' یا آخر میں 's' نہیں لگتا۔ 'a water' یا 'rices' نہیں، بلکہ 'some water'، 'some rice'۔ اور 'مجھے بھوک لگی ہے' = 'I am hungry'۔",
+                "roman": "Kuch cheezein gini nahin jaatein: water, rice, milk, sugar. In ke saath 'a' ya aakhir mein 's' nahin lagta. 'a water' ya 'rices' nahin, balkay 'some water', 'some rice'. Aur 'Mujhe bhook lagi hai' = 'I am hungry'." },
+      "examples": [
+        { "en": "Some water, please.", "ur": "تھوڑا پانی، مہربانی کر کے۔", "roman": "Thora paani, meherbani kar ke." },
+        { "en": "I want some rice.", "ur": "مجھے کچھ چاول چاہییں۔", "roman": "Mujhe kuch chawal chahiyein." },
+        { "en": "I am hungry.", "ur": "مجھے بھوک لگی ہے۔", "roman": "Mujhe bhook lagi hai." }
+      ] },
+    { "type": "pick", "q": { "en": "water" }, "options": [{ "ur": "پانی", "roman": "paani" }, { "ur": "دودھ", "roman": "doodh" }, { "ur": "چائے", "roman": "chai" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "چائے", "roman": "chai" }, "options": ["tea", "water", "milk"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "water", "ur": "پانی", "roman": "paani" },
+      { "en": "tea", "ur": "چائے", "roman": "chai" },
+      { "en": "rice", "ur": "چاول", "roman": "chawal" },
+      { "en": "milk", "ur": "دودھ", "roman": "doodh" },
+      { "en": "sugar", "ur": "چینی", "roman": "cheeni" } ] },
+    { "type": "pick", "q": { "en": "I want ___ water." }, "options": ["some", "a"], "answer": 0,
+      "why": { "ur": "پانی گنا نہیں جاتا، اس لیے 'a water' نہیں، 'some water'۔", "roman": "Paani gina nahin jaata, is liye 'a water' nahin, 'some water'." } },
+    { "type": "fix", "sentence": "I want two rices.", "wrong": [2, 3], "fixed": "I want some rice.",
+      "why": { "ur": "چاول گنے نہیں جاتے: 'some rice'۔", "roman": "Chawal ginay nahin jaate: 'some rice'." } },
+    { "type": "build", "q": { "ur": "مجھے بھوک لگی ہے", "roman": "Mujhe bhook lagi hai" }, "answer": "I am hungry", "extra": ["have", "me"],
+      "why": { "ur": "اردو کا 'مجھے' یہاں انگریزی میں 'I am' بنتا ہے۔", "roman": "Urdu ka 'mujhe' yahan Angrezi mein 'I am' banta hai." } },
+    { "type": "listen", "say": "chicken and rice", "options": ["chicken and rice", "kitchen and rice", "chicken and ice"], "answer": 0 },
+    { "type": "pick", "q": { "en": "bread" }, "options": [{ "ur": "ڈبل روٹی", "roman": "double roti" }, { "ur": "چاول", "roman": "chawal" }, { "ur": "چینی", "roman": "cheeni" }], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں چائے پیتا ہوں", "roman": "Main chai peeta hoon" }, "answer": "I drink tea", "extra": ["am", "eat"],
+      "why": { "ur": "انگریزی میں فعل درمیان میں: I drink tea (میں + پیتا + چائے)۔", "roman": "Angrezi mein fail darmiyan mein: I drink tea (main + peeta + chai)." } },
+    { "type": "reply", "say": "Are you hungry?", "options": ["Yes, I am.", "Yes, I have.", "Yes, I hungry."], "answer": 0 },
+    { "type": "speak", "say": "Some water, please.", "meaning": { "ur": "تھوڑا پانی، مہربانی کر کے۔", "roman": "Thora paani, meherbani kar ke." } },
+    { "type": "type", "say": "milk", "answer": "milk", "meaning": { "ur": "دودھ", "roman": "doodh" } }
+  ]
+}

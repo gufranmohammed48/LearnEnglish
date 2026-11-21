@@ -1,0 +1,42 @@
+{
+  "id": "u6-l1",
+  "words": [
+    { "en": "head", "ur": "سر", "roman": "sar" },
+    { "en": "stomach", "ur": "پیٹ", "roman": "pait" },
+    { "en": "tooth", "ur": "دانت", "roman": "daant" },
+    { "en": "back", "ur": "کمر", "roman": "kamar" },
+    { "en": "fever", "ur": "بخار", "roman": "bukhaar" },
+    { "en": "pain", "ur": "درد", "roman": "dard" },
+    { "en": "cough", "ur": "کھانسی", "roman": "khaansi" },
+    { "en": "headache", "ur": "سر درد", "roman": "sar dard" },
+    { "en": "sick", "ur": "بیمار", "roman": "beemaar" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں 'مجھے بخار ہے' اور 'میرے سر میں درد ہے'۔ انگریزی میں 'I have' سے: 'I have a fever'، 'I have a headache'۔ یا: 'My head hurts' (میرا سر دکھ رہا ہے)۔ 'I am having fever' نہ کہیں۔",
+                "roman": "Urdu mein 'Mujhe bukhaar hai' aur 'Mere sar mein dard hai'. Angrezi mein 'I have' se: 'I have a fever', 'I have a headache'. Ya: 'My head hurts' (mera sar dukh raha hai). 'I am having fever' na kahein." },
+      "examples": [
+        { "en": "I have a fever.", "ur": "مجھے بخار ہے۔", "roman": "Mujhe bukhaar hai." },
+        { "en": "I have a headache.", "ur": "میرے سر میں درد ہے۔", "roman": "Mere sar mein dard hai." },
+        { "en": "My back hurts.", "ur": "میری کمر میں درد ہے۔", "roman": "Meri kamar mein dard hai." }
+      ] },
+    { "type": "pick", "q": { "en": "head" }, "options": [{ "ur": "سر", "roman": "sar" }, { "ur": "پیٹ", "roman": "pait" }, { "ur": "کمر", "roman": "kamar" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "پیٹ", "roman": "pait" }, "options": ["stomach", "back", "tooth"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "head", "ur": "سر", "roman": "sar" },
+      { "en": "stomach", "ur": "پیٹ", "roman": "pait" },
+      { "en": "tooth", "ur": "دانت", "roman": "daant" },
+      { "en": "back", "ur": "کمر", "roman": "kamar" },
+      { "en": "fever", "ur": "بخار", "roman": "bukhaar" } ] },
+    { "type": "build", "q": { "ur": "مجھے بخار ہے", "roman": "Mujhe bukhaar hai" }, "answer": "I have a fever", "extra": ["am", "an"] },
+    { "type": "build", "q": { "ur": "میرے سر میں درد ہے", "roman": "Mere sar mein dard hai" }, "answer": "I have a headache", "extra": ["my", "is"] },
+    { "type": "fix", "sentence": "I am having fever.", "wrong": [1, 2], "fixed": "I have a fever.",
+      "why": { "ur": "بیماری کے لیے 'I have a ...' کہیں۔", "roman": "Beemaari ke liye 'I have a ...' kahein." } },
+    { "type": "pick", "q": { "ur": "میں بیمار ہوں", "roman": "Main beemaar hoon" }, "options": ["I am sick.", "I have sick.", "I sick."], "answer": 0 },
+    { "type": "listen", "say": "My back hurts.", "options": ["My back hurts.", "My bag hurts.", "My back hurt."], "answer": 0 },
+    { "type": "pick", "q": { "en": "I have a bad ___." }, "hint": { "ur": "کھانسی", "roman": "khaansi" }, "options": ["cough", "cold"], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "ڈاکٹر کے پاس", "roman": "Doctor ke paas" }, "say": "What is the problem?", "options": ["I have a stomachache.", "I am from Pakistan.", "Cash, please."], "answer": 0 },
+    { "type": "speak", "say": "I have a headache and a fever.", "meaning": { "ur": "میرے سر میں درد ہے اور بخار ہے۔", "roman": "Mere sar mein dard hai aur bukhaar hai." } },
+    { "type": "type", "say": "pain", "answer": "pain", "meaning": { "ur": "درد", "roman": "dard" } }
+  ]
+}

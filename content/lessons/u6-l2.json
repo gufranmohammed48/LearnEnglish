@@ -1,0 +1,42 @@
+{
+  "id": "u6-l2",
+  "words": [
+    { "en": "appointment", "ur": "ملاقات کا وقت", "roman": "mulaqaat ka waqt" },
+    { "en": "doctor", "ur": "ڈاکٹر", "roman": "doctor" },
+    { "en": "medicine", "ur": "دوا", "roman": "dawa" },
+    { "en": "pharmacy", "ur": "دواخانہ / میڈیکل اسٹور", "roman": "dawakhana / medical store" },
+    { "en": "allergy", "ur": "الرجی", "roman": "allergy" },
+    { "en": "for two days", "ur": "دو دن سے", "roman": "do din se" },
+    { "en": "since Monday", "ur": "پیر سے", "roman": "peer se" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں 'دو دن سے' اور 'پیر سے' دونوں میں 'سے' ہے۔ انگریزی میں: مدت کے لیے 'for' (for two days) اور شروع ہونے کے وقت کے لیے 'since' (since Monday)۔ 'since two days' غلط ہے۔",
+                "roman": "Urdu mein 'do din se' aur 'peer se' dono mein 'se' hai. Angrezi mein: muddat ke liye 'for' (for two days) aur shuru hone ke waqt ke liye 'since' (since Monday). 'since two days' ghalat hai." },
+      "examples": [
+        { "en": "I have had a fever for two days.", "ur": "مجھے دو دن سے بخار ہے۔", "roman": "Mujhe do din se bukhaar hai." },
+        { "en": "I have had a cough since Monday.", "ur": "مجھے پیر سے کھانسی ہے۔", "roman": "Mujhe peer se khaansi hai." },
+        { "en": "I need an appointment.", "ur": "مجھے ڈاکٹر سے ملنے کا وقت چاہیے۔", "roman": "Mujhe doctor se milne ka waqt chahiye." }
+      ] },
+    { "type": "pick", "q": { "ur": "مجھے ڈاکٹر سے ملنے کا وقت چاہیے", "roman": "Mujhe doctor se milne ka waqt chahiye" }, "options": ["I need an appointment.", "I need a doctor time.", "I want appointment doctor."], "answer": 0 },
+    { "type": "pick", "q": { "en": "I have had a fever ___ three days." }, "options": ["for", "since"], "answer": 0,
+      "why": { "ur": "'three days' مدت ہے، اس لیے 'for'۔", "roman": "'three days' muddat hai, is liye 'for'." } },
+    { "type": "pick", "q": { "en": "I have had a cough ___ Monday." }, "options": ["since", "for"], "answer": 0,
+      "why": { "ur": "'Monday' شروع ہونے کا دن ہے، اس لیے 'since'۔", "roman": "'Monday' shuru hone ka din hai, is liye 'since'." } },
+    { "type": "fix", "sentence": "I am sick since two days.", "wrong": [3], "fixed": "I have been sick for two days.",
+      "why": { "ur": "مدت کے ساتھ 'for': for two days۔", "roman": "Muddat ke saath 'for': for two days." } },
+    { "type": "reply", "scene": { "ur": "ڈاکٹر کے پاس", "roman": "Doctor ke paas" }, "say": "How long have you had this pain?", "options": ["For two days.", "Since two days.", "Two days ago pain."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "ڈاکٹر کے پاس", "roman": "Doctor ke paas" }, "say": "Do you have any allergies?", "options": ["No, I don't.", "No, I am not allergy.", "Yes, please."], "answer": 0 },
+    { "type": "build", "q": { "ur": "کیا مجھے دوا کی ضرورت ہے؟", "roman": "Kya mujhe dawa ki zaroorat hai?" }, "answer": "Do I need medicine?", "extra": ["am", "a"] },
+    { "type": "listen", "say": "Take this medicine twice a day.", "options": ["Take this medicine twice a day.", "Take this medicine twice a week.", "Take these medicines today."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "doctor", "ur": "ڈاکٹر", "roman": "doctor" },
+      { "en": "medicine", "ur": "دوا", "roman": "dawa" },
+      { "en": "pharmacy", "ur": "دواخانہ", "roman": "dawakhana" },
+      { "en": "appointment", "ur": "ملاقات کا وقت", "roman": "mulaqaat ka waqt" },
+      { "en": "allergy", "ur": "الرجی", "roman": "allergy" } ] },
+    { "type": "pick", "q": { "en": "pharmacy" }, "options": [{ "ur": "دواخانہ / میڈیکل اسٹور", "roman": "dawakhana / medical store" }, { "ur": "ہسپتال", "roman": "hospital" }, { "ur": "دوا", "roman": "dawa" }], "answer": 0 },
+    { "type": "speak", "say": "I would like to make an appointment, please.", "meaning": { "ur": "میں ملاقات کا وقت لینا چاہتا ہوں۔", "roman": "Main mulaqaat ka waqt lena chahta hoon." } },
+    { "type": "type", "say": "doctor", "answer": "doctor", "meaning": { "ur": "ڈاکٹر", "roman": "doctor" } }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "u2-l2",
+  "words": [
+    { "en": "this", "ur": "یہ (قریب)", "roman": "yeh (qareeb)" },
+    { "en": "that", "ur": "وہ (دور)", "roman": "woh (door)" },
+    { "en": "pen", "ur": "قلم", "roman": "qalam" },
+    { "en": "phone", "ur": "فون", "roman": "phone" },
+    { "en": "bag", "ur": "بیگ / تھیلا", "roman": "bag / thaila" },
+    { "en": "key", "ur": "چابی", "roman": "chaabi" },
+    { "en": "door", "ur": "دروازہ", "roman": "darwaaza" },
+    { "en": "What is this?", "ur": "یہ کیا ہے؟", "roman": "Yeh kya hai?" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "قریب کی چیز کے لیے 'this' (یہ) اور دور کی چیز کے لیے 'that' (وہ)۔ 'یہ کیا ہے؟' = 'What is this?' — سوال میں 'is' پہلے آتا ہے۔",
+                "roman": "Qareeb ki cheez ke liye 'this' (yeh) aur door ki cheez ke liye 'that' (woh). 'Yeh kya hai?' = 'What is this?' — sawaal mein 'is' pehle aata hai." },
+      "examples": [
+        { "en": "This is my phone.", "ur": "یہ میرا فون ہے۔", "roman": "Yeh mera phone hai." },
+        { "en": "That is a door.", "ur": "وہ ایک دروازہ ہے۔", "roman": "Woh ek darwaaza hai." },
+        { "en": "What is this?", "ur": "یہ کیا ہے؟", "roman": "Yeh kya hai?" }
+      ] },
+    { "type": "pick", "q": { "en": "this" }, "options": [{ "ur": "یہ", "roman": "yeh" }, { "ur": "وہ", "roman": "woh" }, { "ur": "کیا", "roman": "kya" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "that" }, "options": [{ "ur": "وہ", "roman": "woh" }, { "ur": "یہ", "roman": "yeh" }, { "ur": "کون", "roman": "kaun" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "یہ کیا ہے؟", "roman": "Yeh kya hai?" }, "options": ["What is this?", "What is that?", "Where is this?"], "answer": 0 },
+    { "type": "build", "q": { "ur": "یہ میرا فون ہے", "roman": "Yeh mera phone hai" }, "answer": "This is my phone", "extra": ["that", "a"] },
+    { "type": "build", "q": { "ur": "وہ ایک دروازہ ہے", "roman": "Woh ek darwaaza hai" }, "answer": "That is a door", "extra": ["this", "an"] },
+    { "type": "listen", "say": "This is a key.", "options": ["This is a key.", "This is a kid.", "That is a key."], "answer": 0 },
+    { "type": "pick", "q": { "en": "Is ___ your bag?" }, "hint": { "ur": "بیگ آپ کے ہاتھ میں ہے (قریب)", "roman": "Bag aap ke haath mein hai (qareeb)" }, "options": ["this", "that"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "this", "ur": "یہ", "roman": "yeh" },
+      { "en": "that", "ur": "وہ", "roman": "woh" },
+      { "en": "pen", "ur": "قلم", "roman": "qalam" },
+      { "en": "key", "ur": "چابی", "roman": "chaabi" },
+      { "en": "door", "ur": "دروازہ", "roman": "darwaaza" } ] },
+    { "type": "reply", "say": "What is this?", "options": ["It is a pen.", "I am fine.", "Yes, please."], "answer": 0 },
+    { "type": "pick", "q": { "ur": "قلم", "roman": "qalam" }, "options": ["pen", "phone", "bag"], "answer": 0 },
+    { "type": "speak", "say": "What is this? This is my bag.", "meaning": { "ur": "یہ کیا ہے؟ یہ میرا بیگ ہے۔", "roman": "Yeh kya hai? Yeh mera bag hai." } },
+    { "type": "type", "say": "key", "answer": "key", "meaning": { "ur": "چابی", "roman": "chaabi" } }
+  ]
+}

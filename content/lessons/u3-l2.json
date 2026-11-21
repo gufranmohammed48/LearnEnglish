@@ -1,0 +1,44 @@
+{
+  "id": "u3-l2",
+  "words": [
+    { "en": "How much is it?", "ur": "یہ کتنے کا ہے؟", "roman": "Yeh kitne ka hai?" },
+    { "en": "price", "ur": "قیمت", "roman": "qeemat" },
+    { "en": "cheap", "ur": "سستا", "roman": "sasta" },
+    { "en": "expensive", "ur": "مہنگا", "roman": "mehnga" },
+    { "en": "twenty", "ur": "بیس", "roman": "bees" },
+    { "en": "fifty", "ur": "پچاس", "roman": "pachaas" },
+    { "en": "hundred", "ur": "سو", "roman": "sau" },
+    { "en": "dollars", "ur": "ڈالر", "roman": "dollar" },
+    { "en": "rupees", "ur": "روپے", "roman": "rupay" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "قیمت پوچھنی ہو تو: 'How much is it?' (یہ کتنے کا ہے؟)۔ قیمت بتاتے وقت ایک سے زیادہ ہوں تو s لگتا ہے: five dollars، one hundred rupees۔ دھیان دیں: fifteen (15) اور fifty (50) کی آواز ملتی جلتی ہے۔",
+                "roman": "Qeemat poochhni ho to: 'How much is it?' (Yeh kitne ka hai?). Qeemat batate waqt ek se zyada hon to s lagta hai: five dollars, one hundred rupees. Dhiyaan dein: fifteen (15) aur fifty (50) ki awaaz milti julti hai." },
+      "examples": [
+        { "en": "How much is it?", "ur": "یہ کتنے کا ہے؟", "roman": "Yeh kitne ka hai?" },
+        { "en": "It is fifty dollars.", "ur": "یہ پچاس ڈالر کا ہے۔", "roman": "Yeh pachaas dollar ka hai." },
+        { "en": "That is too expensive.", "ur": "یہ بہت مہنگا ہے۔", "roman": "Yeh bohat mehnga hai." }
+      ] },
+    { "type": "pick", "q": { "ur": "یہ کتنے کا ہے؟", "roman": "Yeh kitne ka hai?" }, "options": ["How much is it?", "How many is it?", "What is it?"], "answer": 0 },
+    { "type": "pick", "q": { "en": "expensive" }, "options": [{ "ur": "مہنگا", "roman": "mehnga" }, { "ur": "سستا", "roman": "sasta" }, { "ur": "قیمت", "roman": "qeemat" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "cheap" }, "options": [{ "ur": "سستا", "roman": "sasta" }, { "ur": "مہنگا", "roman": "mehnga" }, { "ur": "بیس", "roman": "bees" }], "answer": 0 },
+    { "type": "listen", "say": "fifty dollars", "options": ["fifty dollars", "fifteen dollars", "five dollars"], "answer": 0 },
+    { "type": "listen", "say": "twenty rupees", "options": ["twenty rupees", "twelve rupees", "twenty dollars"], "answer": 0 },
+    { "type": "build", "q": { "ur": "یہ بہت مہنگا ہے", "roman": "Yeh bohat mehnga hai" }, "answer": "It is very expensive", "extra": ["cheap", "much"] },
+    { "type": "reply", "scene": { "ur": "دکان پر", "roman": "Dukaan par" }, "say": "That is five dollars.", "options": ["Here you are.", "Good night.", "My name is Ali."], "answer": 0,
+      "why": { "ur": "'Here you are' = 'یہ لیجیے' (کوئی چیز یا پیسے دیتے وقت)۔", "roman": "'Here you are' = 'Yeh lijiye' (koi cheez ya paisay dete waqt)." } },
+    { "type": "fix", "sentence": "It is very much expensive.", "wrong": [3], "fixed": "It is very expensive.",
+      "why": { "ur": "'very much expensive' نہیں، صرف 'very expensive'۔", "roman": "'very much expensive' nahin, sirf 'very expensive'." } },
+    { "type": "match", "pairs": [
+      { "en": "cheap", "ur": "سستا", "roman": "sasta" },
+      { "en": "expensive", "ur": "مہنگا", "roman": "mehnga" },
+      { "en": "price", "ur": "قیمت", "roman": "qeemat" },
+      { "en": "hundred", "ur": "سو", "roman": "sau" },
+      { "en": "fifty", "ur": "پچاس", "roman": "pachaas" } ] },
+    { "type": "pick", "q": { "en": "It is ten ___." }, "options": ["dollars", "dollar"], "answer": 0,
+      "why": { "ur": "ایک سے زیادہ ڈالر ہوں تو 'dollars'۔", "roman": "Ek se zyada dollar hon to 'dollars'." } },
+    { "type": "speak", "say": "Excuse me, how much is it?", "meaning": { "ur": "سنیے، یہ کتنے کا ہے؟", "roman": "Suniye, yeh kitne ka hai?" } },
+    { "type": "type", "say": "cheap", "answer": "cheap", "meaning": { "ur": "سستا", "roman": "sasta" } }
+  ]
+}

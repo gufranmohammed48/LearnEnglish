@@ -1,0 +1,40 @@
+{
+  "id": "u5-l2",
+  "words": [
+    { "en": "Excuse me", "ur": "سنیے / معاف کیجیے", "roman": "Suniye / maaf kijiye" },
+    { "en": "I would like", "ur": "مجھے ... چاہیے (ادب سے)", "roman": "Mujhe ... chahiye (adab se)" },
+    { "en": "Can I have...?", "ur": "کیا مجھے ... مل سکتا ہے؟", "roman": "Kya mujhe ... mil sakta hai?" },
+    { "en": "receipt", "ur": "رسید", "roman": "raseed" },
+    { "en": "cash", "ur": "نقد", "roman": "naqad" },
+    { "en": "card", "ur": "کارڈ", "roman": "card" },
+    { "en": "Here you are", "ur": "یہ لیجیے", "roman": "Yeh lijiye" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "'I want' سیدھا سا ہے اور کبھی کبھی سخت لگتا ہے۔ دکان پر ادب سے کہیں: 'I would like...' یا 'Can I have..., please?'۔ کسی کو متوجہ کرنا ہو تو 'Excuse me'۔",
+                "roman": "'I want' seedha sa hai aur kabhi kabhi sakht lagta hai. Dukaan par adab se kahein: 'I would like...' ya 'Can I have..., please?'. Kisi ko mutawajjeh karna ho to 'Excuse me'." },
+      "examples": [
+        { "en": "Excuse me!", "ur": "سنیے!", "roman": "Suniye!" },
+        { "en": "I would like some water, please.", "ur": "مجھے تھوڑا پانی چاہیے۔", "roman": "Mujhe thora paani chahiye." },
+        { "en": "Can I have a receipt, please?", "ur": "کیا مجھے رسید مل سکتی ہے؟", "roman": "Kya mujhe raseed mil sakti hai?" }
+      ] },
+    { "type": "pick", "q": { "ur": "سنیے! (کسی کو متوجہ کرنا)", "roman": "Suniye! (kisi ko mutawajjeh karna)" }, "options": ["Excuse me!", "Thank you!", "Goodbye!"], "answer": 0 },
+    { "type": "pick", "q": { "en": "receipt" }, "options": [{ "ur": "رسید", "roman": "raseed" }, { "ur": "قیمت", "roman": "qeemat" }, { "ur": "تھیلا", "roman": "thaila" }], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "دکان پر", "roman": "Dukaan par" }, "say": "Cash or card?", "options": ["Card, please.", "I am fine.", "Good morning."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "دکان پر", "roman": "Dukaan par" }, "say": "Do you need a bag?", "options": ["Yes, please.", "Yes, I am.", "My name is Ali."], "answer": 0 },
+    { "type": "build", "q": { "ur": "کیا مجھے ایک رسید مل سکتی ہے؟", "roman": "Kya mujhe ek raseed mil sakti hai?" }, "answer": "Can I have a receipt?", "extra": ["am", "the"] },
+    { "type": "build", "q": { "ur": "مجھے تھوڑا پانی چاہیے، مہربانی کر کے", "roman": "Mujhe thora paani chahiye, meherbani kar ke" }, "answer": "I would like some water, please", "extra": ["want", "a"],
+      "accept": ["I would like some water please"] },
+    { "type": "pick", "q": { "ur": "دکان والے سے ادب سے کیسے مانگیں؟", "roman": "Dukaan wale se adab se kaise maangein?" }, "options": ["Can I have a bag, please?", "Give me bag.", "I want bag."], "answer": 0,
+      "why": { "ur": "'Can I have ..., please?' سب سے مؤدب ہے، اور 'a bag' میں 'a' نہ بھولیں۔", "roman": "'Can I have ..., please?' sab se muaddab hai, aur 'a bag' mein 'a' na bhoolein." } },
+    { "type": "listen", "say": "Can I pay by card?", "options": ["Can I pay by card?", "Can I play by card?", "Can I pay my car?"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "cash", "ur": "نقد", "roman": "naqad" },
+      { "en": "card", "ur": "کارڈ", "roman": "card" },
+      { "en": "receipt", "ur": "رسید", "roman": "raseed" },
+      { "en": "price", "ur": "قیمت", "roman": "qeemat" },
+      { "en": "Here you are", "ur": "یہ لیجیے", "roman": "Yeh lijiye" } ] },
+    { "type": "speak", "say": "Excuse me, can I have a receipt, please?", "meaning": { "ur": "سنیے، کیا مجھے رسید مل سکتی ہے؟", "roman": "Suniye, kya mujhe raseed mil sakti hai?" } },
+    { "type": "type", "say": "cash", "answer": "cash", "meaning": { "ur": "نقد", "roman": "naqad" } }
+  ]
+}

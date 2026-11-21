@@ -1,0 +1,43 @@
+{
+  "id": "u2-l1",
+  "words": [
+    { "en": "book", "ur": "کتاب", "roman": "kitaab" },
+    { "en": "apple", "ur": "سیب", "roman": "saib" },
+    { "en": "egg", "ur": "انڈا", "roman": "anda" },
+    { "en": "car", "ur": "گاڑی", "roman": "gaari" },
+    { "en": "house", "ur": "گھر", "roman": "ghar" },
+    { "en": "umbrella", "ur": "چھتری", "roman": "chhatri" },
+    { "en": "orange", "ur": "مالٹا / کینو", "roman": "maalta / kinnu" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں 'a' جیسا کوئی لفظ نہیں، اس لیے ہم اکثر اسے بھول جاتے ہیں۔ انگریزی میں ایک چیز کے لیے 'a' لگاتے ہیں: a book (ایک کتاب)۔ اگر اگلا لفظ a، e، i، o، u کی آواز سے شروع ہو تو 'an': an apple، an egg۔",
+                "roman": "Urdu mein 'a' jaisa koi lafz nahin, is liye hum aksar ise bhool jaate hain. Angrezi mein ek cheez ke liye 'a' lagate hain: a book (ek kitaab). Agar agla lafz a, e, i, o, u ki awaaz se shuru ho to 'an': an apple, an egg." },
+      "examples": [
+        { "en": "a book", "ur": "ایک کتاب", "roman": "ek kitaab" },
+        { "en": "an apple", "ur": "ایک سیب", "roman": "ek saib" },
+        { "en": "an egg", "ur": "ایک انڈا", "roman": "ek anda" }
+      ] },
+    { "type": "pick", "q": { "en": "a book" }, "options": [{ "ur": "ایک کتاب", "roman": "ek kitaab" }, { "ur": "ایک سیب", "roman": "ek saib" }, { "ur": "ایک انڈا", "roman": "ek anda" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "an apple" }, "options": [{ "ur": "ایک سیب", "roman": "ek saib" }, { "ur": "ایک گھر", "roman": "ek ghar" }, { "ur": "ایک گاڑی", "roman": "ek gaari" }], "answer": 0 },
+    { "type": "pick", "q": { "en": "___ egg" }, "options": ["an", "a"], "answer": 0,
+      "why": { "ur": "egg کی پہلی آواز 'e' ہے، اس لیے an۔", "roman": "egg ki pehli awaaz 'e' hai, is liye an." } },
+    { "type": "pick", "q": { "en": "___ car" }, "options": ["a", "an"], "answer": 0 },
+    { "type": "pick", "q": { "en": "___ orange" }, "options": ["an", "a"], "answer": 0 },
+    { "type": "pick", "q": { "en": "___ house" }, "options": ["a", "an"], "answer": 0 },
+    { "type": "listen", "say": "an umbrella", "options": ["an umbrella", "a number", "an apple"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "book", "ur": "کتاب", "roman": "kitaab" },
+      { "en": "apple", "ur": "سیب", "roman": "saib" },
+      { "en": "egg", "ur": "انڈا", "roman": "anda" },
+      { "en": "car", "ur": "گاڑی", "roman": "gaari" },
+      { "en": "house", "ur": "گھر", "roman": "ghar" } ] },
+    { "type": "build", "q": { "ur": "یہ ایک سیب ہے", "roman": "Yeh ek saib hai" }, "answer": "This is an apple", "extra": ["a", "the"] },
+    { "type": "pick", "q": { "ur": "میرے پاس ایک گاڑی ہے", "roman": "Mere paas ek gaari hai" }, "options": ["I have a car.", "I am having a car.", "I have car."], "answer": 0,
+      "why": { "ur": "'I am having a car' غلط ہے۔ 'have' (پاس ہونا) کے ساتھ ing نہیں لگاتے، اور 'a' نہ بھولیں: I have a car۔", "roman": "'I am having a car' ghalat hai. 'have' (paas hona) ke saath ing nahin lagate, aur 'a' na bhoolein: I have a car." } },
+    { "type": "fix", "sentence": "I have a egg.", "wrong": [2], "fixed": "I have an egg.",
+      "why": { "ur": "egg 'e' کی آواز سے شروع ہوتا ہے، اس لیے an egg۔", "roman": "egg 'e' ki awaaz se shuru hota hai, is liye an egg." } },
+    { "type": "speak", "say": "I have an apple and an egg.", "meaning": { "ur": "میرے پاس ایک سیب اور ایک انڈا ہے۔", "roman": "Mere paas ek saib aur ek anda hai." } },
+    { "type": "type", "say": "an egg", "answer": "an egg", "meaning": { "ur": "ایک انڈا", "roman": "ek anda" } }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "u1-l3",
+  "words": [
+    { "en": "name", "ur": "نام", "roman": "naam" },
+    { "en": "What is your name?", "ur": "آپ کا نام کیا ہے؟", "roman": "Aap ka naam kya hai?" },
+    { "en": "Nice to meet you", "ur": "آپ سے مل کر خوشی ہوئی", "roman": "Aap se mil kar khushi hui" },
+    { "en": "I am from Pakistan", "ur": "میں پاکستان سے ہوں", "roman": "Main Pakistan se hoon" },
+    { "en": "my", "ur": "میرا / میری", "roman": "mera / meri" },
+    { "en": "your", "ur": "آپ کا / آپ کی", "roman": "aap ka / aap ki" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "اردو میں فعل جملے کے آخر میں آتا ہے: 'میرا نام علی ہے'۔ انگریزی میں 'is' درمیان میں آتا ہے: 'My name is Ali'۔ یعنی: کون + is/am/are + باقی بات۔",
+                "roman": "Urdu mein fail jumle ke aakhir mein aata hai: 'Mera naam Ali hai'. Angrezi mein 'is' darmiyan mein aata hai: 'My name is Ali'. Yaani: kaun + is/am/are + baaqi baat." },
+      "examples": [
+        { "en": "My name is Ali.", "ur": "میرا نام علی ہے۔", "roman": "Mera naam Ali hai." },
+        { "en": "I am from Pakistan.", "ur": "میں پاکستان سے ہوں۔", "roman": "Main Pakistan se hoon." },
+        { "en": "Nice to meet you.", "ur": "آپ سے مل کر خوشی ہوئی۔", "roman": "Aap se mil kar khushi hui." }
+      ] },
+    { "type": "pick", "q": { "en": "My name is Ali." }, "options": [{ "ur": "میرا نام علی ہے۔", "roman": "Mera naam Ali hai." }, { "ur": "علی کا نام کیا ہے؟", "roman": "Ali ka naam kya hai?" }, { "ur": "میں پاکستان سے ہوں۔", "roman": "Main Pakistan se hoon." }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "آپ کا نام کیا ہے؟", "roman": "Aap ka naam kya hai?" }, "options": ["What is your name?", "My name is Ali.", "How are you?"], "answer": 0 },
+    { "type": "build", "q": { "ur": "میرا نام سارہ ہے", "roman": "Mera naam Sara hai" }, "answer": "My name is Sara", "extra": ["your", "are"] },
+    { "type": "listen", "say": "Nice to meet you", "options": ["Nice to meet you", "Nice to see you", "Need to meet you"], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں پاکستان سے ہوں", "roman": "Main Pakistan se hoon" }, "answer": "I am from Pakistan", "extra": ["is", "to"] },
+    { "type": "fix", "sentence": "My name Ali is.", "wrong": [2, 3], "fixed": "My name is Ali.",
+      "why": { "ur": "انگریزی میں 'is' آخر میں نہیں آتا: My name is Ali۔", "roman": "Angrezi mein 'is' aakhir mein nahin aata: My name is Ali." } },
+    { "type": "pick", "q": { "en": "Nice to meet you" }, "options": [{ "ur": "آپ سے مل کر خوشی ہوئی", "roman": "Aap se mil kar khushi hui" }, { "ur": "خدا حافظ", "roman": "Khuda hafiz" }, { "ur": "آپ کیسے ہیں؟", "roman": "Aap kaise hain?" }], "answer": 0 },
+    { "type": "reply", "say": "Hi, I am John. What is your name?", "options": ["My name is Ali.", "I am fine.", "Goodbye."], "answer": 0 },
+    { "type": "build", "q": { "ur": "آپ کا نام کیا ہے؟", "roman": "Aap ka naam kya hai?" }, "answer": "What is your name?", "extra": ["my", "are"] },
+    { "type": "match", "pairs": [
+      { "en": "name", "ur": "نام", "roman": "naam" },
+      { "en": "my", "ur": "میرا", "roman": "mera" },
+      { "en": "your", "ur": "آپ کا", "roman": "aap ka" },
+      { "en": "from", "ur": "سے", "roman": "se" },
+      { "en": "what", "ur": "کیا", "roman": "kya" } ] },
+    { "type": "speak", "say": "My name is Ali. Nice to meet you.", "meaning": { "ur": "میرا نام علی ہے۔ آپ سے مل کر خوشی ہوئی۔", "roman": "Mera naam Ali hai. Aap se mil kar khushi hui." } },
+    { "type": "type", "say": "Pakistan", "answer": "Pakistan", "meaning": { "ur": "پاکستان", "roman": "Pakistan" } }
+  ]
+}
