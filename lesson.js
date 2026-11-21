@@ -280,8 +280,9 @@ R.match = (ex, api) => {
     colL.append(b);
   });
   shuffle(pairs).forEach((p) => {
-    const b = h("button", { class: "mbtn", type: "button", "data-i": p.i }, ur(p));
-    b.addEventListener("click", () => { colR.querySelectorAll(".sel").forEach((x) => x.classList.remove("sel")); b.classList.add("sel"); selR = b; tryPair(); });
+    // a pair is English → Urdu, or English → English when it has "to" (e.g. go → went)
+    const b = h("button", { class: "mbtn", type: "button", "data-i": p.i }, p.to ? en(p.to) : ur(p));
+    b.addEventListener("click", () => { colR.querySelectorAll(".sel").forEach((x) => x.classList.remove("sel")); b.classList.add("sel"); selR = b; if (p.to) speak(p.to); tryPair(); });
     colR.append(b);
   });
   return {

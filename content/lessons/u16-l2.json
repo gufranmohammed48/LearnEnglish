@@ -1,0 +1,41 @@
+{
+  "id": "u16-l2",
+  "words": [
+    { "en": "went", "ur": "گیا / گئی (go)", "roman": "gaya / gayi (go)" },
+    { "en": "ate", "ur": "کھایا (eat)", "roman": "khaaya (eat)" },
+    { "en": "saw", "ur": "دیکھا (see)", "roman": "dekha (see)" },
+    { "en": "came", "ur": "آیا (come)", "roman": "aaya (come)" },
+    { "en": "bought", "ur": "خریدا (buy)", "roman": "khareeda (buy)" },
+    { "en": "worked", "ur": "کام کیا (work)", "roman": "kaam kiya (work)" },
+    { "en": "called", "ur": "فون کیا (call)", "roman": "phone kiya (call)" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "گزری ہوئی بات کے لیے فعل بدلتا ہے۔ زیادہ تر فعل کے آخر میں ed لگتا ہے: work → worked، call → called۔ کچھ فعل اپنی شکل بدلتے ہیں، انہیں یاد کرنا پڑتا ہے: go → went، eat → ate، see → saw، come → came، buy → bought۔ 'I did went' یا 'Yesterday I go' غلط ہے۔",
+                "roman": "Guzri hui baat ke liye fail badalta hai. Zyada tar fail ke aakhir mein ed lagta hai: work → worked, call → called. Kuch fail apni shakl badalte hain, inhein yaad karna parta hai: go → went, eat → ate, see → saw, come → came, buy → bought. 'I did went' ya 'Yesterday I go' ghalat hai." },
+      "examples": [
+        { "en": "I went to the shop yesterday.", "ur": "میں کل دکان گیا تھا۔", "roman": "Main kal dukaan gaya tha." },
+        { "en": "She called her mother.", "ur": "اس نے اپنی امی کو فون کیا۔", "roman": "Us ne apni ammi ko phone kiya." },
+        { "en": "We ate rice and chicken.", "ur": "ہم نے چاول اور چکن کھایا۔", "roman": "Hum ne chawal aur chicken khaaya." }
+      ] },
+    { "type": "pick", "q": { "en": "Yesterday I ___ to work." }, "options": ["went", "go", "goed"], "answer": 0 },
+    { "type": "pick", "q": { "en": "We ___ dinner at eight." }, "options": ["ate", "eat", "eated"], "answer": 0 },
+    { "type": "pick", "q": { "en": "She ___ her sister last week." }, "options": ["called", "call", "calls"], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "go", "to": "went" },
+      { "en": "eat", "to": "ate" },
+      { "en": "see", "to": "saw" },
+      { "en": "come", "to": "came" },
+      { "en": "buy", "to": "bought" } ] },
+    { "type": "build", "q": { "ur": "میں کل دکان گیا تھا", "roman": "Main kal dukaan gaya tha" }, "answer": "I went to the shop yesterday", "extra": ["go", "did"] },
+    { "type": "build", "q": { "ur": "میں نے ایک نیا فون خریدا", "roman": "Main ne ek naya phone khareeda" }, "answer": "I bought a new phone", "extra": ["buy", "an"] },
+    { "type": "fix", "sentence": "I did went to the doctor.", "wrong": [1], "fixed": "I went to the doctor.",
+      "why": { "ur": "'did' اور 'went' ایک ساتھ نہیں آتے۔ صرف 'I went'۔", "roman": "'did' aur 'went' ek saath nahin aate. Sirf 'I went'." } },
+    { "type": "fix", "sentence": "Yesterday I eat biryani.", "wrong": [2], "fixed": "Yesterday I ate biryani.",
+      "why": { "ur": "کل کی بات ہے، اس لیے 'eat' کی جگہ 'ate'۔", "roman": "Kal ki baat hai, is liye 'eat' ki jagah 'ate'." } },
+    { "type": "reply", "say": "What did you do on Sunday?", "options": ["I went to the park with my family.", "I go to the park with my family.", "I did went to the park."], "answer": 0 },
+    { "type": "listen", "say": "They came home late.", "options": ["They came home late.", "They come home late.", "They came home lately."], "answer": 0 },
+    { "type": "speak", "say": "Yesterday I went to the shop and bought some bread.", "meaning": { "ur": "کل میں دکان گیا اور کچھ ڈبل روٹی خریدی۔", "roman": "Kal main dukaan gaya aur kuch double roti khareedi." } },
+    { "type": "type", "say": "went", "answer": "went", "meaning": { "ur": "گیا (go)", "roman": "gaya (go)" } }
+  ]
+}

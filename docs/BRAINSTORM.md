@@ -259,7 +259,7 @@ the owner checks the Urdu. Zero cost to users, highest quality, fully offline.
 
 **Done (2026-11-21):**
 - Phase 1 — app shell, Urdu RTL / Roman Urdu UI, onboarding (script, goal, daily goal, level), learning path, lesson player.
-- Phase 2 — 9 units / 25 lessons (A1–A2) incl. a Sounds unit (v/w, th, "school not iskool"), placement / jump-ahead
+- Phase 2 — 17 units / 30 lessons (A1–A2; incl. housing, bank & forms, emergencies, past tense) incl. a Sounds unit (v/w, th, "school not iskool"), placement / jump-ahead
   and unit tests, spaced-repetition review, Words list, streak / XP / daily goal / hearts, speaking exercises
   (word-level scoring), dictation, fix-the-mistake, dialogue replies.
 - Extra — 4 Stories (Duolingo-Stories style: per-character voices, tap any word for its Urdu meaning, questions).
@@ -271,5 +271,5 @@ the owner checks the Urdu. Zero cost to users, highest quality, fully offline.
 - Owner reviews all Urdu (`docs/URDU_REVIEW.md`).
 - Try the debug APK on a real phone (speaking exercises, reminder).
 - AdMob (needs an AdMob account), privacy policy page, Play listing, GitHub Actions builds (added via web UI).
-- More content: housing, bank & forms, emergencies, past tense; more stories.
+- More content: future (will / going to), feelings, IELTS speaking; more stories.
 - Tier 1 AI: optional sound-level pronunciation model.

@@ -1,0 +1,39 @@
+{
+  "id": "u15-l1",
+  "words": [
+    { "en": "Help!", "ur": "مدد!", "roman": "Madad!" },
+    { "en": "emergency", "ur": "ہنگامی حالت / ایمرجنسی", "roman": "hangaami haalat / emergency" },
+    { "en": "ambulance", "ur": "ایمبولینس", "roman": "ambulance" },
+    { "en": "police", "ur": "پولیس", "roman": "police" },
+    { "en": "fire", "ur": "آگ", "roman": "aag" },
+    { "en": "hurt", "ur": "زخمی / چوٹ لگی", "roman": "zakhmi / chot lagi" },
+    { "en": "breathing", "ur": "سانس لینا", "roman": "saans lena" },
+    { "en": "accident", "ur": "حادثہ", "roman": "haadsa" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "ایمرجنسی نمبر: امریکہ اور کینیڈا میں 911، برطانیہ میں 999، پاکستان میں پولیس 15 اور ریسکیو 1122۔ فون پر پہلے بتائیں کیا ہوا، پھر اپنا پتہ آہستہ اور صاف بولیں۔ اردو کا مترجم چاہیے تو کہیں: 'I need an Urdu interpreter'۔",
+                "roman": "Emergency number: America aur Canada mein 911, Bartaniya mein 999, Pakistan mein police 15 aur rescue 1122. Phone par pehle bataaein kya hua, phir apna pata aahista aur saaf bolein. Urdu ka mutarjim chahiye to kahein: 'I need an Urdu interpreter'." },
+      "examples": [
+        { "en": "I need an ambulance.", "ur": "مجھے ایمبولینس چاہیے۔", "roman": "Mujhe ambulance chahiye." },
+        { "en": "My father is not breathing.", "ur": "میرے ابو سانس نہیں لے رہے۔", "roman": "Mere abbu saans nahin le rahe." },
+        { "en": "I need an Urdu interpreter.", "ur": "مجھے اردو مترجم چاہیے۔", "roman": "Mujhe Urdu mutarjim chahiye." }
+      ] },
+    { "type": "pick", "q": { "en": "ambulance" }, "options": [{ "ur": "ایمبولینس", "roman": "ambulance" }, { "ur": "پولیس", "roman": "police" }, { "ur": "آگ", "roman": "aag" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "امریکہ میں ایمرجنسی نمبر کیا ہے؟", "roman": "America mein emergency number kya hai?" }, "options": ["911", "999", "1122"], "answer": 0 },
+    { "type": "build", "q": { "ur": "مجھے ایمبولینس چاہیے", "roman": "Mujhe ambulance chahiye" }, "answer": "I need an ambulance", "extra": ["a", "am"] },
+    { "type": "reply", "scene": { "ur": "911 پر فون", "roman": "911 par phone" }, "say": "911, what is your emergency?", "options": ["There is a fire in my house!", "I am fine, thank you.", "My name is fire."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "911 پر فون", "roman": "911 par phone" }, "say": "What is your address?", "options": ["My address is 25 Main Street.", "My address is fine.", "I am at address."], "answer": 0 },
+    { "type": "listen", "say": "Is anyone hurt?", "options": ["Is anyone hurt?", "Is anyone here?", "Is anyone hungry?"], "answer": 0 },
+    { "type": "build", "q": { "ur": "مجھے اردو مترجم چاہیے", "roman": "Mujhe Urdu mutarjim chahiye" }, "answer": "I need an Urdu interpreter", "extra": ["a", "English"] },
+    { "type": "match", "pairs": [
+      { "en": "fire", "ur": "آگ", "roman": "aag" },
+      { "en": "police", "ur": "پولیس", "roman": "police" },
+      { "en": "accident", "ur": "حادثہ", "roman": "haadsa" },
+      { "en": "hurt", "ur": "زخمی", "roman": "zakhmi" },
+      { "en": "Help!", "ur": "مدد!", "roman": "Madad!" } ] },
+    { "type": "pick", "q": { "ur": "گاڑی کا حادثہ ہوا ہے", "roman": "Gaari ka haadsa hua hai" }, "options": ["There was a car accident.", "There is a car fire.", "My car is broken."], "answer": 0 },
+    { "type": "speak", "say": "Help! I need an ambulance. My address is ten Main Street.", "meaning": { "ur": "مدد! مجھے ایمبولینس چاہیے۔ میرا پتہ ٹین مین اسٹریٹ ہے۔", "roman": "Madad! Mujhe ambulance chahiye. Mera pata Ten Main Street hai." } },
+    { "type": "type", "say": "help", "answer": "help", "meaning": { "ur": "مدد", "roman": "madad" } }
+  ]
+}

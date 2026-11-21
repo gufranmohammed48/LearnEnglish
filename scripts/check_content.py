@@ -103,7 +103,11 @@ def check_lesson(lid, unit_id):
             if len({norm(p["en"]) for p in pairs}) != len(pairs):
                 bad(where, "duplicate English in pairs")
             for p in pairs:
-                bilingual(where, p, need_en=True)
+                if "to" in p:
+                    if not p.get("en") or not p["to"]:
+                        bad(where, "English pair needs 'en' and 'to'")
+                else:
+                    bilingual(where, p, need_en=True)
         elif t == "fix":
             words_ = ex.get("sentence", "").split(" ")
             if not ex.get("wrong") or any(not 0 <= i < len(words_) for i in ex["wrong"]):

@@ -21,7 +21,7 @@ stories and real-life conversations, all explained in Urdu (Nastaliq script or R
 | Daily reminder notification (app only) | `native.js` |
 | Offline support | `sw.js` |
 
-Content: 9 units / 25 lessons (A1–A2) + 4 stories, in `content/`. **All Urdu is a draft to be checked**:
+Content: 17 units / 30 lessons (A1–A2) + 4 stories, in `content/`. **All Urdu is a draft to be checked**:
 see [docs/URDU_REVIEW.md](docs/URDU_REVIEW.md).
 
 ## Run it on your computer

@@ -1,5 +1,5 @@
 // Offline support. Bump VERSION whenever any file changes so phones pick up the update.
-const VERSION = "angrezi-v5";
+const VERSION = "angrezi-v6";
 const FONTS = "angrezi-fonts"; // kept across versions
 const FILES = ["./", "index.html", "style.css", "app.js", "lesson.js", "content.js", "store.js", "srs.js", "speech.js",
   "strings.js", "ui.js", "native.js", "manifest.json", "content/course.json",

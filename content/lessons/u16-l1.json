@@ -1,0 +1,36 @@
+{
+  "id": "u16-l1",
+  "words": [
+    { "en": "was", "ur": "تھا / تھی (ایک)", "roman": "tha / thi (ek)" },
+    { "en": "were", "ur": "تھے (کئی، یا 'you')", "roman": "thay (kai, ya 'you')" },
+    { "en": "yesterday", "ur": "کل (گزرا ہوا)", "roman": "kal (guzra hua)" },
+    { "en": "last week", "ur": "پچھلے ہفتے", "roman": "pichhle haftay" },
+    { "en": "ago", "ur": "پہلے (دو دن پہلے)", "roman": "pehle (do din pehle)" },
+    { "en": "tired", "ur": "تھکا ہوا", "roman": "thaka hua" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "'تھا/تھی/تھے' کے لیے انگریزی میں دو لفظ ہیں: I، he، she، it کے ساتھ 'was'؛ you، we، they کے ساتھ 'were'۔ 'میں کل تھکا ہوا تھا' = 'I was tired yesterday'۔ 'دو دن پہلے' = 'two days ago' (ago آخر میں آتا ہے)۔",
+                "roman": "'tha/thi/thay' ke liye Angrezi mein do lafz hain: I, he, she, it ke saath 'was'; you, we, they ke saath 'were'. 'Main kal thaka hua tha' = 'I was tired yesterday'. 'Do din pehle' = 'two days ago' (ago aakhir mein aata hai)." },
+      "examples": [
+        { "en": "I was tired yesterday.", "ur": "میں کل تھکا ہوا تھا۔", "roman": "Main kal thaka hua tha." },
+        { "en": "They were at home.", "ur": "وہ گھر پر تھے۔", "roman": "Woh ghar par thay." },
+        { "en": "She was sick two days ago.", "ur": "وہ دو دن پہلے بیمار تھی۔", "roman": "Woh do din pehle beemaar thi." }
+      ] },
+    { "type": "pick", "q": { "en": "I ___ tired yesterday." }, "options": ["was", "were"], "answer": 0 },
+    { "type": "pick", "q": { "en": "They ___ at the mosque." }, "options": ["were", "was"], "answer": 0 },
+    { "type": "pick", "q": { "en": "You ___ late today." }, "options": ["were", "was"], "answer": 0,
+      "why": { "ur": "'you' کے ساتھ ہمیشہ 'were'، چاہے ایک ہی شخص ہو۔", "roman": "'you' ke saath hamesha 'were', chahe ek hi shakhs ho." } },
+    { "type": "pick", "q": { "en": "My mother ___ a teacher." }, "options": ["was", "were"], "answer": 0 },
+    { "type": "build", "q": { "ur": "میں کل گھر پر تھا", "roman": "Main kal ghar par tha" }, "answer": "I was at home yesterday", "extra": ["were", "in"] },
+    { "type": "build", "q": { "ur": "وہ دو دن پہلے بیمار تھی", "roman": "Woh do din pehle beemaar thi" }, "answer": "She was sick two days ago", "extra": ["were", "before"] },
+    { "type": "fix", "sentence": "We was at the shop.", "wrong": [1], "fixed": "We were at the shop.",
+      "why": { "ur": "'we' کے ساتھ 'were'۔", "roman": "'we' ke saath 'were'." } },
+    { "type": "fix", "sentence": "I was sick before two days.", "wrong": [3, 4, 5], "fixed": "I was sick two days ago.",
+      "why": { "ur": "'دو دن پہلے' = 'two days ago'، 'before two days' نہیں۔", "roman": "'Do din pehle' = 'two days ago', 'before two days' nahin." } },
+    { "type": "reply", "say": "Where were you yesterday?", "options": ["I was at work.", "I am at work.", "I were at work."], "answer": 0 },
+    { "type": "listen", "say": "We were very tired last week.", "options": ["We were very tired last week.", "We are very tired this week.", "We were very tired last night."], "answer": 0 },
+    { "type": "speak", "say": "I was at home yesterday.", "meaning": { "ur": "میں کل گھر پر تھا۔", "roman": "Main kal ghar par tha." } },
+    { "type": "type", "say": "were", "answer": "were", "meaning": { "ur": "تھے", "roman": "thay" } }
+  ]
+}

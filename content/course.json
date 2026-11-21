@@ -359,41 +359,119 @@
     },
     {
       "id": "u13",
-      "soon": true,
+      "level": "A2",
+      "color": "teal",
       "title": {
         "en": "Housing & the landlord",
         "ur": "گھر اور مالک مکان",
         "roman": "Ghar aur maalik-e-makaan"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "u13-l1",
+          "title": {
+            "en": "Something is broken",
+            "ur": "کچھ خراب ہے",
+            "roman": "Kuch kharaab hai"
+          }
+        }
+      ]
     },
     {
       "id": "u14",
-      "soon": true,
+      "level": "A2",
+      "color": "blue",
       "title": {
         "en": "Bank & forms",
         "ur": "بینک اور فارم",
         "roman": "Bank aur form"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "u14-l1",
+          "title": {
+            "en": "Filling in a form",
+            "ur": "فارم بھرنا",
+            "roman": "Form bharna"
+          }
+        }
+      ]
     },
     {
       "id": "u15",
-      "soon": true,
+      "level": "A2",
+      "color": "red",
       "title": {
         "en": "Emergencies",
         "ur": "ہنگامی حالات",
         "roman": "Hangaami haalaat"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "u15-l1",
+          "title": {
+            "en": "Calling for help",
+            "ur": "مدد کے لیے فون",
+            "roman": "Madad ke liye phone"
+          }
+        }
+      ]
     },
     {
       "id": "u16",
-      "soon": true,
+      "level": "A2",
+      "color": "purple",
       "title": {
         "en": "Talking about the past",
         "ur": "گزری ہوئی باتیں",
         "roman": "Guzri hui baatein"
+      },
+      "lessons": [
+        {
+          "id": "u16-l1",
+          "title": {
+            "en": "was and were",
+            "ur": "was اور were",
+            "roman": "was aur were"
+          }
+        },
+        {
+          "id": "u16-l2",
+          "title": {
+            "en": "went, ate, saw",
+            "ur": "went، ate، saw",
+            "roman": "went, ate, saw"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u17",
+      "soon": true,
+      "title": {
+        "en": "Plans: will & going to",
+        "ur": "آگے کے منصوبے",
+        "roman": "Aagay ke mansoobay"
+      },
+      "lessons": []
+    },
+    {
+      "id": "u18",
+      "soon": true,
+      "title": {
+        "en": "Feelings & opinions",
+        "ur": "احساسات اور رائے",
+        "roman": "Ehsaasaat aur raaye"
+      },
+      "lessons": []
+    },
+    {
+      "id": "u19",
+      "soon": true,
+      "title": {
+        "en": "IELTS speaking",
+        "ur": "IELTS بول چال",
+        "roman": "IELTS bol chaal"
       },
       "lessons": []
     }

@@ -9,7 +9,7 @@ import { STRINGS } from "./strings.js";
 import { isNative, setReminder } from "./native.js";
 
 const app = document.getElementById("app");
-const VERSION = "0.2.0";
+const VERSION = "0.3.0";
 
 // ---------- setup ----------
 function applyScript() {
@@ -401,7 +401,7 @@ function mePage() {
         ttsAvailable() && hasEnglishVoice() ? null : h("small", { class: "warn" }, tx("noVoice"))),
       installEvent ? h("div", { class: "row" }, h("button", { class: "btn primary", type: "button", onclick: async () => { installEvent.prompt(); installEvent = null; } }, tx("installApp"))) : null,
       h("div", { class: "row" }, h("button", { class: "btn danger", type: "button", onclick: async () => { if (await ask("resetQ", "reset", "cancel")) { resetAll(); go("#/"); } } }, tx("resetAll")))),
-    h("p", { class: "about" }, tx("about"), " ", en("v" + VERSION)));
+    h("p", { class: "about" }, tx("about"), " ", en("v" + VERSION), " · ", h("a", { href: "privacy.html", class: "en" }, "Privacy")));
 }
 
 function statTile(ico, value, label) {

@@ -612,11 +612,141 @@ Every Urdu and Roman Urdu text in Angrezi. Fix mistakes directly in the JSON fil
 
 ## Housing & the landlord — گھر اور مالک مکان (Ghar aur maalik-e-makaan)
 
+### Something is broken — `content/lessons/u13-l1.json`
+
+| English | اردو | Roman Urdu |
+|---|---|---|
+| Something is broken | کچھ خراب ہے | Kuch kharaab hai |
+| rent | کرایہ | kiraaya |
+| landlord | مالک مکان | maalik-e-makaan |
+| apartment | فلیٹ / اپارٹمنٹ | flat / apartment |
+| broken | ٹوٹا ہوا / خراب | toota hua / kharaab |
+| leak | پانی ٹپکنا / رساؤ | paani tapakna / risaao |
+| fix | ٹھیک کرنا | theek karna |
+| heater | ہیٹر | heater |
+| lease | کرایہ نامہ | kiraaya naama |
+| (tip) | مالک مکان سے کوئی شکایت ادب سے کریں: پہلے مسئلہ بتائیں، پھر درخواست کریں۔ 'The heater is broken. Could you fix it, please?'۔ 'Could you...?' ہمیشہ 'Do it!' سے بہتر ہے۔ | Maalik-e-makaan se koi shikaayat adab se karein: pehle masla bataaein, phir darkhwaast karein. 'The heater is broken. Could you fix it, please?'. 'Could you...?' hamesha 'Do it!' se behtar hai. |
+| The heater is broken. | ہیٹر خراب ہے۔ | Heater kharaab hai. |
+| There is a leak in the kitchen. | باورچی خانے میں پانی ٹپک رہا ہے۔ | Baawarchi khaane mein paani tapak raha hai. |
+| Could you fix it, please? | کیا آپ اسے ٹھیک کر سکتے ہیں؟ | Kya aap ise theek kar sakte hain? |
+| The heater is broken | ہیٹر خراب ہے | Heater kharaab hai |
+| Could you fix it, please? | کیا آپ اسے ٹھیک کر سکتے ہیں، مہربانی کر کے؟ | Kya aap ise theek kar sakte hain, meherbani kar ke? |
+| Could you fix the leak, please? | مالک مکان سے ادب سے کیسے کہیں؟ | Maalik-e-makaan se adab se kaise kahein? |
+| (scene) | مالک مکان کا فون | Maalik-e-makaan ka phone |
+| broken | خراب | kharaab |
+| (why) | خراب چیز کے لیے 'broken' کہتے ہیں۔ | Kharaab cheez ke liye 'broken' kehte hain. |
+| There is a leak in the kitchen. Could you fix it, please? | باورچی خانے میں پانی ٹپک رہا ہے۔ کیا آپ اسے ٹھیک کر سکتے ہیں؟ | Baawarchi khaane mein paani tapak raha hai. Kya aap ise theek kar sakte hain? |
+
 ## Bank & forms — بینک اور فارم (Bank aur form)
+
+### Filling in a form — `content/lessons/u14-l1.json`
+
+| English | اردو | Roman Urdu |
+|---|---|---|
+| Filling in a form | فارم بھرنا | Form bharna |
+| first name | پہلا نام (اپنا نام) | pehla naam (apna naam) |
+| last name | خاندانی نام | khaandaani naam |
+| date of birth | تاریخ پیدائش | tareekh-e-paidaish |
+| address | پتہ | pata |
+| signature | دستخط | dastakhat |
+| account | اکاؤنٹ / کھاتہ | account / khaata |
+| deposit | پیسے جمع کرانا | paisay jama karaana |
+| withdraw | پیسے نکالنا | paisay nikaalna |
+| (tip) | فارم پر: 'First name' = آپ کا اپنا نام (علی)، 'Last name' یا 'Surname' = خاندانی نام (خان)۔ دھیان دیں: امریکہ میں تاریخ پہلے مہینہ پھر دن لکھتے ہیں: 03/04/1990 = 4 مارچ! پاکستان اور برطانیہ میں پہلے دن آتا ہے۔ 'Sign here' = یہاں دستخط کریں۔ | Form par: 'First name' = aap ka apna naam (Ali), 'Last name' ya 'Surname' = khaandaani naam (Khan). Dhiyaan dein: America mein tareekh pehle maheena phir din likhte hain: 03/04/1990 = 4 March! Pakistan aur Bartaniya mein pehle din aata hai. 'Sign here' = yahan dastakhat karein. |
+| First name: Ali. Last name: Khan. | نام: علی۔ خاندانی نام: خان۔ | Naam: Ali. Khaandaani naam: Khan. |
+| Please sign here. | یہاں دستخط کریں۔ | Yahan dastakhat karein. |
+| I want to open an account. | میں اکاؤنٹ کھولنا چاہتا ہوں۔ | Main account kholna chahta hoon. |
+| Khan | علی خان: 'Last name' کیا لکھیں گے؟ | Ali Khan: 'Last name' kya likhein ge? |
+| (date of birth) | آج کی تاریخ | aaj ki tareekh |
+| 03/04/1990 | امریکی فارم پر 4 مارچ 1990 کیسے لکھیں گے؟ | Amreeki form par 4 March 1990 kaise likhein ge? |
+| (why) | امریکہ میں پہلے مہینہ (03 = مارچ)، پھر دن (04)۔ | America mein pehle maheena (03 = March), phir din (04). |
+| I want to open an account | میں اکاؤنٹ کھولنا چاہتا ہوں | Main account kholna chahta hoon |
+| (scene) | بینک میں | Bank mein |
+| account | اکاؤنٹ | account |
+| deposit | جمع کرانا | jama karaana |
+| withdraw | نکالنا | nikaalna |
 
 ## Emergencies — ہنگامی حالات (Hangaami haalaat)
 
+### Calling for help — `content/lessons/u15-l1.json`
+
+| English | اردو | Roman Urdu |
+|---|---|---|
+| Calling for help | مدد کے لیے فون | Madad ke liye phone |
+| Help! | مدد! | Madad! |
+| emergency | ہنگامی حالت / ایمرجنسی | hangaami haalat / emergency |
+| ambulance | ایمبولینس | ambulance |
+| police | پولیس | police |
+| fire | آگ | aag |
+| hurt | زخمی / چوٹ لگی | zakhmi / chot lagi |
+| breathing | سانس لینا | saans lena |
+| accident | حادثہ | haadsa |
+| (tip) | ایمرجنسی نمبر: امریکہ اور کینیڈا میں 911، برطانیہ میں 999، پاکستان میں پولیس 15 اور ریسکیو 1122۔ فون پر پہلے بتائیں کیا ہوا، پھر اپنا پتہ آہستہ اور صاف بولیں۔ اردو کا مترجم چاہیے تو کہیں: 'I need an Urdu interpreter'۔ | Emergency number: America aur Canada mein 911, Bartaniya mein 999, Pakistan mein police 15 aur rescue 1122. Phone par pehle bataaein kya hua, phir apna pata aahista aur saaf bolein. Urdu ka mutarjim chahiye to kahein: 'I need an Urdu interpreter'. |
+| I need an ambulance. | مجھے ایمبولینس چاہیے۔ | Mujhe ambulance chahiye. |
+| My father is not breathing. | میرے ابو سانس نہیں لے رہے۔ | Mere abbu saans nahin le rahe. |
+| I need an Urdu interpreter. | مجھے اردو مترجم چاہیے۔ | Mujhe Urdu mutarjim chahiye. |
+| 911 | امریکہ میں ایمرجنسی نمبر کیا ہے؟ | America mein emergency number kya hai? |
+| I need an ambulance | مجھے ایمبولینس چاہیے | Mujhe ambulance chahiye |
+| (scene) | 911 پر فون | 911 par phone |
+| I need an Urdu interpreter | مجھے اردو مترجم چاہیے | Mujhe Urdu mutarjim chahiye |
+| hurt | زخمی | zakhmi |
+| There was a car accident. | گاڑی کا حادثہ ہوا ہے | Gaari ka haadsa hua hai |
+| Help! I need an ambulance. My address is ten Main Street. | مدد! مجھے ایمبولینس چاہیے۔ میرا پتہ ٹین مین اسٹریٹ ہے۔ | Madad! Mujhe ambulance chahiye. Mera pata Ten Main Street hai. |
+| help | مدد | madad |
+
 ## Talking about the past — گزری ہوئی باتیں (Guzri hui baatein)
+
+### was and were — `content/lessons/u16-l1.json`
+
+| English | اردو | Roman Urdu |
+|---|---|---|
+| was and were | was اور were | was aur were |
+| was | تھا / تھی (ایک) | tha / thi (ek) |
+| were | تھے (کئی، یا 'you') | thay (kai, ya 'you') |
+| yesterday | کل (گزرا ہوا) | kal (guzra hua) |
+| last week | پچھلے ہفتے | pichhle haftay |
+| ago | پہلے (دو دن پہلے) | pehle (do din pehle) |
+| tired | تھکا ہوا | thaka hua |
+| (tip) | 'تھا/تھی/تھے' کے لیے انگریزی میں دو لفظ ہیں: I، he، she، it کے ساتھ 'was'؛ you، we، they کے ساتھ 'were'۔ 'میں کل تھکا ہوا تھا' = 'I was tired yesterday'۔ 'دو دن پہلے' = 'two days ago' (ago آخر میں آتا ہے)۔ | 'tha/thi/thay' ke liye Angrezi mein do lafz hain: I, he, she, it ke saath 'was'; you, we, they ke saath 'were'. 'Main kal thaka hua tha' = 'I was tired yesterday'. 'Do din pehle' = 'two days ago' (ago aakhir mein aata hai). |
+| I was tired yesterday. | میں کل تھکا ہوا تھا۔ | Main kal thaka hua tha. |
+| They were at home. | وہ گھر پر تھے۔ | Woh ghar par thay. |
+| She was sick two days ago. | وہ دو دن پہلے بیمار تھی۔ | Woh do din pehle beemaar thi. |
+| (why) | 'you' کے ساتھ ہمیشہ 'were'، چاہے ایک ہی شخص ہو۔ | 'you' ke saath hamesha 'were', chahe ek hi shakhs ho. |
+| I was at home yesterday | میں کل گھر پر تھا | Main kal ghar par tha |
+| She was sick two days ago | وہ دو دن پہلے بیمار تھی | Woh do din pehle beemaar thi |
+| (why) | 'we' کے ساتھ 'were'۔ | 'we' ke saath 'were'. |
+| (why) | 'دو دن پہلے' = 'two days ago'، 'before two days' نہیں۔ | 'Do din pehle' = 'two days ago', 'before two days' nahin. |
+| I was at home yesterday. | میں کل گھر پر تھا۔ | Main kal ghar par tha. |
+| were | تھے | thay |
+
+### went, ate, saw — `content/lessons/u16-l2.json`
+
+| English | اردو | Roman Urdu |
+|---|---|---|
+| went, ate, saw | went، ate، saw | went, ate, saw |
+| went | گیا / گئی (go) | gaya / gayi (go) |
+| ate | کھایا (eat) | khaaya (eat) |
+| saw | دیکھا (see) | dekha (see) |
+| came | آیا (come) | aaya (come) |
+| bought | خریدا (buy) | khareeda (buy) |
+| worked | کام کیا (work) | kaam kiya (work) |
+| called | فون کیا (call) | phone kiya (call) |
+| (tip) | گزری ہوئی بات کے لیے فعل بدلتا ہے۔ زیادہ تر فعل کے آخر میں ed لگتا ہے: work → worked، call → called۔ کچھ فعل اپنی شکل بدلتے ہیں، انہیں یاد کرنا پڑتا ہے: go → went، eat → ate، see → saw، come → came، buy → bought۔ 'I did went' یا 'Yesterday I go' غلط ہے۔ | Guzri hui baat ke liye fail badalta hai. Zyada tar fail ke aakhir mein ed lagta hai: work → worked, call → called. Kuch fail apni shakl badalte hain, inhein yaad karna parta hai: go → went, eat → ate, see → saw, come → came, buy → bought. 'I did went' ya 'Yesterday I go' ghalat hai. |
+| I went to the shop yesterday. | میں کل دکان گیا تھا۔ | Main kal dukaan gaya tha. |
+| She called her mother. | اس نے اپنی امی کو فون کیا۔ | Us ne apni ammi ko phone kiya. |
+| We ate rice and chicken. | ہم نے چاول اور چکن کھایا۔ | Hum ne chawal aur chicken khaaya. |
+| I went to the shop yesterday | میں کل دکان گیا تھا | Main kal dukaan gaya tha |
+| I bought a new phone | میں نے ایک نیا فون خریدا | Main ne ek naya phone khareeda |
+| (why) | 'did' اور 'went' ایک ساتھ نہیں آتے۔ صرف 'I went'۔ | 'did' aur 'went' ek saath nahin aate. Sirf 'I went'. |
+| (why) | کل کی بات ہے، اس لیے 'eat' کی جگہ 'ate'۔ | Kal ki baat hai, is liye 'eat' ki jagah 'ate'. |
+| Yesterday I went to the shop and bought some bread. | کل میں دکان گیا اور کچھ ڈبل روٹی خریدی۔ | Kal main dukaan gaya aur kuch double roti khareedi. |
+| went | گیا (go) | gaya (go) |
+
+## Plans: will & going to — آگے کے منصوبے (Aagay ke mansoobay)
+
+## Feelings & opinions — احساسات اور رائے (Ehsaasaat aur raaye)
+
+## IELTS speaking — IELTS بول چال (IELTS bol chaal)
 
 ## Stories
 

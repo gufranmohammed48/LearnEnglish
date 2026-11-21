@@ -1,0 +1,39 @@
+{
+  "id": "u14-l1",
+  "words": [
+    { "en": "first name", "ur": "پہلا نام (اپنا نام)", "roman": "pehla naam (apna naam)" },
+    { "en": "last name", "ur": "خاندانی نام", "roman": "khaandaani naam" },
+    { "en": "date of birth", "ur": "تاریخ پیدائش", "roman": "tareekh-e-paidaish" },
+    { "en": "address", "ur": "پتہ", "roman": "pata" },
+    { "en": "signature", "ur": "دستخط", "roman": "dastakhat" },
+    { "en": "account", "ur": "اکاؤنٹ / کھاتہ", "roman": "account / khaata" },
+    { "en": "deposit", "ur": "پیسے جمع کرانا", "roman": "paisay jama karaana" },
+    { "en": "withdraw", "ur": "پیسے نکالنا", "roman": "paisay nikaalna" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "فارم پر: 'First name' = آپ کا اپنا نام (علی)، 'Last name' یا 'Surname' = خاندانی نام (خان)۔ دھیان دیں: امریکہ میں تاریخ پہلے مہینہ پھر دن لکھتے ہیں: 03/04/1990 = 4 مارچ! پاکستان اور برطانیہ میں پہلے دن آتا ہے۔ 'Sign here' = یہاں دستخط کریں۔",
+                "roman": "Form par: 'First name' = aap ka apna naam (Ali), 'Last name' ya 'Surname' = khaandaani naam (Khan). Dhiyaan dein: America mein tareekh pehle maheena phir din likhte hain: 03/04/1990 = 4 March! Pakistan aur Bartaniya mein pehle din aata hai. 'Sign here' = yahan dastakhat karein." },
+      "examples": [
+        { "en": "First name: Ali. Last name: Khan.", "ur": "نام: علی۔ خاندانی نام: خان۔", "roman": "Naam: Ali. Khaandaani naam: Khan." },
+        { "en": "Please sign here.", "ur": "یہاں دستخط کریں۔", "roman": "Yahan dastakhat karein." },
+        { "en": "I want to open an account.", "ur": "میں اکاؤنٹ کھولنا چاہتا ہوں۔", "roman": "Main account kholna chahta hoon." }
+      ] },
+    { "type": "pick", "q": { "ur": "علی خان: 'Last name' کیا لکھیں گے؟", "roman": "Ali Khan: 'Last name' kya likhein ge?" }, "options": ["Khan", "Ali", "Ali Khan"], "answer": 0 },
+    { "type": "pick", "q": { "en": "date of birth" }, "options": [{ "ur": "تاریخ پیدائش", "roman": "tareekh-e-paidaish" }, { "ur": "آج کی تاریخ", "roman": "aaj ki tareekh" }, { "ur": "پتہ", "roman": "pata" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "امریکی فارم پر 4 مارچ 1990 کیسے لکھیں گے؟", "roman": "Amreeki form par 4 March 1990 kaise likhein ge?" }, "options": ["03/04/1990", "04/03/1990", "1990/04/03"], "answer": 0,
+      "why": { "ur": "امریکہ میں پہلے مہینہ (03 = مارچ)، پھر دن (04)۔", "roman": "America mein pehle maheena (03 = March), phir din (04)." } },
+    { "type": "build", "q": { "ur": "میں اکاؤنٹ کھولنا چاہتا ہوں", "roman": "Main account kholna chahta hoon" }, "answer": "I want to open an account", "extra": ["a", "close"] },
+    { "type": "pick", "q": { "en": "withdraw" }, "options": [{ "ur": "پیسے نکالنا", "roman": "paisay nikaalna" }, { "ur": "پیسے جمع کرانا", "roman": "paisay jama karaana" }, { "ur": "دستخط", "roman": "dastakhat" }], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "بینک میں", "roman": "Bank mein" }, "say": "How can I help you today?", "options": ["I would like to deposit some money.", "I would like to deposit some moneys.", "I am a bank."], "answer": 0 },
+    { "type": "listen", "say": "Please sign here and write the date.", "options": ["Please sign here and write the date.", "Please sing here and write the date.", "Please sign here and write the data."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "address", "ur": "پتہ", "roman": "pata" },
+      { "en": "signature", "ur": "دستخط", "roman": "dastakhat" },
+      { "en": "account", "ur": "اکاؤنٹ", "roman": "account" },
+      { "en": "deposit", "ur": "جمع کرانا", "roman": "jama karaana" },
+      { "en": "withdraw", "ur": "نکالنا", "roman": "nikaalna" } ] },
+    { "type": "speak", "say": "I would like to open an account, please.", "meaning": { "ur": "میں اکاؤنٹ کھولنا چاہتا ہوں۔", "roman": "Main account kholna chahta hoon." } },
+    { "type": "type", "say": "address", "answer": "address", "meaning": { "ur": "پتہ", "roman": "pata" } }
+  ]
+}

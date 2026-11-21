@@ -1,0 +1,40 @@
+{
+  "id": "u13-l1",
+  "words": [
+    { "en": "rent", "ur": "کرایہ", "roman": "kiraaya" },
+    { "en": "landlord", "ur": "مالک مکان", "roman": "maalik-e-makaan" },
+    { "en": "apartment", "ur": "فلیٹ / اپارٹمنٹ", "roman": "flat / apartment" },
+    { "en": "broken", "ur": "ٹوٹا ہوا / خراب", "roman": "toota hua / kharaab" },
+    { "en": "leak", "ur": "پانی ٹپکنا / رساؤ", "roman": "paani tapakna / risaao" },
+    { "en": "fix", "ur": "ٹھیک کرنا", "roman": "theek karna" },
+    { "en": "heater", "ur": "ہیٹر", "roman": "heater" },
+    { "en": "lease", "ur": "کرایہ نامہ", "roman": "kiraaya naama" }
+  ],
+  "exercises": [
+    { "type": "tip",
+      "text": { "ur": "مالک مکان سے کوئی شکایت ادب سے کریں: پہلے مسئلہ بتائیں، پھر درخواست کریں۔ 'The heater is broken. Could you fix it, please?'۔ 'Could you...?' ہمیشہ 'Do it!' سے بہتر ہے۔",
+                "roman": "Maalik-e-makaan se koi shikaayat adab se karein: pehle masla bataaein, phir darkhwaast karein. 'The heater is broken. Could you fix it, please?'. 'Could you...?' hamesha 'Do it!' se behtar hai." },
+      "examples": [
+        { "en": "The heater is broken.", "ur": "ہیٹر خراب ہے۔", "roman": "Heater kharaab hai." },
+        { "en": "There is a leak in the kitchen.", "ur": "باورچی خانے میں پانی ٹپک رہا ہے۔", "roman": "Baawarchi khaane mein paani tapak raha hai." },
+        { "en": "Could you fix it, please?", "ur": "کیا آپ اسے ٹھیک کر سکتے ہیں؟", "roman": "Kya aap ise theek kar sakte hain?" }
+      ] },
+    { "type": "pick", "q": { "en": "rent" }, "options": [{ "ur": "کرایہ", "roman": "kiraaya" }, { "ur": "مالک مکان", "roman": "maalik-e-makaan" }, { "ur": "کرایہ نامہ", "roman": "kiraaya naama" }], "answer": 0 },
+    { "type": "pick", "q": { "ur": "مالک مکان", "roman": "maalik-e-makaan" }, "options": ["landlord", "lease", "apartment"], "answer": 0 },
+    { "type": "build", "q": { "ur": "ہیٹر خراب ہے", "roman": "Heater kharaab hai" }, "answer": "The heater is broken", "extra": ["fix", "a"] },
+    { "type": "build", "q": { "ur": "کیا آپ اسے ٹھیک کر سکتے ہیں، مہربانی کر کے؟", "roman": "Kya aap ise theek kar sakte hain, meherbani kar ke?" }, "answer": "Could you fix it, please?", "extra": ["broken", "do"] },
+    { "type": "pick", "q": { "ur": "مالک مکان سے ادب سے کیسے کہیں؟", "roman": "Maalik-e-makaan se adab se kaise kahein?" }, "options": ["Could you fix the leak, please?", "Fix the leak now!", "You fix leak."], "answer": 0 },
+    { "type": "listen", "say": "The rent is due on the first of the month.", "options": ["The rent is due on the first of the month.", "The rent is due on the last of the month.", "The rent is two on the first of the month."], "answer": 0 },
+    { "type": "reply", "scene": { "ur": "مالک مکان کا فون", "roman": "Maalik-e-makaan ka phone" }, "say": "Hi, is everything OK in the apartment?", "options": ["Not really. There is a leak in the bathroom.", "Yes, I am a leak.", "I am the landlord."], "answer": 0 },
+    { "type": "match", "pairs": [
+      { "en": "rent", "ur": "کرایہ", "roman": "kiraaya" },
+      { "en": "landlord", "ur": "مالک مکان", "roman": "maalik-e-makaan" },
+      { "en": "broken", "ur": "خراب", "roman": "kharaab" },
+      { "en": "fix", "ur": "ٹھیک کرنا", "roman": "theek karna" },
+      { "en": "lease", "ur": "کرایہ نامہ", "roman": "kiraaya naama" } ] },
+    { "type": "fix", "sentence": "The heater is break.", "wrong": [3], "fixed": "The heater is broken.",
+      "why": { "ur": "خراب چیز کے لیے 'broken' کہتے ہیں۔", "roman": "Kharaab cheez ke liye 'broken' kehte hain." } },
+    { "type": "speak", "say": "There is a leak in the kitchen. Could you fix it, please?", "meaning": { "ur": "باورچی خانے میں پانی ٹپک رہا ہے۔ کیا آپ اسے ٹھیک کر سکتے ہیں؟", "roman": "Baawarchi khaane mein paani tapak raha hai. Kya aap ise theek kar sakte hain?" } },
+    { "type": "type", "say": "rent", "answer": "rent", "meaning": { "ur": "کرایہ", "roman": "kiraaya" } }
+  ]
+}
