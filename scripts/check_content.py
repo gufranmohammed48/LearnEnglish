@@ -138,6 +138,33 @@ def main():
             if not u.get("soon"):
                 check_lesson(l["id"], u["id"])
                 lesson_count += 1
+    stories = json.loads((CONTENT / "stories" / "index.json").read_text(encoding="utf-8"))["stories"]
+    for st in stories:
+        where = "story " + st["id"]
+        bilingual(where + " title", st["title"], need_en=True)
+        if st.get("after") and st["after"] not in ids:
+            bad(where, f"unlocks after unknown lesson {st['after']}")
+        path = CONTENT / "stories" / f"{st['id']}.json"
+        if not path.exists():
+            bad(where, "story file missing")
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        cast = data.get("cast", {})
+        for n, item in enumerate(data.get("items", [])):
+            w = f"{where} #{n}"
+            if item.get("type"):
+                if item["type"] in ("pick", "reply", "listen"):
+                    check_options(w, item)
+                if item.get("type") == "pick" and "en" not in item.get("q", {}):
+                    bilingual(w + " q", item["q"])
+            else:
+                bilingual(w, item, need_en=True)
+                if item.get("who") and item["who"] not in cast:
+                    bad(w, f"'{item['who']}' is not in the cast")
+        for k, g in data.get("glossary", {}).items():
+            if k != k.lower():
+                bad(where, f"glossary key '{k}' must be lowercase")
+            bilingual(f"{where} glossary {k}", g)
     for f in (CONTENT / "lessons").glob("*.json"):
         if f.stem not in ids:
             bad(f.name, "lesson file not listed in course.json")
@@ -145,7 +172,7 @@ def main():
         print("\n".join(problems))
         print(f"\n{len(problems)} problem(s)")
         sys.exit(1)
-    print(f"OK: {lesson_count} lessons checked")
+    print(f"OK: {lesson_count} lessons and {len(stories)} stories checked")
 
 
 if __name__ == "__main__":

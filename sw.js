@@ -1,5 +1,5 @@
 // Offline support. Bump VERSION whenever any file changes so phones pick up the update.
-const VERSION = "angrezi-v2";
+const VERSION = "angrezi-v3";
 const FONTS = "angrezi-fonts"; // kept across versions
 const FILES = ["./", "index.html", "style.css", "app.js", "lesson.js", "content.js", "store.js", "srs.js", "speech.js",
   "strings.js", "ui.js", "manifest.json", "content/course.json",
@@ -13,7 +13,9 @@ self.addEventListener("install", (e) => {
     try {
       const course = await (await fetch("content/course.json", { cache: "reload" })).json();
       const lessons = course.units.flatMap((u) => (u.soon ? [] : u.lessons.map((l) => "content/lessons/" + l.id + ".json")));
-      await c.addAll(lessons.map((f) => new Request(f, { cache: "reload" })));
+      const stories = (await (await fetch("content/stories/index.json", { cache: "reload" })).json()).stories
+        .map((st) => "content/stories/" + st.id + ".json");
+      await c.addAll([...lessons, "content/stories/index.json", ...stories].map((f) => new Request(f, { cache: "reload" })));
     } catch (err) {}
   })());
   self.skipWaiting();

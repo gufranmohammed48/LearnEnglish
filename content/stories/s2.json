@@ -1,0 +1,38 @@
+{
+  "id": "s2",
+  "title": { "en": "At the shop", "ur": "دکان پر", "roman": "Dukaan par" },
+  "cast": { "Ali": "m", "Anna": "f" },
+  "glossary": {
+    "goes": { "ur": "جاتا ہے", "roman": "jaata hai" },
+    "shop": { "ur": "دکان", "roman": "dukaan" },
+    "wants": { "ur": "چاہتا ہے", "roman": "chahta hai" },
+    "milk": { "ur": "دودھ", "roman": "doodh" },
+    "bread": { "ur": "ڈبل روٹی", "roman": "double roti" },
+    "help": { "ur": "مدد", "roman": "madad" },
+    "door": { "ur": "دروازہ", "roman": "darwaaza" },
+    "next": { "ur": "ساتھ (next to)", "roman": "saath (next to)" },
+    "today": { "ur": "آج", "roman": "aaj" },
+    "sorry": { "ur": "معاف کیجیے", "roman": "maaf kijiye" },
+    "dollars": { "ur": "ڈالر", "roman": "dollar" },
+    "cash": { "ur": "نقد", "roman": "naqad" },
+    "card": { "ur": "کارڈ", "roman": "card" },
+    "receipt": { "ur": "رسید", "roman": "raseed" },
+    "nice": { "ur": "اچھا", "roman": "achha" },
+    "day": { "ur": "دن", "roman": "din" }
+  },
+  "items": [
+    { "en": "Ali goes to a shop. He wants some milk and bread.", "ur": "علی ایک دکان پر جاتا ہے۔ اسے دودھ اور ڈبل روٹی چاہیے۔", "roman": "Ali ek dukaan par jaata hai. Use doodh aur double roti chahiye." },
+    { "who": "Anna", "en": "Good morning! Can I help you?", "ur": "صبح بخیر! میں آپ کی کیا مدد کر سکتی ہوں؟", "roman": "Subah bakhair! Main aap ki kya madad kar sakti hoon?" },
+    { "who": "Ali", "en": "Good morning. I would like some milk, please.", "ur": "صبح بخیر۔ مجھے تھوڑا دودھ چاہیے۔", "roman": "Subah bakhair. Mujhe thora doodh chahiye." },
+    { "who": "Anna", "en": "The milk is next to the door.", "ur": "دودھ دروازے کے ساتھ ہے۔", "roman": "Doodh darwaaze ke saath hai." },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "دودھ کہاں ہے؟", "roman": "Doodh kahan hai?" }, "options": ["Next to the door", "Next to the bread", "At home"], "answer": 0 },
+    { "who": "Ali", "en": "Thank you. And bread?", "ur": "شکریہ۔ اور ڈبل روٹی؟", "roman": "Shukriya. Aur double roti?" },
+    { "who": "Anna", "en": "Sorry, we have no bread today.", "ur": "معاف کیجیے، آج ہمارے پاس ڈبل روٹی نہیں ہے۔", "roman": "Maaf kijiye, aaj hamare paas double roti nahin hai." },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "کیا آج دکان میں ڈبل روٹی ہے؟", "roman": "Kya aaj dukaan mein double roti hai?" }, "options": ["No, not today.", "Yes, a lot.", "Yes, next to the door."], "answer": 0 },
+    { "who": "Ali", "en": "OK. How much is the milk?", "ur": "ٹھیک ہے۔ دودھ کتنے کا ہے؟", "roman": "Theek hai. Doodh kitne ka hai?" },
+    { "who": "Anna", "en": "Three dollars. Cash or card?", "ur": "تین ڈالر۔ نقد یا کارڈ؟", "roman": "Teen dollar. Naqad ya card?" },
+    { "type": "reply", "say": "Cash or card?", "options": ["Card, please.", "Milk, please.", "Three dollars."], "answer": 0 },
+    { "who": "Ali", "en": "Card, please. Can I have a receipt?", "ur": "کارڈ سے۔ کیا مجھے رسید مل سکتی ہے؟", "roman": "Card se. Kya mujhe raseed mil sakti hai?" },
+    { "who": "Anna", "en": "Here you are. Have a nice day!", "ur": "یہ لیجیے۔ آپ کا دن اچھا گزرے!", "roman": "Yeh lijiye. Aap ka din achha guzre!" }
+  ]
+}

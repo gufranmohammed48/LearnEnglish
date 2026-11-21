@@ -120,5 +120,10 @@ export const STRINGS = {
   profile: { ur: "میں", roman: "Main" },
   wordsEmpty: { ur: "سبق مکمل کریں تو الفاظ یہاں آئیں گے", roman: "Sabaq mukammal karein to alfaaz yahan aaein ge" },
   strength: { ur: "یاد", roman: "Yaad" },
+  stories: { ur: "کہانیاں", roman: "Kahaaniyan" },
+  storiesIntro: { ur: "چھوٹی چھوٹی کہانیاں سنیں اور پڑھیں۔ کسی بھی لفظ پر دبا کر اس کا مطلب دیکھیں۔", roman: "Chhoti chhoti kahaaniyan sunein aur parhein. Kisi bhi lafz par daba kar us ka matlab dekhein." },
+  storyAfter: { ur: "پہلے یہ سبق مکمل کریں:", roman: "Pehle yeh sabaq mukammal karein:" },
+  storyDone: { ur: "کہانی مکمل!", roman: "Kahaani mukammal!" },
+  translate: { ur: "ترجمہ", roman: "Tarjuma" },
   installApp: { ur: "ایپ فون پر انسٹال کریں", roman: "App phone par install karein" },
 };

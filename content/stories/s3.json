@@ -1,0 +1,35 @@
+{
+  "id": "s3",
+  "title": { "en": "At the clinic", "ur": "کلینک میں", "roman": "Clinic mein" },
+  "cast": { "Sara": "f", "Doctor": "m" },
+  "glossary": {
+    "clinic": { "ur": "کلینک", "roman": "clinic" },
+    "sick": { "ur": "بیمار", "roman": "beemaar" },
+    "problem": { "ur": "مسئلہ", "roman": "masla" },
+    "headache": { "ur": "سر درد", "roman": "sar dard" },
+    "fever": { "ur": "بخار", "roman": "bukhaar" },
+    "days": { "ur": "دن", "roman": "din" },
+    "allergies": { "ur": "الرجی", "roman": "allergy" },
+    "medicine": { "ur": "دوا", "roman": "dawa" },
+    "twice": { "ur": "دو بار", "roman": "do baar" },
+    "drink": { "ur": "پیئیں", "roman": "piyein" },
+    "water": { "ur": "پانی", "roman": "paani" },
+    "lot": { "ur": "زیادہ (a lot of)", "roman": "zyada (a lot of)" },
+    "take": { "ur": "لیں", "roman": "lein" }
+  },
+  "items": [
+    { "en": "Sara is at the clinic. She is sick.", "ur": "سارہ کلینک میں ہے۔ وہ بیمار ہے۔", "roman": "Sara clinic mein hai. Woh beemaar hai." },
+    { "who": "Doctor", "en": "Hello, Sara. What is the problem?", "ur": "ہیلو سارہ۔ کیا مسئلہ ہے؟", "roman": "Hello Sara. Kya masla hai?" },
+    { "who": "Sara", "en": "I have a headache and a fever.", "ur": "میرے سر میں درد ہے اور بخار ہے۔", "roman": "Mere sar mein dard hai aur bukhaar hai." },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "سارہ کو کیا مسئلہ ہے؟", "roman": "Sara ko kya masla hai?" }, "options": ["A headache and a fever", "A stomachache", "A cough"], "answer": 0 },
+    { "who": "Doctor", "en": "How long have you had the fever?", "ur": "آپ کو کب سے بخار ہے؟", "roman": "Aap ko kab se bukhaar hai?" },
+    { "type": "reply", "say": "How long have you had the fever?", "options": ["For two days.", "Since two days.", "Two days fever."], "answer": 0,
+      "why": { "ur": "مدت کے ساتھ 'for' آتا ہے: for two days۔", "roman": "Muddat ke saath 'for' aata hai: for two days." } },
+    { "who": "Sara", "en": "For two days.", "ur": "دو دن سے۔", "roman": "Do din se." },
+    { "who": "Doctor", "en": "Do you have any allergies?", "ur": "کیا آپ کو کوئی الرجی ہے؟", "roman": "Kya aap ko koi allergy hai?" },
+    { "who": "Sara", "en": "No, I don't.", "ur": "نہیں، کوئی نہیں۔", "roman": "Nahin, koi nahin." },
+    { "who": "Doctor", "en": "OK. Take this medicine twice a day, and drink a lot of water.", "ur": "ٹھیک ہے۔ یہ دوا دن میں دو بار لیں، اور پانی زیادہ پیئیں۔", "roman": "Theek hai. Yeh dawa din mein do baar lein, aur paani zyada piyein." },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "سارہ دوا دن میں کتنی بار لے گی؟", "roman": "Sara dawa din mein kitni baar le gi?" }, "options": ["Twice a day", "Once a day", "Three times a day"], "answer": 0 },
+    { "who": "Sara", "en": "Thank you, doctor.", "ur": "شکریہ ڈاکٹر صاحب۔", "roman": "Shukriya doctor sahab." }
+  ]
+}

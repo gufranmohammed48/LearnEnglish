@@ -2,6 +2,9 @@
 // Uses what the phone/browser already has; no download, no account, no cost.
 
 let voice = null;
+let voices = [];
+const FEMALE = /female|zira|samantha|jenny|aria|susan|hazel|libby|sonia|karen|moira|tessa|victoria|serena/i;
+const MALE = /male|david|mark|guy|george|daniel|ryan|alex|fred|james|thomas/i;
 
 export const ttsAvailable = () => typeof window !== "undefined" && "speechSynthesis" in window;
 
@@ -11,7 +14,16 @@ function pickVoice() {
     (/en[-_]US/i.test(v.lang) ? 4 : /en[-_]GB/i.test(v.lang) ? 3 : 0) +
     (/natural|neural|google|samantha|aria|jenny/i.test(v.name) ? 2 : 0) +
     (v.localService ? 1 : 0);
-  voice = vs.sort((a, b) => score(b) - score(a))[0] || null;
+  voices = vs.sort((a, b) => score(b) - score(a));
+  voice = voices[0] || null;
+}
+
+/** A voice for a story character: "f" or "m" if the device has one, else the default voice. */
+function voiceFor(gender) {
+  if (!gender) return voice;
+  const re = gender === "f" ? FEMALE : MALE;
+  const v = voices.find((x) => re.test(x.name) && !(gender === "m" && /female/i.test(x.name)));
+  return v || voice;
 }
 
 if (ttsAvailable()) {
@@ -22,14 +34,17 @@ if (ttsAvailable()) {
 export const hasEnglishVoice = () => !!voice;
 
 /** Speaks English. Returns a promise that resolves when done (or right away if no voice). */
-export function speak(text, slow = false) {
+export function speak(text, slow = false, gender = null) {
   return new Promise((resolve) => {
     if (!ttsAvailable() || !text) return resolve();
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    if (voice) u.voice = voice;
-    u.lang = voice ? voice.lang : "en-US";
+    const v = voiceFor(gender);
+    if (v) u.voice = v;
+    u.lang = v ? v.lang : "en-US";
     u.rate = slow ? 0.55 : 0.9;
+    // same voice for everyone? change the pitch a little so characters sound different
+    if (gender && v === voice) u.pitch = gender === "f" ? 1.2 : 0.85;
     u.onend = u.onerror = () => resolve();
     speechSynthesis.speak(u);
   });

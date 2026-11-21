@@ -1,0 +1,37 @@
+{
+  "id": "s4",
+  "title": { "en": "The job interview", "ur": "نوکری کا انٹرویو", "roman": "Naukri ka interview" },
+  "cast": { "Ali": "m", "Manager": "f" },
+  "glossary": {
+    "job": { "ur": "نوکری", "roman": "naukri" },
+    "interview": { "ur": "انٹرویو", "roman": "interview" },
+    "restaurant": { "ur": "ریسٹورنٹ", "roman": "restaurant" },
+    "sit": { "ur": "بیٹھیں", "roman": "baithein" },
+    "yourself": { "ur": "اپنے بارے میں", "roman": "apne baare mein" },
+    "cook": { "ur": "باورچی", "roman": "baawarchi" },
+    "experience": { "ur": "تجربہ", "roman": "tajurba" },
+    "years": { "ur": "سال", "roman": "saal" },
+    "why": { "ur": "کیوں", "roman": "kyun" },
+    "love": { "ur": "بہت پسند ہے", "roman": "bohat pasand hai" },
+    "cooking": { "ur": "کھانا پکانا", "roman": "khaana pakaana" },
+    "hard-working": { "ur": "محنتی", "roman": "mehnati" },
+    "start": { "ur": "شروع کرنا", "roman": "shuru karna" },
+    "perfect": { "ur": "بہت خوب", "roman": "bohat khoob" },
+    "time": { "ur": "وقت", "roman": "waqt" }
+  },
+  "items": [
+    { "en": "Ali has a job interview at a restaurant.", "ur": "علی کا ایک ریسٹورنٹ میں نوکری کا انٹرویو ہے۔", "roman": "Ali ka ek restaurant mein naukri ka interview hai." },
+    { "who": "Manager", "en": "Good afternoon, Ali. Please sit down.", "ur": "سلام علی۔ تشریف رکھیے۔", "roman": "Salaam Ali. Tashreef rakhiye." },
+    { "who": "Ali", "en": "Thank you. Good afternoon.", "ur": "شکریہ۔ سلام۔", "roman": "Shukriya. Salaam." },
+    { "who": "Manager", "en": "Tell me about yourself.", "ur": "اپنے بارے میں بتائیں۔", "roman": "Apne baare mein bataaein." },
+    { "who": "Ali", "en": "I am a cook. I have five years of experience.", "ur": "میں باورچی ہوں۔ میرے پاس پانچ سال کا تجربہ ہے۔", "roman": "Main baawarchi hoon. Mere paas paanch saal ka tajurba hai." },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "علی کے پاس کتنا تجربہ ہے؟", "roman": "Ali ke paas kitna tajurba hai?" }, "options": ["Five years", "Two years", "No experience"], "answer": 0 },
+    { "who": "Manager", "en": "Why do you want this job?", "ur": "آپ یہ نوکری کیوں چاہتے ہیں؟", "roman": "Aap yeh naukri kyun chahte hain?" },
+    { "who": "Ali", "en": "I love cooking, and I am hard-working.", "ur": "مجھے کھانا پکانا بہت پسند ہے، اور میں محنتی ہوں۔", "roman": "Mujhe khaana pakaana bohat pasand hai, aur main mehnati hoon." },
+    { "who": "Manager", "en": "Great. When can you start?", "ur": "بہت اچھا۔ آپ کب سے شروع کر سکتے ہیں؟", "roman": "Bohat achha. Aap kab se shuru kar sakte hain?" },
+    { "type": "reply", "say": "When can you start?", "options": ["I can start on Monday.", "I can start in Monday.", "I started Monday."], "answer": 0 },
+    { "who": "Ali", "en": "I can start on Monday.", "ur": "میں پیر سے شروع کر سکتا ہوں۔", "roman": "Main peer se shuru kar sakta hoon." },
+    { "who": "Manager", "en": "Perfect! See you on Monday at nine o'clock.", "ur": "بہت خوب! پیر کو نو بجے ملتے ہیں۔", "roman": "Bohat khoob! Peer ko nau bajay milte hain." },
+    { "who": "Ali", "en": "Thank you for your time!", "ur": "آپ کے وقت کا شکریہ!", "roman": "Aap ke waqt ka shukriya!" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "s1",
+  "title": { "en": "The new neighbour", "ur": "نئی پڑوسن", "roman": "Nayi parosan" },
+  "cast": { "Sara": "f", "Ali": "m" },
+  "glossary": {
+    "home": { "ur": "گھر", "roman": "ghar" },
+    "someone": { "ur": "کوئی", "roman": "koi" },
+    "knocks": { "ur": "کھٹکھٹاتا ہے", "roman": "khatkhatata hai" },
+    "door": { "ur": "دروازہ", "roman": "darwaaza" },
+    "new": { "ur": "نیا / نئی", "roman": "naya / nayi" },
+    "neighbour": { "ur": "پڑوسی", "roman": "parosi" },
+    "nice": { "ur": "اچھا", "roman": "achha" },
+    "meet": { "ur": "ملنا", "roman": "milna" },
+    "today": { "ur": "آج", "roman": "aaj" },
+    "come": { "ur": "آئیں", "roman": "aaein" },
+    "in": { "ur": "اندر", "roman": "andar" },
+    "but": { "ur": "مگر", "roman": "magar" },
+    "not": { "ur": "نہیں", "roman": "nahin" },
+    "where": { "ur": "کہاں", "roman": "kahan" },
+    "from": { "ur": "سے", "roman": "se" }
+  },
+  "items": [
+    { "en": "Ali is at home. Someone knocks on the door.", "ur": "علی گھر پر ہے۔ کوئی دروازہ کھٹکھٹاتا ہے۔", "roman": "Ali ghar par hai. Koi darwaaza khatkhatata hai." },
+    { "who": "Sara", "en": "Hello! My name is Sara. I am your new neighbour.", "ur": "ہیلو! میرا نام سارہ ہے۔ میں آپ کی نئی پڑوسن ہوں۔", "roman": "Hello! Mera naam Sara hai. Main aap ki nayi parosan hoon." },
+    { "who": "Ali", "en": "Hello, Sara! Nice to meet you. I am Ali.", "ur": "ہیلو سارہ! آپ سے مل کر خوشی ہوئی۔ میں علی ہوں۔", "roman": "Hello Sara! Aap se mil kar khushi hui. Main Ali hoon." },
+    { "type": "pick", "q": { "ur": "سارہ کون ہے؟", "roman": "Sara kaun hai?" }, "options": ["Ali's new neighbour", "Ali's sister", "Ali's teacher"], "answer": 0 },
+    { "who": "Sara", "en": "Where are you from, Ali?", "ur": "علی، آپ کہاں سے ہیں؟", "roman": "Ali, aap kahan se hain?" },
+    { "who": "Ali", "en": "I am from Pakistan. And you?", "ur": "میں پاکستان سے ہوں۔ اور آپ؟", "roman": "Main Pakistan se hoon. Aur aap?" },
+    { "who": "Sara", "en": "I am from Canada. How are you today?", "ur": "میں کینیڈا سے ہوں۔ آج آپ کیسے ہیں؟", "roman": "Main Canada se hoon. Aaj aap kaise hain?" },
+    { "type": "reply", "say": "How are you today?", "options": ["I am fine, thank you.", "I am from Canada.", "My name is Sara."], "answer": 0 },
+    { "who": "Ali", "en": "I am fine, thank you. Please come in!", "ur": "میں ٹھیک ہوں، شکریہ۔ اندر آئیے!", "roman": "Main theek hoon, shukriya. Andar aaiye!" },
+    { "who": "Sara", "en": "Thank you, but not today. Goodbye, Ali!", "ur": "شکریہ، مگر آج نہیں۔ خدا حافظ علی!", "roman": "Shukriya, magar aaj nahin. Khuda hafiz Ali!" },
+    { "type": "pick", "prompt": "reply", "q": { "ur": "علی کہاں سے ہے؟", "roman": "Ali kahan se hai?" }, "options": ["Pakistan", "Canada", "India"], "answer": 0 }
+  ]
+}

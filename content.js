@@ -93,3 +93,24 @@ export async function testExercises(lessonIds, count = 12) {
   }
   return shuffle(all).slice(0, count);
 }
+
+// ---- stories ----
+let storyIndex = null;
+export async function getStories() {
+  if (!storyIndex) storyIndex = await (await fetch("content/stories/index.json")).json();
+  return storyIndex.stories;
+}
+
+/** Turns a story file into player exercises: each line shows the lines before it, questions stay as they are. */
+export async function storySession(id) {
+  const st = await (await fetch("content/stories/" + id + ".json")).json();
+  const exercises = [];
+  const history = [];
+  for (const item of st.items) {
+    if (item.type) { exercises.push(item); continue; }
+    const line = { ...item, g: (st.cast || {})[item.who] || null };
+    exercises.push({ type: "line", ...line, glossary: st.glossary, title: history.length ? null : st.title, history: history.slice(-6) });
+    history.push(line);
+  }
+  return { story: st, exercises };
+}

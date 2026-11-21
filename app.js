@@ -2,7 +2,7 @@
 import { h, t, tx, en, ur, loc, svg, ask, toast, script } from "./ui.js";
 import { state, save, resetAll, dateKey, todayXp, currentStreak, addXp, hearts, gainHeart, nextHeartMinutes, markDone, MAX_HEARTS } from "./store.js";
 import { addWords, allCards, dueCards, strength } from "./srs.js";
-import { getCourse, getLesson, lessonList, isUnlocked, nextLessonId, reviewSession, testExercises } from "./content.js";
+import { getCourse, getLesson, lessonList, isUnlocked, nextLessonId, reviewSession, testExercises, getStories, storySession } from "./content.js";
 import { play } from "./lesson.js";
 import { speak, sfx, hasEnglishVoice, ttsAvailable, canListen } from "./speech.js";
 import { STRINGS } from "./strings.js";
@@ -43,6 +43,8 @@ async function route() {
       case "review": return await runReview();
       case "test": return await runTest(arg);
       case "jump": return await runJump(arg);
+      case "stories": return await storiesPage();
+      case "story": return await runStory(arg);
       case "words": return wordsPage();
       case "me": return mePage();
       default: return await pathPage();
@@ -69,6 +71,7 @@ function bottomNav(active) {
     h("a", { class: "nav-item" + (active === id ? " on" : ""), href: hash }, svg(ico), tx(key));
   return h("nav", { class: "bottomnav" },
     item("#/", "path", "home", "learn"),
+    item("#/stories", "book", "stories", "stories"),
     item("#/words", "cards", "wordsTab", "words"),
     item("#/me", "user", "profile", "me"));
 }
@@ -219,7 +222,7 @@ async function runLesson(id, isPractice) {
   if (!isPractice && !(await isUnlocked(id))) return go("#/");
   const lesson = await getLesson(id);
   // Hearts only once the learner has the basics (3 lessons), and never when practising an old lesson.
-  const useHearts = !isPractice && Object.keys(state.done).length >= 3;
+  const useHearts = !isPractice && Object.keys(state.done).filter((k) => !k.startsWith("story:")).length >= 3;
   const r = await play({ kind: isPractice ? "practice" : "lesson", exercises: lesson.exercises, hearts: useHearts }, app);
   if (r.needHearts) return allCards().length ? go("#/review") : go("#/");
   if (!r.finished) return go("#/");
@@ -285,7 +288,7 @@ async function runJump(unitId) {
   resultScreen({ title: pass ? "testPassed" : "testFailed", xp, acc, perfect: r.mistakes === 0, streakUp });
 }
 
-function resultScreen({ title, xp, acc, perfect, streakUp, heart }) {
+function resultScreen({ title, xp, acc, perfect, streakUp, heart, back = "#/" }) {
   if (state.settings.sfx !== false) sfx.done();
   app.replaceChildren(h("div", { class: "result" },
     h("div", { class: "confetti", "aria-hidden": "true" }, Array.from({ length: 18 }, (_, i) => h("i", { style: `--i:${i}` }))),
@@ -297,8 +300,44 @@ function resultScreen({ title, xp, acc, perfect, streakUp, heart }) {
       h("div", { class: "tile-stat acc" }, h("small", {}, tx("accuracy")), en(acc + "%"))),
     streakUp ? h("p", { class: "streak-up" }, svg("fire"), en(String(currentStreak()) + " "), tx("streakUp")) : null,
     heart ? h("p", { class: "heart-up" }, svg("heart"), tx("heartBack")) : null,
-    h("button", { class: "btn primary big", type: "button", onclick: () => go("#/") }, tx("continue"))));
+    h("button", { class: "btn primary big", type: "button", onclick: () => go(back) }, tx("continue"))));
   app.querySelector(".btn").focus();
+}
+
+// ---------- stories ----------
+async function storiesPage() {
+  const stories = await getStories();
+  const list = await lessonList();
+  const titleOf = (id) => (list.find((l) => l.id === id) || {}).title;
+  page("stories",
+    h("div", { class: "page-head" }, h("h1", {}, tx("stories"))),
+    h("p", { class: "muted" }, tx("storiesIntro")),
+    h("div", { class: "story-list" }, stories.map((st) => {
+      const open = !st.after || state.done[st.after];
+      const done = state.done["story:" + st.id];
+      return h(open ? "a" : "div", { class: "card story-card" + (open ? "" : " locked") + (done ? " done" : ""), href: open ? "#/story/" + st.id : null },
+        h("span", { class: "story-emoji", "aria-hidden": "true" }, st.emoji || "📖"),
+        h("div", { class: "story-info" },
+          h("b", {}, ur(st.title)),
+          en(st.title.en, "muted small"),
+          open ? null : h("div", { class: "small muted" }, tx("storyAfter"), " ", ur(titleOf(st.after)))),
+        h("span", { class: "story-state" }, svg(done ? "check" : open ? "star" : "lock")));
+    })));
+}
+
+async function runStory(id) {
+  const stories = await getStories();
+  const meta = stories.find((s) => s.id === id);
+  if (!meta || (meta.after && !state.done[meta.after])) return go("#/stories");
+  const { exercises } = await storySession(id);
+  const r = await play({ kind: "story", exercises, hearts: false }, app);
+  if (!r.finished) return go("#/stories");
+  const acc = r.total ? Math.round((100 * r.firstTry) / r.total) : 100;
+  const first = !state.done["story:" + id];
+  const xp = first ? 10 : 3;
+  const streakUp = addXp(xp);
+  markDone("story:" + id, acc);
+  resultScreen({ title: "storyDone", xp, acc, perfect: r.mistakes === 0, streakUp, back: "#/stories" });
 }
 
 // ---------- words ----------
@@ -328,7 +367,7 @@ function mePage() {
   const toggle = (k, label) => h("label", { class: "row" }, h("span", {}, tx(label)),
     h("input", { type: "checkbox", class: "switch", checked: s[k] !== false, onchange: (e) => set(k, e.target.checked) }));
 
-  const lessonsDone = Object.keys(state.done).length;
+  const lessonsDone = Object.keys(state.done).filter((k) => !k.startsWith("story:")).length;
   page("me",
     h("div", { class: "page-head" }, h("h1", {}, tx("stats"))),
     h("div", { class: "stat-grid" },

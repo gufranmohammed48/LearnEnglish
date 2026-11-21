@@ -89,6 +89,56 @@ R.tip = (ex) => ({
   check: () => ({ ok: true }),
 });
 
+// One line of a story. Earlier lines stay on screen above it, like a chat.
+// Every English word can be tapped to see its meaning (from the story's glossary).
+function tappable(text, glossary) {
+  const wrap = h("span", { class: "en story-en", dir: "ltr", lang: "en" });
+  text.split(/(\s+)/).forEach((part) => {
+    if (!part.trim()) return wrap.append(part);
+    const key = part.toLowerCase().replace(/[^a-z'-]/g, "");
+    const g = glossary && glossary[key];
+    if (!g) return wrap.append(part);
+    const w = h("button", { class: "gw", type: "button" }, part);
+    w.addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.querySelectorAll(".gloss").forEach((x) => x.remove());
+      speak(key);
+      const tipEl = h("span", { class: "gloss" }, ur(g));
+      w.append(tipEl);
+      setTimeout(() => tipEl.remove(), 2500);
+    });
+    wrap.append(w);
+  });
+  return wrap;
+}
+
+function lineBubble(line, glossary, current) {
+  const trans = h("div", { class: "line-ur", hidden: !current || null }, ur(line));
+  return h("div", { class: "line" + (line.who ? " g-" + (line.g || "n") : " narrator") + (current ? " current" : "") },
+    line.who ? h("span", { class: "avatar", "aria-hidden": "true" }, line.who[0]) : null,
+    h("div", { class: "line-body" },
+      line.who ? h("div", { class: "who" }, en(line.who)) : null,
+      h("div", { class: "line-text" },
+        h("button", { class: "spk small", type: "button", onclick: () => speak(line.en, false, line.g) }, svg("speaker")),
+        tappable(line.en, glossary)),
+      current ? trans : null));
+}
+
+R.line = (ex) => {
+  const box = h("div", { class: "story" },
+    ex.title ? h("h2", { class: "story-title" }, ur(ex.title)) : null,
+    (ex.history || []).map((l) => lineBubble(l, ex.glossary, false)),
+    lineBubble(ex, ex.glossary, true));
+  const tr = box.querySelector(".line.current .line-ur");
+  if (tr) tr.hidden = true;
+  const toggle = h("button", { class: "link", type: "button", onclick: () => { if (tr) tr.hidden = !tr.hidden; } }, tx("translate"));
+  setTimeout(() => {
+    speak(ex.en, false, ex.g);
+    box.querySelector(".line.current")?.scrollIntoView({ block: "end", behavior: "smooth" });
+  }, 250);
+  return { el: h("div", {}, box, toggle), check: () => ({ ok: true }) };
+};
+
 R.pick = (ex, api) => {
   const gap = ex.q.en && ex.q.en.includes("___");
   const promptKey = ex.prompt === "gap" || gap ? "pGap" : ex.prompt === "reply" ? "pReply" : ex.q.en ? "pMeaning" : "pToEnglish";
@@ -295,7 +345,8 @@ export function play(session, root) {
   return new Promise((resolve) => {
     const speakOff = !canListen() || state.settings?.speak === false || state.noSpeakUntil > Date.now();
     let queue = session.exercises.filter((e) => !(e.type === "speak" && speakOff));
-    const graded = queue.filter((e) => e.type !== "tip");
+    const ungraded = (e) => e.type === "tip" || e.type === "line";
+    const graded = queue.filter((e) => !ungraded(e));
     let total = graded.length;
     const firstTry = new Set();
     const seen = new Set();
@@ -357,7 +408,7 @@ export function play(session, root) {
       if (DEBUG) document.body.dataset.ex = JSON.stringify(current); // lets test scripts drive lessons
       body.replaceChildren(renderer.el);
       body.scrollTop = 0;
-      if (current.type === "tip") {
+      if (ungraded(current)) {
         btn.disabled = false;
         btn.replaceChildren(tx("continue"));
         btn.onclick = () => next();

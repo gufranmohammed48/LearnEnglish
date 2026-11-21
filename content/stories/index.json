@@ -1,0 +1,8 @@
+{
+  "stories": [
+    { "id": "s1", "after": "u1-l3", "emoji": "🏠", "title": { "en": "The new neighbour", "ur": "نئی پڑوسن", "roman": "Nayi parosan" } },
+    { "id": "s2", "after": "u5-l2", "emoji": "🛒", "title": { "en": "At the shop", "ur": "دکان پر", "roman": "Dukaan par" } },
+    { "id": "s3", "after": "u6-l2", "emoji": "🩺", "title": { "en": "At the clinic", "ur": "کلینک میں", "roman": "Clinic mein" } },
+    { "id": "s4", "after": "u11-l2", "emoji": "💼", "title": { "en": "The job interview", "ur": "نوکری کا انٹرویو", "roman": "Naukri ka interview" } }
+  ]
+}

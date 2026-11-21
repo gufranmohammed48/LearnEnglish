@@ -386,3 +386,42 @@ a { color: inherit; text-decoration: none; }
 }
 .pbody.answered .options, .pbody.answered .bank, .pbody.answered .build-line, .pbody.answered .fix-row, .pbody.answered .mic, .pbody.answered .link { pointer-events: none; }
 .lvl { display: inline-block; margin-inline-start: 8px; padding: 0 8px; border-radius: 99px; background: rgba(255,255,255,0.25); font-size: 0.75rem; }
+
+/* ---------- stories ---------- */
+.small { font-size: 0.85rem; }
+.story-list { display: flex; flex-direction: column; gap: 10px; }
+.story-card { display: flex; align-items: center; gap: 14px; }
+.story-card.locked { opacity: 0.55; }
+.story-card.done { border-color: var(--accent); }
+.story-emoji { font-size: 2.2rem; }
+.story-info { flex: 1; display: flex; flex-direction: column; }
+.story-info .en { display: block; }
+.story-state { color: var(--primary); }
+.story-card.done .story-state { color: var(--accent); }
+.story-card.locked .story-state { color: var(--muted); }
+.story { display: flex; flex-direction: column; gap: 10px; }
+.story-title { text-align: center; color: var(--primary); margin: 0 0 6px; }
+.line { display: flex; gap: 10px; align-items: flex-start; opacity: 0.6; }
+.line.current { opacity: 1; }
+.line.narrator .line-body { background: none; border: 0; padding: 0 4px; font-style: italic; }
+.avatar {
+  flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  font: 900 1.1rem var(--font-en); color: #fff; background: var(--gem);
+}
+.line.g-f .avatar { background: #d6517e; }
+.line.g-m .avatar { background: #2f7fd6; }
+.line-body { flex: 1; background: var(--surface); border: 2px solid var(--line); border-radius: 16px; border-start-start-radius: 4px; padding: 8px 12px; }
+.line.current .line-body { border-color: var(--gem); }
+.who { font-weight: 800; font-size: 0.85rem; color: var(--muted); }
+.line-text { display: flex; gap: 10px; align-items: flex-start; }
+.story-en { font-size: 1.15rem; font-weight: 700; line-height: 1.6; }
+.line:not(.current) .story-en { font-size: 1rem; font-weight: 600; }
+.line:not(.current) .spk { display: none; }
+.line-ur { margin-top: 4px; color: var(--muted); }
+.gw { position: relative; background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; border-bottom: 2px dotted var(--gem); }
+.gloss {
+  position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); z-index: 3; white-space: nowrap;
+  background: var(--text); color: var(--bg); padding: 2px 10px; border-radius: 10px; font-size: 0.95rem; font-weight: 700;
+}
+.gloss .ur { line-height: 1.9; }
+.bottomnav .nav-item { font-size: 0.8rem; }
