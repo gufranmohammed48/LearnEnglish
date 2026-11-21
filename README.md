@@ -1,4 +1,4 @@
-# LearnEnglish
+# Angrezi (LearnEnglish)
 
 An app for Urdu speakers to learn English: short daily lessons, spaced-repetition review,
 pronunciation practice and real-life role-plays, with explanations in Urdu (Nastaliq or Roman Urdu).

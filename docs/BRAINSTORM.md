@@ -1,4 +1,4 @@
-# LearnEnglish – Brainstorm
+# Angrezi (LearnEnglish) – Brainstorm
 
 An app that teaches English to Urdu speakers. Free, with ads. Web + Android + iPhone.
 
@@ -174,11 +174,81 @@ Needs: AdMob account, privacy policy, Google consent screen for Europe/UK (UMP),
 
 ---
 
-## 9. Open questions for you
+## 9. Decisions (2026-11-21)
 
-1. **App name** for the stores? ("LearnEnglish" works for the repo; something like "Angrezi Seekho / انگریزی سیکھو" may do better in Pakistan search.)
-2. **App ID** `com.mohammed.learnenglish`: OK?
-3. **Content writing**: I can draft lessons and Urdu explanations; who checks the Urdu (you, a friend, a teacher)?
-4. **Voices**: start with phone text-to-speech, or record real voices for the first units?
-5. **Interface language**: Urdu script by default with a Roman Urdu toggle, or ask on first launch?
-6. Should the **web version** be public (GitHub Pages) from the start, as with Iqama Time?
+1. **App name: Angrezi** (انگریزی). Repo stays `LearnEnglish`.
+2. **App ID: `com.mohammed.learnenglish`** (permanent).
+3. **Urdu content**: Claude drafts lessons and explanations; the owner checks all Urdu.
+4. **Voices**: phone/browser built-in text-to-speech for now.
+5. **Script**: ask on first launch (Urdu script or Roman Urdu); changeable in Settings.
+6. **Web version**: public on GitHub Pages from the start.
+
+---
+
+## 10. AI: free, open, on-device options
+
+Goal: AI features that cost nothing per user and work offline where possible.
+Constraint: many learners have cheap Android phones and limited mobile data, so **no big
+download is ever forced**. AI comes in tiers; each tier is optional and the app works without it.
+
+### Tier 0 – already in the phone / browser (0 MB download)
+
+| What | Where it works | Use in Angrezi |
+|---|---|---|
+| Speech recognition (Web Speech API / Android & iOS native) | All phones; Chrome/Edge/Safari | "Speak the sentence" scoring (word level) |
+| Text-to-speech (speechSynthesis / native) | All phones | All English audio for now |
+| **Chrome built-in AI** (Gemini Nano): Prompt, Proofreader, Rewriter, Translator, Language Detector APIs | Desktop Chrome (Prompt API stable since Chrome 148); not mobile Chrome yet | Free AI tutor + grammar check on laptops |
+| **Apple Foundation Models** (~3B, on-device) | iPhone 15 Pro and newer, iOS 26+ (native app via Capacitor plugin) | Free AI tutor on newer iPhones |
+| **Gemini Nano via ML Kit GenAI** | Recent flagship Androids (Pixel 9+, Galaxy S25+, etc.) | Free AI tutor on those phones |
+
+### Tier 1 – small downloads (≈ 20–150 MB, one time, cached)
+
+| Model | Size (approx.) | Runs with | Use |
+|---|---|---|---|
+| wav2vec2 / phoneme recognizer (ONNX) | 17–100 MB | Transformers.js (WASM/WebGPU) | **Sound-level pronunciation score** (v/w, th, "iskool") – what ELSA does |
+| Whisper tiny.en / base.en | 40–80 MB | Transformers.js | Offline speech-to-text, dictation checking |
+| Kokoro-82M TTS | ≈ 80 MB (8-bit) | kokoro-js | Natural English voice, better than phone TTS |
+| MMS-TTS Urdu (Meta) | ≈ 30–150 MB | Transformers.js | Urdu voice for instructions where the phone has no Urdu voice |
+| opus-mt-en-ur (Marian) | ≈ 75 MB | Transformers.js | Offline English→Urdu for tap-a-word in stories (owner-checked word list preferred) |
+
+### Tier 2 – optional "AI tutor pack" (≈ 0.5–3 GB, Wi-Fi only, user chooses)
+
+| Model | Download | Notes |
+|---|---|---|
+| Gemma 3 1B (int4) | ≈ 530 MB | Smallest useful chat model; simple English role-plays |
+| Qwen3 0.6B / 1.7B | ≈ 0.4 / 1.1 GB | Good small chat model in WebLLM |
+| Gemma 3n E2B / E4B | ≈ 2 / 3 GB | Best on-device quality; understands audio and images; needs a newer phone |
+| Llama 3.2 1B/3B, Phi-4-mini, SmolLM | 0.7–2.5 GB | Alternatives |
+
+Runtimes: **WebLLM** (WebGPU, in-browser), **Transformers.js** (WebGPU or WASM), **wllama** (llama.cpp in WASM, no GPU needed),
+**LiteRT-LM / MediaPipe** (native Android/iOS; MediaPipe LLM Inference is now maintenance-only, LiteRT-LM is its successor).
+
+Honest limits of small models:
+- They are **weak in Urdu**: Urdu explanations stay human-written (by the owner), not generated on the phone.
+- They are good at **simple English conversation, spotting grammar mistakes, and making extra practice sentences**.
+- WebGPU on mobile browsers is patchy; the native app (Capacitor + LiteRT-LM) is the reliable path on phones.
+
+### Tier 3 – cloud AI (best quality, costs money per use)
+Claude Haiku or a similar fast model behind a small server (e.g. Firebase Function, so the key stays secret).
+Best Urdu quality and best tutor. Pay for it from ad revenue, with a daily limit per user. **Later phase only.**
+
+### Free AI we use right now: at build time
+Claude writes the lesson JSON, example sentences, wrong-answer choices and draft Urdu explanations;
+the owner checks the Urdu. Zero cost to users, highest quality, fully offline.
+
+### What AI does in the app (by feature)
+
+| Feature | v1 (no download) | With Tier 1 | With Tier 2 / built-in AI |
+|---|---|---|---|
+| Pronunciation | Word-level (speech recognition) | Sound-level score + which sound was wrong | Spoken tips |
+| Conversation practice | Scripted role-plays | Scripted + offline speech-to-text | **Free chat with an AI partner**, gentle corrections |
+| Grammar check of typed answers | Exact/alternate answers in lesson JSON | – | Accepts any correct answer, explains the mistake |
+| Extra practice | Fixed exercises | – | Endless new sentences from words you know |
+| Stories | Pre-written | Tap-a-word offline translation | Stories made from your own word list |
+
+### Proposed plan
+- **Phase 1–2:** Tier 0 only (speech recognition + TTS) – works on every phone, no download.
+- **Phase 3:** add the Tier 1 pronunciation model as an optional download (biggest learning value per MB).
+- **Phase 4:** AI tutor using whatever is free on the device (Chrome Gemini Nano, Apple Foundation Models,
+  Gemini Nano on Android), else offer the Tier 2 pack on Wi-Fi.
+- **Phase 5:** cloud tutor (Tier 3) only if ad income covers it.
