@@ -125,5 +125,9 @@ export const STRINGS = {
   storyAfter: { ur: "پہلے یہ سبق مکمل کریں:", roman: "Pehle yeh sabaq mukammal karein:" },
   storyDone: { ur: "کہانی مکمل!", roman: "Kahaani mukammal!" },
   translate: { ur: "ترجمہ", roman: "Tarjuma" },
+  reminder: { ur: "روزانہ یاد دہانی", roman: "Rozana yaad-dihaani" },
+  reminderTitle: { ur: "انگریزی کا وقت!", roman: "Angrezi ka waqt!" },
+  reminderBody: { ur: "آج کا سبق صرف 5 منٹ کا ہے۔ اپنا سلسلہ جاری رکھیں!", roman: "Aaj ka sabaq sirf 5 minute ka hai. Apna silsila jaari rakhein!" },
+  reminderOff: { ur: "اجازت نہیں ملی — فون کی سیٹنگز میں نوٹیفکیشن آن کریں", roman: "Ijaazat nahin mili — phone ki settings mein notification on karein" },
   installApp: { ur: "ایپ فون پر انسٹال کریں", roman: "App phone par install karein" },
 };

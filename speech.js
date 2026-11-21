@@ -1,12 +1,18 @@
 // English voice (text-to-speech), speech recognition and the small correct/wrong sounds.
 // Uses what the phone/browser already has; no download, no account, no cost.
 
+// Inside the Android/iPhone app the WebView has no speech of its own, so we use native plugins.
+const CAP = typeof window !== "undefined" && window.Capacitor;
+const NATIVE = !!(CAP && CAP.isNativePlatform && CAP.isNativePlatform());
+const NativeTTS = NATIVE && CAP.Plugins && CAP.Plugins.TextToSpeech;
+const NativeSR = NATIVE && CAP.Plugins && CAP.Plugins.SpeechRecognition;
+
 let voice = null;
 let voices = [];
 const FEMALE = /female|zira|samantha|jenny|aria|susan|hazel|libby|sonia|karen|moira|tessa|victoria|serena/i;
 const MALE = /male|david|mark|guy|george|daniel|ryan|alex|fred|james|thomas/i;
 
-export const ttsAvailable = () => typeof window !== "undefined" && "speechSynthesis" in window;
+export const ttsAvailable = () => !!NativeTTS || (typeof window !== "undefined" && "speechSynthesis" in window);
 
 function pickVoice() {
   const vs = speechSynthesis.getVoices().filter((v) => /^en[-_]/i.test(v.lang));
@@ -26,15 +32,22 @@ function voiceFor(gender) {
   return v || voice;
 }
 
-if (ttsAvailable()) {
+if (!NativeTTS && ttsAvailable()) {
   pickVoice();
   speechSynthesis.addEventListener?.("voiceschanged", pickVoice);
 }
 
-export const hasEnglishVoice = () => !!voice;
+export const hasEnglishVoice = () => !!NativeTTS || !!voice;
 
 /** Speaks English. Returns a promise that resolves when done (or right away if no voice). */
 export function speak(text, slow = false, gender = null) {
+  if (NativeTTS) {
+    if (!text) return Promise.resolve();
+    const pitch = gender === "f" ? 1.2 : gender === "m" ? 0.85 : 1;
+    return NativeTTS.stop().catch(() => {})
+      .then(() => NativeTTS.speak({ text, lang: "en-US", rate: slow ? 0.6 : 0.95, pitch, volume: 1, category: "ambient" }))
+      .catch(() => {});
+  }
   return new Promise((resolve) => {
     if (!ttsAvailable() || !text) return resolve();
     speechSynthesis.cancel();
@@ -51,18 +64,20 @@ export function speak(text, slow = false, gender = null) {
 }
 
 export function stopSpeaking() {
-  if (ttsAvailable()) speechSynthesis.cancel();
+  if (NativeTTS) NativeTTS.stop().catch(() => {});
+  else if (ttsAvailable()) speechSynthesis.cancel();
 }
 
 // ---- speech recognition ----
 const Recognition = typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition);
-export const canListen = () => !!Recognition;
+export const canListen = () => !!NativeSR || !!Recognition;
 
 /**
  * Listens once for English. Resolves with the list of things it may have heard (best first),
  * or [] if nothing was heard. Rejects with an error name ("not-allowed", ...) on failure.
  */
 export function listen() {
+  if (NativeSR) return listenNative();
   return new Promise((resolve, reject) => {
     if (!Recognition) return reject(new Error("unsupported"));
     stopSpeaking();
@@ -107,3 +122,15 @@ export const sfx = {
   wrong: () => tone([220, 180], 0.18, "triangle", 0.12),
   done: () => tone([523, 659, 784, 1047], 0.16, "sine", 0.11),
 };
+
+async function listenNative() {
+  stopSpeaking();
+  const perm = await NativeSR.checkPermissions().catch(() => ({}));
+  if (perm.speechRecognition !== "granted") {
+    const asked = await NativeSR.requestPermissions().catch(() => ({}));
+    if (asked.speechRecognition !== "granted") throw new Error("not-allowed");
+  }
+  listen.stop = () => NativeSR.stop().catch(() => {});
+  const r = await NativeSR.start({ language: "en-US", maxResults: 5, partialResults: false, popup: false });
+  return (r && r.matches) || [];
+}

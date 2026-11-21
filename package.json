@@ -1,0 +1,27 @@
+{
+  "name": "angrezi",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Angrezi: English for Urdu speakers (web, Android, iPhone)",
+  "scripts": {
+    "serve": "python scripts/serve.py",
+    "check": "python scripts/check_content.py",
+    "build": "node scripts/build-www.js",
+    "sync": "node scripts/build-www.js && cap sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gufranmohammed48/LearnEnglish.git"
+  },
+  "dependencies": {
+    "@capacitor-community/speech-recognition": "^7.0.1",
+    "@capacitor-community/text-to-speech": "^8.0.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/local-notifications": "^8.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/ios": "^8.6.2"
+  }
+}

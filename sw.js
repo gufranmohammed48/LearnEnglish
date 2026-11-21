@@ -2,7 +2,7 @@
 const VERSION = "angrezi-v4";
 const FONTS = "angrezi-fonts"; // kept across versions
 const FILES = ["./", "index.html", "style.css", "app.js", "lesson.js", "content.js", "store.js", "srs.js", "speech.js",
-  "strings.js", "ui.js", "manifest.json", "content/course.json",
+  "strings.js", "ui.js", "native.js", "manifest.json", "content/course.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
 // Caches the app plus every lesson listed in course.json, so the whole course works offline.

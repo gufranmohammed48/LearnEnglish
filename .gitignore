@@ -8,3 +8,7 @@ android/.gradle/
 ios/App/Pods/
 .claude/settings.local.json
 __pycache__/
+www/
+android/build/
+android/local.properties
+ios/App/build/

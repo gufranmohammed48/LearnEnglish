@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Angrezi</string>
+    <string name="title_activity_main">Angrezi</string>
+    <string name="package_name">com.mohammed.learnenglish</string>
+    <string name="custom_url_scheme">com.mohammed.learnenglish</string>
+</resources>

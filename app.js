@@ -6,6 +6,7 @@ import { getCourse, getLesson, lessonList, isUnlocked, nextLessonId, reviewSessi
 import { play } from "./lesson.js";
 import { speak, sfx, hasEnglishVoice, ttsAvailable, canListen } from "./speech.js";
 import { STRINGS } from "./strings.js";
+import { isNative, setReminder } from "./native.js";
 
 const app = document.getElementById("app");
 const VERSION = "0.2.0";
@@ -384,6 +385,14 @@ function mePage() {
           h("button", { class: s.script === "roman" ? "on" : "", type: "button", onclick: () => { s.script = "roman"; save(); route(); } }, h("span", { class: "roman" }, "Roman Urdu")))),
       h("div", { class: "row col" }, h("span", {}, tx("dailyGoal")),
         seg("dailyXp", [[10, en("10 XP")], [20, en("20 XP")], [30, en("30 XP")], [50, en("50 XP")]])),
+      isNative() ? h("label", { class: "row" }, h("span", {}, tx("reminder")),
+        h("input", { type: "time", class: "time-in", value: s.reminder || "", onchange: async (e) => {
+          const v = e.target.value || null;
+          const ok = await setReminder(v, t("reminderTitle"), t("reminderBody"));
+          if (!ok && v) toast(tx("reminderOff"));
+          s.reminder = ok ? v : null;
+          save();
+        } })) : null,
       toggle("sfx", "soundEffects"),
       toggle("autoplay", "autoplay"),
       canListen() ? toggle("speak", "speakEx") : null,
