@@ -14,7 +14,8 @@
   <meta name="apple-mobile-web-app-title" content="Angrezi">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Nunito:wght@600;700;800;900&display=swap">
+  <!-- fonts load without blocking the first screen (slow mobile data) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Nunito:wght@600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="script-ur">

@@ -218,16 +218,20 @@ async function runLesson(id, isPractice) {
   if (!id) return go("#/");
   if (!isPractice && !(await isUnlocked(id))) return go("#/");
   const lesson = await getLesson(id);
-  const r = await play({ kind: isPractice ? "practice" : "lesson", exercises: lesson.exercises, hearts: true }, app);
+  // Hearts only once the learner has the basics (3 lessons), and never when practising an old lesson.
+  const useHearts = !isPractice && Object.keys(state.done).length >= 3;
+  const r = await play({ kind: isPractice ? "practice" : "lesson", exercises: lesson.exercises, hearts: useHearts }, app);
   if (r.needHearts) return allCards().length ? go("#/review") : go("#/");
   if (!r.finished) return go("#/");
   const acc = r.total ? Math.round((100 * r.firstTry) / r.total) : 100;
   const perfect = r.mistakes === 0;
   const xp = isPractice ? 5 : 10 + (perfect ? 5 : 0);
+  const hadFull = hearts() >= MAX_HEARTS;
+  if (isPractice) gainHeart(); // practising old lessons earns a heart back
   const streakUp = addXp(xp);
   markDone(id, acc);
   addWords(lesson.words, id);
-  resultScreen({ title: "lessonDone", xp, acc, perfect, streakUp });
+  resultScreen({ title: "lessonDone", xp, acc, perfect, streakUp, heart: isPractice && !hadFull });
 }
 
 async function runReview() {
